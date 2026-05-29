@@ -1,5 +1,8 @@
 # CLAUDE.md — Medius Expense Design System
 
+> **Starting a new prototype?** Read `PROTOTYPE_BASE.md` first.
+> It describes the ready-made Expense List screen and how to use it as a base.
+
 ## Golden Rules
 
 1. **Always use existing components from this library first.** Never recreate a UI element that already exists here.
