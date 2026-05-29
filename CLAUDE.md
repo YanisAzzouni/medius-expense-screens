@@ -22,7 +22,7 @@ import { ComponentName } from "@medius-expense/design-system";
 
 Styles (app entry point):
 ```ts
-import "@medius-expense/design-system/dist/tokens/tokens.css";
+import "@medius-expense/design-system/styles";
 ```
 
 ---
@@ -126,7 +126,7 @@ Renders a pill badge with a coloured dot. Use for workflow states (Draft, Submit
 import { LabelTag } from "@medius-expense/design-system";
 
 label:   string
-color?:  "neutral" | "grey" | "blue" | "green" | "orange" | "red"  // default: "neutral"
+color?:  "neutral" | "grey" | "blue" | "green" | "orange" | "red" | "teal"  // default: "neutral"
 size?:   "default" | "small"                                         // default: "default"
 icon?:   ReactNode   // optional leading icon
 ```
