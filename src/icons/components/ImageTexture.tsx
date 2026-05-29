@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageTexture = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 12.12 12.12 21H9.29L21 9.29zM21 19c0 .55-.22 1.05-.59 1.41-.36.37-.86.59-1.41.59h-2l4-4zM19.51 3.08c.69.18 1.23.72 1.42 1.41L4.49 20.92c-.34-.09-.65-.27-.9-.51-.24-.25-.42-.56-.51-.9zM3 14.71v-2.83L11.88 3h2.83zM3 7V5c0-1.1.9-2 2-2h2z" /></svg>;
+export default ImageTexture;

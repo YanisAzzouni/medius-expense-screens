@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsRemoveShoppingCart = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.98.978c.265 0 .518.105.705.293l20.04 20.05a.996.996 0 1 1-1.41 1.41l-2.13-2.131c-.36.51-.95.84-1.62.84a1.998 1.998 0 0 1-1.16-3.62l-1.38-1.38h-7.33c-1.06 0-2.02-.76-2.12-1.82-.04-.42.05-.82.24-1.15l1.35-2.45-2.21-4.66-3.68-3.68A.995.995 0 0 1 1.98.978M7.565 17.44c1.1 0 2 .9 2 2s-.9 2-2 2-1.99-.9-1.99-2 .89-2 1.99-2m0-3h5.46l-2-2h-2.36zm13-11c.76 0 1.25.82.88 1.48l-3.58 6.49c-.26.48-.71.83-1.25.97l-8.93-8.94z" /></svg>;
+export default ActionsRemoveShoppingCart;

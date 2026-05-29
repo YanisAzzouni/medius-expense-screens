@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationCallSplit = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M8.79 4c.45 0 .67.54.36.84L7.71 6.28l5 5.01c.18.19.29.45.29.71v7c0 .55-.45 1-1 1s-1-.45-1-1v-6.6L6.29 7.7 4.85 9.14c-.31.32-.85.1-.85-.35V4.5c0-.28.22-.5.5-.5zM19.5 4c.28 0 .5.22.5.5v4.29a.5.5 0 0 1-.85.36l-1.44-1.44-2.88 2.88-1.42-1.42 2.88-2.88-1.44-1.44a.5.5 0 0 1 .36-.85z" /></svg>;
+export default CommunicationCallSplit;

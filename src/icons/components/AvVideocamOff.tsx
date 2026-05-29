@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvVideocamOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.706 2.838c.265 0 .519.105.705.292l16.32 16.33a.997.997 0 1 1-1.41 1.41l-2.48-2.48c-.16.1-.34.18-.55.18h-12c-.55 0-1-.45-1-1v-10c0-.55.45-1 1-1h.73l-2.02-2.03a.995.995 0 0 1 .705-1.702M16.291 6.57c.55 0 1 .45 1 1v3.5l2.29-2.3c.63-.63 1.71-.18 1.71.71v5.29c0 .89-1.08 1.34-1.7.71l-8.91-8.91z" /></svg>;
+export default AvVideocamOff;

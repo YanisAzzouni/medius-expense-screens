@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentMarkunread = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 3.53a.85.85 0 0 0-1.3-.72L12 11 5.3 6.81a.85.85 0 1 0-.9 1.44l6.54 4.09c.65.41 1.47.41 2.12 0l6.54-4.09c.25-.16.4-.43.4-.72" /></svg>;
+export default ContentMarkunread;

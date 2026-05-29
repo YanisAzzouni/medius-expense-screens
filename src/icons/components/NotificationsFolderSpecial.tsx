@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsFolderSpecial = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.17 4c.53 0 1.04.21 1.42.59L12 6h8c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm6.28 5.07c-.17-.4-.75-.4-.92 0l-.88 2.06-2.23.19c-.44.04-.61.59-.28.88l1.69 1.46-.51 2.2c-.1.43.36.77.74.55L15 15.28l1.94 1.13c.37.22.83-.12.72-.55l-.51-2.2 1.69-1.46a.5.5 0 0 0-.28-.88l-2.23-.19z" /></svg>;
+export default NotificationsFolderSpecial;

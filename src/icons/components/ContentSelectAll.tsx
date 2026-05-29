@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentSelectAll = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5 21c-1.1 0-2-.9-2-2h2zm4 0H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm4-2c0 1.1-.9 2-2 2v-2zM5 17H3v-2h2zM16 7c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1zm5 10h-2v-2h2zM9 9v6h6V9zm-4 4H3v-2h2zm16 0h-2v-2h2zM5 9H3V7h2zm16 0h-2V7h2zM5 5H3c0-1.1.9-2 2-2zm4 0H7V3h2zm4 0h-2V3h2zm4 0h-2V3h2zm2-2c1.1 0 2 .9 2 2h-2z" /></svg>;
+export default ContentSelectAll;

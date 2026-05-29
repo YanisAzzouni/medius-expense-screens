@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageSwitchVideo = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17 5c.55 0 1 .45 1 1v3.5l2.29-2.3c.63-.63 1.71-.18 1.71.71v8.17c0 .89-1.08 1.34-1.71.71L18 14.5V18c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1zm-4 6H7V8.5l-3.15 3.14c-.2.2-.2.51 0 .71L7 15.5V13h6v2.5l3.15-3.14c.2-.2.2-.51 0-.71L13 8.5z" /></svg>;
+export default ImageSwitchVideo;

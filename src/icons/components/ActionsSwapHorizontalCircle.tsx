@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSwapHorizontalCircle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2M5.85 13.64c-.2.2-.2.51 0 .71L9 17.5V15h4v-2H9v-2.5zM15 9h-4v2h4v2.5l3.15-3.14c.2-.2.2-.51 0-.71L15 6.5z" /></svg>;
+export default ActionsSwapHorizontalCircle;

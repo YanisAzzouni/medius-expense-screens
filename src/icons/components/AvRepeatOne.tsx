@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvRepeatOne = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 13c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1H7v1.79a.5.5 0 0 1-.85.36l-2.79-2.79c-.2-.2-.2-.51 0-.71l2.79-2.79c.31-.32.85-.1.85.35V17h10v-3c0-.55.45-1 1-1m-5.81-4c.45 0 .81.36.81.81v4.44c0 .41-.34.75-.75.75s-.75-.34-.75-.75V11h-.88a.623.623 0 0 1-.62-.62c0-.23.13-.45.34-.55l1.49-.74q.165-.09.36-.09M17 3.21a.5.5 0 0 1 .85-.36l2.79 2.79c.2.2.2.51 0 .71l-2.79 2.79c-.31.32-.85.1-.85-.35V7H7v3c0 .55-.45 1-1 1s-1-.45-1-1V6c0-.55.45-1 1-1h11z" /></svg>;
+export default AvRepeatOne;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImagePhotoSizeSelectActual = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1 0 2 1 2 2v14c0 1-1 2-2 2H3c-1.1 0-2-.9-2-2V5c0-1 1-2 2-2zm-6.1 8.53c-.2-.27-.6-.27-.8-.01L11 15.51l-2.1-2.53a.5.5 0 0 0-.78.01l-2.49 3.2c-.26.33-.02.81.39.82h11.99a.5.5 0 0 0 .4-.8z" /></svg>;
+export default ImagePhotoSizeSelectActual;

@@ -1,0 +1,121 @@
+/* ─── Wrapper ─── */
+/* inline-flex so it doesn't break surrounding flow */
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Trigger slot ─── */
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Bubble ─── */
+.bubble {
+  /* layout */
+  position: absolute;
+  z-index: 200;
+  width: max-content;
+  max-width: 220px;
+  padding: 8px;
+  box-sizing: border-box;
+
+  /* visuals */
+  background: var(--color-chalk-700);
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 5px rgba(59, 53, 84, 0.2));
+
+  /* typography */
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+
+  /* show / hide */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 140ms ease, visibility 140ms ease;
+}
+
+/* Shared beak base — drawn with a border trick */
+.bubble::after {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+}
+
+/* ─── Show on hover / keyboard focus ─── */
+.wrapper:hover .bubble,
+.wrapper:focus-within .bubble {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* ─── Placement: top (bubble above, beak at bottom pointing down) ─── */
+.placement_top {
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.placement_top::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: var(--color-chalk-700);
+  border-bottom-width: 0;
+  margin-top: -1px; /* close gap caused by filter */
+}
+
+/* ─── Placement: bottom (bubble below, beak at top pointing up) ─── */
+.placement_bottom {
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.placement_bottom::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: var(--color-chalk-700);
+  border-top-width: 0;
+  margin-bottom: -1px;
+}
+
+/* ─── Placement: right (bubble to the right, beak at left pointing left) ─── */
+.placement_right {
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.placement_right::after {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-color: var(--color-chalk-700);
+  border-left-width: 0;
+  margin-right: -1px;
+}
+
+/* ─── Placement: left (bubble to the left, beak at right pointing right) ─── */
+.placement_left {
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.placement_left::after {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: var(--color-chalk-700);
+  border-right-width: 0;
+  margin-left: -1px;
+}

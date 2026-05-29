@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsHighlightOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.53 0 10 4.47 10 10s-4.47 10-10 10S2 17.53 2 12 6.47 2 12 2m0 2c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8M9.405 8.407c.265 0 .519.106.705.293L12 10.59l1.89-1.89c.38-.38 1.02-.38 1.41 0 .39.39.39 1.02 0 1.41L13.41 12l1.89 1.89a.996.996 0 1 1-1.41 1.41L12 13.41l-1.89 1.89a.996.996 0 1 1-1.41-1.41L10.59 12 8.7 10.11a.996.996 0 0 1 .705-1.703" /></svg>;
+export default ActionsHighlightOff;

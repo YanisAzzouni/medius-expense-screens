@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageViewComfy = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.5 19h-2c-1.1 0-2-.9-2-2v-2h4zm5 0h-4v-4h4zm5 0h-4v-4h4zm5-2c0 1.1-.9 2-2 2h-2v-4h4zm-15-3h-4v-4h4zm5 0h-4v-4h4zm5 0h-4v-4h4zm5 0h-4v-4h4zm-15-5h-4V7c0-1.1.9-2 2-2h2zm5 0h-4V5h4zm5 0h-4V5h4zm3-4c1.1 0 2 .9 2 2v2h-4V5z" /></svg>;
+export default ImageViewComfy;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalHotel = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2 4.5c.55 0 1 .45 1 1v8h8v-5c0-1.1.9-2 2-2h6c2.21 0 4 1.79 4 4v8c0 .55-.45 1-1 1s-1-.45-1-1v-2H3v2c0 .55-.45 1-1 1s-1-.45-1-1v-13c0-.55.45-1 1-1m5 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3" /></svg>;
+export default MapsLocalHotel;

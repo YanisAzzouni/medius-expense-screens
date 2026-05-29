@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsEditAttributes = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.63 7C20.04 7 22 9.24 22 12s-1.96 5-4.37 5H6.37C3.96 17 2 14.76 2 12s1.96-5 4.37-5zm-6.5 2.89c-.2-.2-.51-.2-.71 0l-3.16 3.16-1.51-1.51c-.2-.2-.51-.2-.71 0s-.2.51 0 .71l1.86 1.86a.485.485 0 0 0 .7 0l3.51-3.51c.19-.2.22-.51.02-.71" /></svg>;
+export default MapsEditAttributes;

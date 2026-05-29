@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsConfirmationNumber = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 4c1.1 0 2 .9 2 2v2.54c0 .69-.34 1.37-.94 1.7-.63.34-1.06 1-1.06 1.76s.43 1.42 1.06 1.76c.6.33.94 1.01.94 1.7V18c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-2.54c0-.69.34-1.37.94-1.7.63-.33 1.06-1 1.06-1.76s-.42-1.42-1.05-1.77c-.61-.32-.94-1-.94-1.69V6c0-1.11.89-2 1.99-2zm-9 13.5h2v-2h-2zm0-4.5h2v-2h-2zm0-6.5v2h2v-2z" /></svg>;
+export default NotificationsConfirmationNumber;

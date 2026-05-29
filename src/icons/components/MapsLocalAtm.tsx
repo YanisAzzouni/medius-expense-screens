@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalAtm = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 4c1.11 0 2 .89 2 2v12c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-12c0-1.11.88-2 1.99-2zM5 6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1zm7 .99c.55 0 1 .45 1 1V8h1c.55 0 1 .45 1 1s-.45 1-1 1h-3v1h3c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1h-1c0 .55-.45 1-1 1s-1-.45-1-1h-1c-.55 0-1-.45-1-1s.45-1 1-1h3v-1h-3c-.55 0-1-.45-1-1V9c0-.55.45-1 1-1h1v-.01c0-.55.45-1 1-1" /></svg>;
+export default MapsLocalAtm;

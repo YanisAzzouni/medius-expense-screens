@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsBackupRestore = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13.404 3.002c4.69.13 8.61 4.05 8.74 8.74.14 5.09-3.95 9.26-9 9.26-1.61 0-3.11-.43-4.42-1.16-.57-.32-.66-1.11-.2-1.57.31-.32.79-.4 1.18-.18 1.02.57 2.19.91 3.44.91 3.9 0 7.05-3.19 7-7.1-.05-3.72-3.18-6.85-6.9-6.9-3.92-.05-7.1 3.1-7.1 7h1.79a.5.5 0 0 1 .36.85l-2.79 2.79c-.2.2-.51.2-.71 0l-2.79-2.79c-.32-.31-.1-.85.35-.85h1.79c0-5.05 4.17-9.14 9.26-9m-.26 7c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2" /></svg>;
+export default ActionsSettingsBackupRestore;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NavigationArrowDropDownCircle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m-2.79 9c-.45 0-.67.54-.35.86l2.79 2.79c.19.19.51.19.71-.01l2.79-2.79c.32-.31.1-.85-.35-.85z" /></svg>;
+export default NavigationArrowDropDownCircle;

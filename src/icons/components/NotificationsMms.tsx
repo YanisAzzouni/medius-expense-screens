@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsMms = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H6l-4 4V4c0-1.1.9-2 2-2zm-5.1 6.53c-.2-.27-.6-.27-.8-.01L11 12.51 8.9 9.98a.5.5 0 0 0-.78.01l-2.49 3.2c-.26.33-.02.81.39.82h11.99a.5.5 0 0 0 .4-.8z" /></svg>;
+export default NotificationsMms;

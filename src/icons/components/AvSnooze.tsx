@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvSnooze = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 3.89a9 9 0 1 1-.002 18.002A9 9 0 0 1 12 3.891m0 2c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7m2.33 3c.85 0 1.31 1 .76 1.651l-3.72 4.35H14c.55 0 1 .45 1 1s-.45 1-1 1H9.67c-.85 0-1.31-1-.76-1.65l3.72-4.35H10c-.55 0-1-.45-1-1s.45-1 1-1zM5.9 2.34a.99.99 0 0 1 1.4.13c.36.42.3 1.05-.13 1.41L4.1 6.44c-.42.35-1.05.3-1.4-.13a1 1 0 0 1 .12-1.41zm10.8.13c.35-.42.98-.48 1.41-.13l3.07 2.56a1 1 0 0 1 .12 1.41c-.35.42-.98.48-1.41.13l-3.07-2.56a1 1 0 0 1-.12-1.41" /></svg>;
+export default AvSnooze;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsTrain = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.5c4 0 8 .5 8 4V16c0 1.93-1.57 3.5-3.5 3.5l1.14 1.15c.32.31.1.85-.35.85H16.2c-.13 0-.26-.06-.35-.15L14 19.5h-4l-1.85 1.85a.47.47 0 0 1-.35.15H6.71a.5.5 0 0 1-.36-.85L7.5 19.5C5.57 19.5 4 17.93 4 16V6.5c0-3.5 4-4 8-4m-4.5 12c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S9 16.83 9 16s-.67-1.5-1.5-1.5m9 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S18 16.83 18 16s-.67-1.5-1.5-1.5M6 10.5h5v-4H6zm7-4v4h5v-4z" /></svg>;
+export default MapsTrain;

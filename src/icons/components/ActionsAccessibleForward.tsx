@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAccessibleForward = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.5 13.73c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3h2c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5zm5.96-7c1.48 0 2.46 1.5 1.85 2.83l-1.67 3.67h1.86c1.1 0 2 .9 2 2v4.5c0 .55-.45 1-1 1s-1-.45-1-1v-4h-4.98c-1.46 0-2.45-1.57-1.85-2.9l1.83-4.1h-2.21l-.3.71c-.2.47-.71.72-1.2.58-.57-.16-.89-.77-.68-1.33l.28-.76c.33-.73 1.06-1.2 1.87-1.2zm2.04-4.46a2 2 0 1 1 0 4 2 2 0 0 1 0-4" /></svg>;
+export default ActionsAccessibleForward;

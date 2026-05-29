@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationRssFeed = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.436 15.384a2.181 2.181 0 1 1 0 4.362 2.181 2.181 0 0 1 0-4.362m-.59-5.41c4.2.67 7.511 3.98 8.191 8.18.13.84-.56 1.59-1.41 1.59-.71 0-1.28-.53-1.4-1.23-.52-2.92-2.82-5.23-5.74-5.74-.7-.12-1.23-.69-1.23-1.4 0-.85.75-1.54 1.59-1.4m-.03-5.71c7.35.73 13.191 6.58 13.921 13.92a1.43 1.43 0 0 1-1.42 1.56c-.73 0-1.33-.55-1.4-1.28-.6-6.01-5.38-10.79-11.39-11.39-.72-.07-1.27-.67-1.27-1.4 0-.83.73-1.5 1.56-1.41" /></svg>;
+export default CommunicationRssFeed;

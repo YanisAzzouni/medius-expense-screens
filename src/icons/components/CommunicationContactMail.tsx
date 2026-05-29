@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationContactMail = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M22 3c1.1 0 2 .9 2 2l-.01 14c0 1.1-.89 2-1.99 2H2c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM8 13.9c-2 0-6 1.1-6 3.1v1h12v-1c0-2-4-3.1-6-3.1M8 6C6.34 6 5 7.34 5 9s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m6.5 0c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5h7c.28 0 .5-.22.5-.5v-5c0-.28-.22-.5-.5-.5zM21 8l-2.73 1.82a.5.5 0 0 1-.55 0L15 8V7l3 2 3-2z" /></svg>;
+export default CommunicationContactMail;

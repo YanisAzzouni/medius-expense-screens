@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageWbCloudy = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.357 10.04C18.667 6.59 15.639 4 12 4a7.49 7.49 0 0 0-6.647 4.04A5.993 5.993 0 0 0 .005 14c0 3.31 2.689 6 5.998 6h12.994a5 5 0 0 0 4.998-5c0-2.64-2.05-4.78-4.638-4.96" /></svg>;
+export default ImageWbCloudy;

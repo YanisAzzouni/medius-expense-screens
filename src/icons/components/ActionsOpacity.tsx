@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsOpacity = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.005 2.554c.264 0 .518.105.705.293l4.95 4.94A8.02 8.02 0 0 1 20 13.425c0 2-.78 4.11-2.34 5.67a7.99 7.99 0 0 1-11.32 0C4.78 17.537 4 15.427 4 13.427s.78-4.08 2.34-5.64l4.96-4.94a1 1 0 0 1 .705-.292M7.76 9.386c-1.14 1.13-1.75 2.4-1.76 4.4h12c-.01-2-.62-3.23-1.76-4.35L12 5.057z" /></svg>;
+export default ActionsOpacity;

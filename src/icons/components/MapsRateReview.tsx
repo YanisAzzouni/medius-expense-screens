@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsRateReview = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H6l-4 4V4c0-1.1.9-2 2-2zm-6.41 2.65c-.2-.2-.51-.2-.71 0L6 11.53V14h2.47l6.89-6.87c.2-.2.2-.51 0-.71zM12.5 12l-2 2H17c.55 0 1-.45 1-1s-.45-1-1-1z" /></svg>;
+export default MapsRateReview;

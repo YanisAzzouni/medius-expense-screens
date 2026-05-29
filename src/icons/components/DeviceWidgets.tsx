@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceWidgets = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.549 13.446c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1zm10 0c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1zm-4.05-10.6c.39-.39 1.03-.39 1.42 0l4.24 4.24c.39.39.39 1.02 0 1.41l-4.25 4.25a.996.996 0 0 1-1.41 0l-4.25-4.25a.996.996 0 0 1 0-1.41zm-5.95.6c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1z" /></svg>;
+export default DeviceWidgets;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationPresentToAll = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1.11 0 2 .89 2 2v14c0 1.11-.89 2-2 2H3c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2zM4 4.98c-.55 0-1 .45-1 1v12.04c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V5.98c0-.55-.45-1-1-1zm7.65 3.37c.2-.2.51-.2.71 0L16 12h-2v4h-4v-4H8z" /></svg>;
+export default CommunicationPresentToAll;

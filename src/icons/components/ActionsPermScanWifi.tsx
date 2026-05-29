@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPermScanWifi = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 3.086c4.59 0 8.14 1.54 11.11 3.61.49.33.59 1 .22 1.46l-9.78 12.02c-.8.99-2.3.98-3.1 0L.67 8.136a1 1 0 0 1 .22-1.46c2.97-2.06 6.52-3.59 11.11-3.59m0 7c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1m-1-4v2h2v-2z" /></svg>;
+export default ActionsPermScanWifi;

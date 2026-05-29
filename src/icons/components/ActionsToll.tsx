@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsToll = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15 4c4.42 0 8 3.58 8 8s-3.58 8-8 8-8-3.58-8-8 3.58-8 8-8m-9.32.73c.61-.29 1.32.14 1.32.82v.19c0 .37-.23.68-.57.84A5.99 5.99 0 0 0 3 12c0 2.39 1.4 4.46 3.43 5.42.34.16.57.48.57.85v.18c0 .68-.71 1.1-1.32.82A7.99 7.99 0 0 1 1 12a7.99 7.99 0 0 1 4.68-7.27M15 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6" /></svg>;
+export default ActionsToll;

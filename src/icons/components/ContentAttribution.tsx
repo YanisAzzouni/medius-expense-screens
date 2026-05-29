@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentAttribution = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.47 10-10 10S2 17.53 2 12 6.47 2 12 2m0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8m0 4.5c.91 0 2.75.47 2.75 1.38V14c0 .28-.22.5-.5.5h-1v3.25a1.25 1.25 0 0 1-2.5 0V14.5h-1c-.28 0-.5-.22-.5-.5V9.88c0-.92 1.84-1.38 2.75-1.38M12 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" /></svg>;
+export default ContentAttribution;

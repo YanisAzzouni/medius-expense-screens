@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareSpeakerGroup = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5 5c.55 0 1 .45 1 1v14c0 .55.45 1 1 1h8c.55 0 1 .45 1 1s-.45 1-1 1H6a2 2 0 0 1-2-2V6c0-.55.45-1 1-1m13.2-4c.99 0 1.8.81 1.8 1.8v14.4c0 .99-.81 1.8-1.8 1.8l-8.4-.01c-.99 0-1.8-.8-1.8-1.79V2.8C8 1.81 8.81 1 9.8 1zM14 8.5c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4m0 1.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5m0-7a2 2 0 1 0-.001 3.999A2 2 0 0 0 14 3" /></svg>;
+export default HardwareSpeakerGroup;

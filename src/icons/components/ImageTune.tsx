@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageTune = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 15c.55 0 1 .45 1 1v1h7c.55 0 1 .45 1 1s-.45 1-1 1h-7v1c0 .55-.45 1-1 1s-1-.45-1-1v-4c0-.55.45-1 1-1m-3 4H4c-.55 0-1-.45-1-1s.45-1 1-1h5zM8 9c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1v-1H4c-.55 0-1-.45-1-1s.45-1 1-1h3v-1c0-.55.45-1 1-1m12 2c.55 0 1 .45 1 1s-.45 1-1 1h-9v-2zm-4-8c.55 0 1 .45 1 1v1h3c.55 0 1 .45 1 1s-.45 1-1 1h-3v1c0 .55-.45 1-1 1s-1-.45-1-1V4c0-.55.45-1 1-1m-3 4H4c-.55 0-1-.45-1-1s.45-1 1-1h9z" /></svg>;
+export default ImageTune;

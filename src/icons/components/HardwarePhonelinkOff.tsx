@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwarePhonelinkOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.065 1.992c.265 0 .518.106.705.293l18.01 18.02a.996.996 0 1 1-1.41 1.41l-1.64-1.64H1.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5H2v-11c0-.48.18-.92.47-1.27l-1.11-1.11a.997.997 0 0 1 .705-1.702M23 8.074c.55 0 1 .45 1 1v10c0 .44-.29.801-.68.931l-2.93-2.93H22v-7h-4v4.61l-2-2v-3.61c0-.55.45-1 1-1zm-19 9h10.73L4 6.346zm17-13c.55 0 1 .45 1 1s-.45 1-1 1H9.39l-2-2z" /></svg>;
+export default HardwarePhonelinkOff;

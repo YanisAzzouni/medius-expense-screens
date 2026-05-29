@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsLabelOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.611 5c.67 0 1.27.33 1.63.84l3.96 5.58c.25.35.25.81 0 1.16l-3.96 5.58c-.36.51-.96.84-1.63.84l-11-.01c-1.1 0-2-.89-2-1.99V7c0-1.1.9-1.99 2-1.99zm-10 2c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h10l3.55-5-3.55-5z" /></svg>;
+export default ActionsLabelOutline;

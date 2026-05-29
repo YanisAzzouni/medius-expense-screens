@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageTonality = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m-1 2.07C7.05 4.56 4 7.92 4 12s3.06 7.44 7 7.93zm2 15.86c1.03-.13 2-.45 2.87-.93H13zM13 17h5.24c.25-.31.48-.65.68-1H13zm0-4v1h6.74c.08-.33.15-.66.19-1zm0-2h6.93c-.04-.34-.11-.67-.19-1H13zm0-3h5.92c-.2-.35-.43-.69-.68-1H13zm0-3h2.87c-.87-.48-1.84-.8-2.87-.93z" /></svg>;
+export default ImageTonality;

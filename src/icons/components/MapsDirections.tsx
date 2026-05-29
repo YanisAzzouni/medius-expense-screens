@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsDirections = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.002c.264 0 .518.106.705.293l9 9c.39.4.39 1.03 0 1.41l-9 9a.996.996 0 0 1-1.41 0l-9-9a.995.995 0 0 1 0-1.41l9-9A1 1 0 0 1 12 2.002m1.995 8.003h-5c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1s1-.45 1-1v-2h4v2.5l3.15-3.14c.2-.2.2-.51 0-.71l-3.15-3.15z" /></svg>;
+export default MapsDirections;

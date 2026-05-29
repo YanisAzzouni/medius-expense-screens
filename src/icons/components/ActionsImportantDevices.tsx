@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsImportantDevices = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.1 0 2 .9 2 2v4c0 .55-.45 1-1 1s-1-.45-1-1V5c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h11c.55 0 1 .45 1 1s-.45 1-1 1h-1v2h1c.55 0 1 .45 1 1s-.45 1-1 1H8c-.55 0-1-.45-1-1s.45-1 1-1h1v-2H2c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm3 9.01c.55 0 1 .44 1 .99v9c0 .55-.45 1-1 1h-5c-.55 0-1-.45-1-1v-9c0-.55.45-1 1-1zM18 20h5v-7h-5zM11.97 9H15l-2.47 1.76.94 2.91-2.47-1.8-2.47 1.8.94-2.91L7 9h3.03L11 6z" /></svg>;
+export default ActionsImportantDevices;

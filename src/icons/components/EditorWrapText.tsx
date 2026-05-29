@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorWrapText = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.33 10.35c2.09 0 3.95 1.53 4.15 3.61a4 4 0 0 1-3.98 4.39h-2v.8c0 .44-.53.67-.85.35l-1.79-1.79c-.2-.2-.2-.51 0-.71l1.79-1.79c.31-.32.85-.1.85.35v.79h2.25c1.21 0 2.18-1.09 1.97-2.34-.16-.99-1.09-1.66-2.09-1.66H4.5c-.55 0-1-.45-1-1s.45-1 1-1zm-7.83 6c.55 0 1 .45 1 1s-.45 1-1 1h-4c-.55 0-1-.45-1-1s.45-1 1-1zm10-12c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default EditorWrapText;

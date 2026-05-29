@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsOfflinePin = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2M8 16c-.55 0-1 .45-1 1s.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1zm8.3-9.4a.984.984 0 0 0-1.4 0l-4.6 4.6L9.1 10a.983.983 0 0 0-1.4 0 .985.985 0 0 0 0 1.4l1.89 1.89c.39.39 1.03.39 1.42 0L16.3 8a.984.984 0 0 0 0-1.4" /></svg>;
+export default ActionsOfflinePin;

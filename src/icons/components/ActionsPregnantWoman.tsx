@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPregnantWoman = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.84 7A3.003 3.003 0 0 1 14 10c1.17.49 1.99 1.66 2 3v3c0 .55-.45 1-1 1h-2v3.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5V17H9c-.55 0-1-.45-1-1v-5.84C8 8.54 9.22 7.09 10.84 7M11 2c1.11 0 2 .89 2 2s-.89 2-2 2-2-.89-2-2 .89-2 2-2" /></svg>;
+export default ActionsPregnantWoman;

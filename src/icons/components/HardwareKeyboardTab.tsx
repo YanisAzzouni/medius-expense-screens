@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareKeyboardTab = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21.5 6c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1s-1-.45-1-1V7c0-.55.45-1 1-1m-8.005.407c.265 0 .518.106.705.293l4.59 4.59c.39.39.39 1.02 0 1.41l-4.59 4.59a.996.996 0 1 1-1.41-1.41L15.67 13H2.5c-.55 0-1-.45-1-1s.45-1 1-1h13.17l-2.88-2.88c-.39-.39-.38-1.03 0-1.42a1 1 0 0 1 .705-.293" /></svg>;
+export default HardwareKeyboardTab;

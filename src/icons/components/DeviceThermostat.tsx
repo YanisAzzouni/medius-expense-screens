@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceThermostat = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c1.66 0 3 1.34 3 3v8c1.21.91 2 2.37 2 4 0 2.76-2.24 5-5 5s-5-2.24-5-5c0-1.63.79-3.09 2-4V5c0-1.66 1.34-3 3-3m0 2c-.55 0-1 .45-1 1v6h2V9h-.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h.5V6h-.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h.5c0-.55-.45-1-1-1" /></svg>;
+export default DeviceThermostat;

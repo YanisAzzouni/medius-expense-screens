@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsTrendingDown = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="m16.646 16.951 1.44-1.44-4.88-4.88-3.29 3.29a.996.996 0 0 1-1.41 0l-6-6.01a.996.996 0 1 1 1.41-1.41l5.29 5.3 3.29-3.29a.996.996 0 0 1 1.41 0l5.59 5.58 1.44-1.44a.5.5 0 0 1 .85.35v4.29c0 .28-.22.5-.5.5h-4.29c-.44.01-.66-.53-.35-.84" /></svg>;
+export default ActionsTrendingDown;

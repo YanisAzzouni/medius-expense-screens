@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsTouchApp = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.052 4.5c.83 0 1.5.67 1.5 1.5v6h.61c.31 0 .61.07.89.21l4.079 2.03c.77.38 1.21 1.22 1.09 2.07l-.63 4.47c-.14.99-.98 1.72-1.98 1.72h-6.1c-.53 0-1.04-.21-1.42-.58l-4.01-4.01a1.13 1.13 0 0 1 0-1.58c.27-.27.66-.39 1.03-.31l3.44.72V6c0-.83.67-1.5 1.5-1.5m0-3c2.49 0 4.5 2.01 4.5 4.5 0 1.56-.79 2.93-2 3.74V6a2.5 2.5 0 0 0-5 0v3.74c-1.21-.81-2-2.18-2-3.74 0-2.49 2.01-4.5 4.5-4.5" /></svg>;
+export default ActionsTouchApp;

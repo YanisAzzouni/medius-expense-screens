@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvVideoLibrary = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3 6c.55 0 1 .45 1 1v12c0 .55.45 1 1 1h12c.55 0 1 .45 1 1s-.45 1-1 1H4c-1.1 0-2-.9-2-2V7c0-.55.45-1 1-1m17-4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm-8 12.5 5.47-4.1c.27-.2.27-.6 0-.8L12 5.5z" /></svg>;
+export default AvVideoLibrary;

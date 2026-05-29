@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialSentimentSatisfied = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.99 2C17.52 2 22 6.48 22 12s-4.48 10-10.01 10C6.47 22 2 17.52 2 12S6.47 2 11.99 2M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8m-4.41 9.88c.35-.22.81-.11 1.03.24.74 1.18 2 1.88 3.38 1.88s2.64-.7 3.38-1.87a.748.748 0 0 1 1.27.79C15.63 16.53 13.9 17.5 12 17.5s-3.63-.96-4.65-2.59a.75.75 0 0 1 .24-1.03M8.5 8a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" /></svg>;
+export default SocialSentimentSatisfied;

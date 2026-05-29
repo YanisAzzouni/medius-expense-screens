@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsStoreMallDirectory = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.18 7c.48 0 .89.34.98.8L21 12v1c0 .55-.45 1-1 1v5c0 .55-.45 1-1 1s-1-.45-1-1v-5h-4v5c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-5c-.55 0-1-.45-1-1v-1l.84-4.2c.09-.46.5-.8.98-.8zM6 18h6v-4H6zM19 4c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default MapsStoreMallDirectory;

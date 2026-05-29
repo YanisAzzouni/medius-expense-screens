@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageGridOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.98.978c.265 0 .518.105.705.292l20.04 20.04c.39.39.39 1.03 0 1.42a.996.996 0 0 1-1.41 0l-1.3-1.3H4.565c-1.1 0-2-.9-2-2V3.98l-1.29-1.3A.995.995 0 0 1 1.98.978M4.565 18.43c0 .55.45 1 1 1h3v-4h-4zm6 1h4v-3.45l-.55-.55h-3.45zm6 0h1.45l-1.45-1.45zm4-18c1.1 0 2 .9 2 2v14.89l-2-2v-.89h-.89l-2-2h2.89v-4h-4v2.89l-2-2v-.89h-.89l-2-2h2.89v-4h-4v2.89l-2-2v-.89h-.89l-2-2zm-16 12h4V9.98l-.55-.55h-3.45zm6 0h1.45l-1.45-1.45zm-6-6h1.45l-1.45-1.45zm12 0h4v-3c0-.55-.45-1-1-1h-3z" /></svg>;
+export default ImageGridOff;

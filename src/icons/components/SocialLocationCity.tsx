@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialLocationCity = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.995 2.709c.265 0 .518.106.705.293l1.71 1.71c.38.37.59.88.59 1.41v5.169h4c1.1 0 2 .9 2 2v6c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-10c0-1.1.9-2 2-2h4v-1.17c0-.53.21-1.04.59-1.42l1.7-1.699a1 1 0 0 1 .705-.293M5 19.291h2v-2H5zm6 0h2v-2h-2zm6 0h2v-2h-2zm-12-4h2v-2H5zm6 0h2v-2h-2zm6-2v2h2v-2zm-12-2h2v-2H5zm6 0h2v-2h-2zm0-4h2v-2h-2z" /></svg>;
+export default SocialLocationCity;

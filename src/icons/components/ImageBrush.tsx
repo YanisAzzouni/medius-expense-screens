@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageBrush = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M7.499 14.002c1.66 0 3 1.34 3 3a4 4 0 0 1-4 4c-1.51 0-3.08-.78-4-2 .84 0 2-.69 2-2 0-1.66 1.34-3 3-3M19.164 2.999c.264 0 .518.105.705.293l1.34 1.34c.39.39.39 1.02 0 1.41l-8.96 8.96-2.75-2.75 8.96-8.96a1 1 0 0 1 .705-.293" /></svg>;
+export default ImageBrush;

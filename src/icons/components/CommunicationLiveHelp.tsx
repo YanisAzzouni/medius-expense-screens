@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationLiveHelp = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 1.709c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-4l-2.3 2.29a.996.996 0 0 1-1.41 0L9 19.709H5c-1.1 0-2-.9-2-2v-14a2 2 0 0 1 2-2zm-8 16h2v-2h-2zm1-14c-1.82 0-3.35 1.21-3.84 2.87-.16.56.24 1.12.82 1.12h.3c.39 0 .7-.27.83-.64.27-.78 1.02-1.35 1.89-1.35 1.1 0 2 .9 2 2 0 .55-.22 1.05-.58 1.41l-1.24 1.26c-.61.62-1.03 1.43-1.14 2.34-.07.52.33.98.85.98h.31c.44 0 .79-.33.85-.76.13-.96.54-1.47 1.12-2.06l.9-.92c.57-.57.93-1.37.93-2.25 0-2.21-1.79-4-4-4" /></svg>;
+export default CommunicationLiveHelp;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsViewList = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.5 15c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1zm13 0c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-10c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1zm-13-5c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1zm13 0c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-10c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1zm-13-5c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1zm13 0c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-10c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1z" /></svg>;
+export default ActionsViewList;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAccountCircle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 10.9c-2 0-5.97 1.09-6 3.08a7.2 7.2 0 0 0 12 0c-.03-1.99-4.01-3.08-6-3.08M12 5c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3" /></svg>;
+export default ActionsAccountCircle;

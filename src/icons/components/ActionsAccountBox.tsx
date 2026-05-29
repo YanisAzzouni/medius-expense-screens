@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAccountBox = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 10.9c-2 0-6 1.1-6 3.1v1h12v-1c0-2-4-3.1-6-3.1M12 6c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3" /></svg>;
+export default ActionsAccountBox;

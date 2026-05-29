@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationMobileScreenShare = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.995 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2h-10c-1.1 0-1.99-.9-1.99-2V3c0-1.1.89-2 1.99-2zm-10 18h10V5h-10zm8.61-7.38c.21.2.21.53 0 .73l-2.81 2.62v-1.75c-2.22 0-3.69.68-4.8 2.18.45-2.14 1.69-4.27 4.8-4.7V9z" /></svg>;
+export default CommunicationMobileScreenShare;

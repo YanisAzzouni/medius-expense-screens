@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsGif = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.25 9c.41 0 .75.34.75.75s-.34.75-.75.75H6.5v3h2v-.75c0-.41.34-.75.75-.75s.75.34.75.75V14c0 .5-.4 1-1 1H6c-.6 0-1-.5-1-1v-4c0-.5.4-1 1-1zm3 0c.41 0 .75.34.75.75v4.5c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-4.5c0-.41.34-.75.75-.75m6 0c.41 0 .75.34.75.75s-.34.75-.75.75H16v1h1.25c.41 0 .75.34.75.75s-.34.75-.75.75H16v1.25c0 .41-.34.75-.75.75s-.75-.34-.75-.75V10c0-.55.45-1 1-1z" /></svg>;
+export default ActionsGif;

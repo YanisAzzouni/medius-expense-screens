@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceUsb = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.095 7.236h-2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1v2h-3v-8h1a.5.5 0 0 0 .4-.8l-2-2.67c-.2-.27-.6-.27-.8 0l-2 2.67a.5.5 0 0 0 .4.8h1v8h-3v-2.07c.83-.44 1.38-1.36 1.14-2.43-.17-.77-.77-1.4-1.52-1.61-1.47-.41-2.82.7-2.82 2.11 0 .85.5 1.56 1.2 1.93v2.07c0 1.1.9 2 2 2h3v3.05c-.86.45-1.39 1.42-1.13 2.49a2.204 2.204 0 0 0 4.34-.54c0-.85-.49-1.58-1.2-1.95v-3.05h3c1.1 0 2-.9 2-2v-2c.55 0 1-.45 1-1v-2c-.01-.55-.46-1-1.01-1" /></svg>;
+export default DeviceUsb;

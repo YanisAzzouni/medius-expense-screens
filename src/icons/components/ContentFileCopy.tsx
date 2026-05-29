@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentFileCopy = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.67 5c.53 0 1.04.21 1.42.59l4.83 4.83c.37.37.58.88.58 1.41V21c0 1.1-.9 2-2 2H8.49c-1.1 0-1.99-.9-1.99-2l.01-14c0-1.1.89-2 1.99-2zm.83-4c.55 0 1 .45 1 1s-.45 1-1 1h-10c-.55 0-1 .45-1 1v12c0 .55-.45 1-1 1s-1-.45-1-1V3c0-1.1.9-2 2-2zm-1 10c0 .55.45 1 1 1H20l-5.5-5.5z" /></svg>;
+export default ContentFileCopy;

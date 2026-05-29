@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationCallMerge = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.645 4.009c.2-.2.51-.2.71 0l3.29 3.29c.32.31.1.85-.35.85h-2.29v6.4l-5.3 5.3a.996.996 0 1 1-1.41-1.41l4.71-4.7v-5.59h-2.29a.5.5 0 0 1-.36-.85zm6.06 14.43a.996.996 0 1 1-1.41 1.41l-2.7-2.7 1.41-1.41z" /></svg>;
+export default CommunicationCallMerge;

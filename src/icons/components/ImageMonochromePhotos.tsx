@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageMonochromePhotos = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.11 3c.57 0 1.11.24 1.49.66L16.8 5H20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h3.2l1.2-1.34c.38-.42.92-.66 1.49-.66zM12 8c-2.8 0-5 2.2-5 5s2.2 5 5 5v1h7c.55 0 1-.45 1-1V8c0-.55-.45-1-1-1h-7zm0 0c2.8 0 5 2.2 5 5s-2.2 5-5 5v-1.8c1.8 0 3.2-1.4 3.2-3.2S13.8 9.8 12 9.8zm0 8.2c-1.8 0-3.2-1.4-3.2-3.2s1.4-3.2 3.2-3.2z" /></svg>;
+export default ImageMonochromePhotos;

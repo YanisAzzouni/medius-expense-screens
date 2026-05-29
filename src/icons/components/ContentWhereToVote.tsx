@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentWhereToVote = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.265c3.86 0 7 3.14 7 7 0 4.17-4.42 9.92-6.24 12.11-.4.48-1.13.48-1.53 0C9.42 19.185 5 13.435 5 9.265c0-3.86 3.14-7 7-7m4.32 4.74c-.39-.39-1.03-.39-1.42 0l-4.42 4.42-1.36-1.36c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l2.07 2.07c.39.39 1.02.39 1.41 0l5.13-5.13c.39-.39.39-1.02.01-1.42" /></svg>;
+export default ContentWhereToVote;

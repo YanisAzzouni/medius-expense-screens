@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareDesktopWindows = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-7v2h1c.55 0 1 .45 1 1s-.45 1-1 1H9c-.55 0-1-.45-1-1s.45-1 1-1h1v-2H3c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zM4 4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1z" /></svg>;
+export default HardwareDesktopWindows;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageNature = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.917 16.035c3.37-.4 6.01-3.19 6.16-6.64.17-3.87-3.02-7.25-6.89-7.31-3.92-.05-7.1 3.1-7.1 7a6.98 6.98 0 0 0 5.83 6.89v3.94h-5c-.55 0-1 .45-1 1s.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1h-5z" /></svg>;
+export default ImageNature;

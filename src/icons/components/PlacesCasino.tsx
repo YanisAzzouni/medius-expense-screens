@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const PlacesCasino = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM7.5 15c-.83 0-1.5.67-1.5 1.5S6.67 18 7.5 18 9 17.33 9 16.5 8.33 15 7.5 15m9 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5M12 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5M7.5 6C6.67 6 6 6.67 6 7.5S6.67 9 7.5 9 9 8.33 9 7.5 8.33 6 7.5 6m9 0c-.83 0-1.5.67-1.5 1.5S15.67 9 16.5 9 18 8.33 18 7.5 17.33 6 16.5 6" /></svg>;
+export default PlacesCasino;

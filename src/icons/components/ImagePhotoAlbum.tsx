@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImagePhotoAlbum = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 2c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm-3.47 12.39a.492.492 0 0 0-.79-.01l-2.6 3.34-1.74-2.1a.5.5 0 0 0-.78.01l-1.99 2.56c-.26.33-.02.81.39.82H17a.5.5 0 0 0 .4-.8zM6 12l2.5-1.5L11 12V4H6z" /></svg>;
+export default ImagePhotoAlbum;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationPersonAddDisabled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.706 1.272c.265 0 .519.106.705.293l19.46 19.46a.996.996 0 1 1-1.41 1.41l-3.29-3.29h-8.88c-.55 0-1-.45-1-1v-1c0-1.7 2.19-2.89 4.39-3.49l-2.51-2.51h-2.88v2c0 .55-.45 1-1 1s-1-.45-1-1v-2h-2c-.55 0-1-.45-1-1s.45-1 1-1h2v-2.88l-3.29-3.29a.995.995 0 0 1 .705-1.703m15.276 12.033c2.75.34 6.309 1.7 6.31 3.84v1c0 .4-.241.73-.571.9zm-1.69-10.16a4 4 0 1 1 0 8c-.18 0-.35-.03-.52-.05l-3.43-3.43c-.02-.17-.05-.34-.05-.52a4 4 0 0 1 4-4m-9 6h.88l-.88-.88z" /></svg>;
+export default CommunicationPersonAddDisabled;

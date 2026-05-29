@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceAirplanemodeInactive = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="m20.64 19.67-1.41 1.41-5.73-5.73v3.73l1.8 1.35c.13.09.2.24.2.4v.59c0 .33-.32.57-.64.48L12 21.08l-2.86.82a.503.503 0 0 1-.64-.48v-.59c0-.16.07-.31.2-.4l1.8-1.35v-5.5l-6.64 2.08c-.68.21-1.36-.3-1.36-1 0-.36.19-.7.49-.88l5.5-3.44L3.5 5.35l1.41-1.41zM12 2.08c.83 0 1.5.67 1.5 1.5v5.5l7.51 4.69c.3.2.49.53.49.89 0 .71-.69 1.21-1.36 1l-.99-.32-8.65-8.65V3.58c0-.83.67-1.5 1.5-1.5" /></svg>;
+export default DeviceAirplanemodeInactive;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageTimelapse = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8m0 2c1.54 0 3.07.59 4.24 1.76a5.99 5.99 0 0 1 .01 8.48c-2.35 2.34-6.15 2.34-8.49 0L12 12z" /></svg>;
+export default ImageTimelapse;

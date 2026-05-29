@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceBatteryAlert = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13 2c.55 0 1 .45 1 1v1h1.67C16.4 4 17 4.6 17 5.33v15.34c0 .73-.6 1.33-1.34 1.33H8.34C7.6 22 7 21.4 7 20.66V5.33C7 4.6 7.6 4 8.33 4H10V3c0-.55.45-1 1-1zm-2 16h2v-2h-2zm1-9c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1s1-.45 1-1v-3c0-.55-.45-1-1-1" /></svg>;
+export default DeviceBatteryAlert;

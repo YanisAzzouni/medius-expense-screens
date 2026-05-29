@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsCategory = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17 12.54a4.5 4.5 0 1 1 0 9.001 4.5 4.5 0 0 1 0-9.001m-7.5.5c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1zm1.15-10.1a.992.992 0 0 1 1.7 0l3.71 6.08a.998.998 0 0 1-.85 1.52H7.78c-.78 0-1.26-.86-.85-1.52z" /></svg>;
+export default MapsCategory;

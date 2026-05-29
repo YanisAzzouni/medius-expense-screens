@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalShipping = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15 4c1.1 0 2 .9 2 2v2h2.5c.31 0 .61.15.8.4l2.3 3.07c.26.35.4.77.4 1.2V16c0 .55-.45 1-1 1h-1c0 1.66-1.34 3-3 3s-3-1.34-3-3H9c0 1.66-1.34 3-3 3s-3-1.34-3-3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM6 16c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m12 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m-1-4h4.46L19.5 9.5H17z" /></svg>;
+export default MapsLocalShipping;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsStreetview = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17 13.5c1.05 0 2.06.19 3 .52V20c0 1.1-.9 2-2 2h-7v-5.5c0-.47.22-.9.56-1.17A9.1 9.1 0 0 1 17 13.5M11.24 4a6.465 6.465 0 0 0 1.17 7.59l-9.82 9.82C2.23 21.05 2 20.55 2 20V6c0-1.1.9-2 2-2zM17 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10" /></svg>;
+export default MapsStreetview;

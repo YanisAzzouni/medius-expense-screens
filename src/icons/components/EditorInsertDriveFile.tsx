@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorInsertDriveFile = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13.17 2c.53 0 1.04.21 1.41.59l4.83 4.83c.38.37.59.88.59 1.41V20c0 1.1-.9 2-2 2H5.99C4.89 22 4 21.1 4 20l.01-16c0-1.1.89-2 1.99-2zM13 8c0 .55.45 1 1 1h4.5L13 3.5z" /></svg>;
+export default EditorInsertDriveFile;

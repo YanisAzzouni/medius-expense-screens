@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsCardMembership = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2h-4v5l-4-2-4 2v-5H4c-1.11 0-2-.89-2-2V4c0-1.11.89-2 2-2zM4 15h16v-2H4zM5 4c-.55 0-1 .45-1 1v5h16V5c0-.55-.45-1-1-1z" /></svg>;
+export default ActionsCardMembership;

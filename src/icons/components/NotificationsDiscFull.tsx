@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsDiscFull = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10 4c4.42 0 8 3.58 8 8s-3.58 8-8 8-8-3.58-8-8 3.58-8 8-8m12 12h-2v-2h2zm-12-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m11-3c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1s-1-.45-1-1V8c0-.55.45-1 1-1" /></svg>;
+export default NotificationsDiscFull;

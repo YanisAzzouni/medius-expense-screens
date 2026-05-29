@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsShopTwo = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2 9.5c.55 0 1 .45 1 1v9c0 .55.45 1 1 1h15c0 1.11-.89 2-2 2H3c-1.1 0-2-.9-2-2v-10c0-.55.45-1 1-1m14-8c1.1 0 2 .9 2 2v2h3c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2v-9c0-1.1.9-2 2-2h3v-2c0-1.1.9-2 2-2zm-3.26 7.4a.502.502 0 0 0-.74.44v5.18c0 .41.46.64.79.4l4.07-2.96c.3-.21.27-.66-.05-.84zM12 5.5h4v-2h-4z" /></svg>;
+export default ActionsShopTwo;

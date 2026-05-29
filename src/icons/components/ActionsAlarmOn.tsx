@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAlarmOn = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 3.89a9 9 0 1 1-.002 18.002A9 9 0 0 1 12 3.891m0 2c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7M14.94 10c.29-.29.77-.29 1.06 0s.29.77 0 1.06L11.06 16c-.29.29-.77.29-1.06 0l-2.12-2.12a.755.755 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l1.6 1.6zM5.9 2.34a.99.99 0 0 1 1.4.13c.36.42.3 1.05-.13 1.41L4.1 6.44c-.42.35-1.05.3-1.4-.13a1 1 0 0 1 .12-1.41zm10.79.13c.36-.43.99-.48 1.41-.13l3.08 2.56a1 1 0 0 1 .12 1.41 1 1 0 0 1-1.41.13l-3.07-2.56a1.01 1.01 0 0 1-.13-1.41" /></svg>;
+export default ActionsAlarmOn;

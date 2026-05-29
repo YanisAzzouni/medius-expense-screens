@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialPersonOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 13c2.67 0 8 1.34 8 4v2c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-2c0-2.66 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1M12 4c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4m0 1.9a2.1 2.1 0 1 0-.001 4.199A2.1 2.1 0 0 0 12 5.9" /></svg>;
+export default SocialPersonOutline;

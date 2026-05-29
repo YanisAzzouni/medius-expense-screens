@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvNote = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.17 4c.53 0 1.04.21 1.41.58l4.83 4.83c.38.38.59.89.59 1.42V18c0 1.1-.9 2-2 2H3.99C2.89 20 2 19.11 2 18.01V6c0-1.1.9-2 2-2zM15 10c0 .55.45 1 1 1h4.5L15 5.5z" /></svg>;
+export default AvNote;

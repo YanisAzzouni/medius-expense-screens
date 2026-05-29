@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvAirplay = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.995 15.907c.265 0 .518.106.705.293l3.59 3.59c.63.63.18 1.71-.71 1.71H8.41c-.89 0-1.33-1.08-.71-1.71l3.59-3.59a1 1 0 0 1 .705-.293M21 2.5c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-3c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h2c.55 0 1 .45 1 1s-.45 1-1 1H3c-1.1 0-2-.9-2-2v-12c0-1.1.9-2 2-2z" /></svg>;
+export default AvAirplay;

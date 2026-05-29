@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsMotorcycle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15 5c.26 0 .52.11.71.3l1.6 1.6 2.13 2.13C22.03 9.23 24 11.35 24 14c0 2.8-2.2 5-5 5s-5-2.2-5-5c0-.63.11-1.23.31-1.77l-2.18 2.18c-.37.38-.88.59-1.41.59H9.9c-.45 2.31-2.44 4-4.9 4-2.8 0-5-2.2-5-5s2.2-5 5-5h11.59l-2-2H12c-.55 0-1-.45-1-1s.45-1 1-1zM5 11c-1.63 0-3 1.37-3 3s1.37 3 3 3c1.28 0 2.4-.85 2.82-2H5c-.55 0-1-.45-1-1s.45-1 1-1h2.82C7.4 11.85 6.28 11 5 11m14 0c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3" /></svg>;
+export default ActionsMotorcycle;

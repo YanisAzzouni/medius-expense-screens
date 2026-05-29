@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvWeb = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-12c0-1.1.89-2 1.99-2zM4 17c0 .55.45 1 1 1h9.5v-3.5H4zm12.5-8v9H19c.55 0 1-.45 1-1V9zM4 12.5h10.5V9H4z" /></svg>;
+export default AvWeb;

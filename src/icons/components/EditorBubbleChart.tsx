@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorBubbleChart = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.8 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4m-7.6-4.8a3.2 3.2 0 1 1 0 6.401 3.2 3.2 0 0 1 0-6.4m8-7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6" /></svg>;
+export default EditorBubbleChart;

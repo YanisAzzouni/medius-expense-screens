@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageFilterFrames = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.005 1.209c.264 0 .518.105.705.293L16 4.79h4c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h4l3.3-3.29a1 1 0 0 1 .705-.292M8.52 6.79H5c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-12c0-.55-.45-1-1-1h-3.48l-3.48-3.5zm8.48 2c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-8c0-.55.45-1 1-1z" /></svg>;
+export default ImageFilterFrames;

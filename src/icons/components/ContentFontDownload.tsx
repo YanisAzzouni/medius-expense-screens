@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentFontDownload = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm-8 3.5c-.56 0-1.06.34-1.28.87L6.47 17.18a.968.968 0 1 0 1.81.69l.89-2.37h5.64l.9 2.38c.15.37.51.62.91.62.68 0 1.15-.69.9-1.32L13.27 6.37c-.21-.53-.71-.87-1.27-.87m2.07 8H9.93L12 7.98z" /></svg>;
+export default ContentFontDownload;

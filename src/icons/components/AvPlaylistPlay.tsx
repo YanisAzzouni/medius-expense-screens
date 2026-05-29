@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvPlaylistPlay = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14 13.677a.674.674 0 0 1 1.007-.588l4.675 2.833c.424.267.424.895 0 1.15l-4.675 2.831A.663.663 0 0 1 14 19.33zM11 13c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm4-4c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zm0-4c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default AvPlaylistPlay;

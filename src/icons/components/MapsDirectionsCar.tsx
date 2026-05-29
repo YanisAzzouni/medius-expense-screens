@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsDirectionsCar = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.5 4c.66 0 1.22.42 1.42 1.01l1.97 5.67c.07.21.11.44.11.66v7.16c0 .83-.68 1.5-1.5 1.5-.83 0-1.5-.68-1.5-1.5V18H6v.5c0 .83-.67 1.5-1.5 1.5S3 19.33 3 18.5v-7.16c0-.23.04-.45.11-.66l1.97-5.67C5.29 4.42 5.84 4 6.5 4zm-11 8c-.83 0-1.5.67-1.5 1.5S5.67 15 6.5 15 8 14.33 8 13.5 7.33 12 6.5 12m11 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5M7.22 5.5c-.43 0-.81.28-.95.68L5 10h14l-1.27-3.82c-.14-.4-.52-.68-.95-.68z" /></svg>;
+export default MapsDirectionsCar;

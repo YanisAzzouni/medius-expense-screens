@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareDesktopMac = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-7l1.63 2.45c.45.66-.03 1.55-.83 1.55H9.2c-.8 0-1.27-.89-.83-1.55L10 18H3c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zM4 4c-.55 0-1 .45-1 1v9h18V5c0-.55-.45-1-1-1z" /></svg>;
+export default HardwareDesktopMac;

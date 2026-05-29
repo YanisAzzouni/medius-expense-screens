@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsLiveTv = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.64 2.25c.2-.2.51-.2.71 0s.2.51 0 .71L13.41 5.9H21a2 2 0 0 1 2 2v12c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2v-12a2 2 0 0 1 2-2h7.59L7.65 2.96c-.2-.2-.2-.51 0-.71s.51-.2.71 0L12 5.89zM4 7.9c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1zm5 3.72c0-.76.83-1.25 1.5-.87l3.98 2.28c.67.39.67 1.36 0 1.74l-3.98 2.28c-.67.38-1.5-.11-1.5-.88z" /></svg>;
+export default NotificationsLiveTv;

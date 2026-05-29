@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const OthersReconciliation = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" fillRule="evenodd" d="M4 1a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h.5a1 1 0 1 0 0-2H4a1 1 0 0 1-1-1V4.216l6.5 4.5 6.5-4.5V9a1 1 0 1 0 2 0V4a3 3 0 0 0-3-3zm10.243 2H4.757L9.5 6.284zM9 11a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm0 10v-4h12v4zm12-8v1H9v-1z" clipRule="evenodd" /></svg>;
+export default OthersReconciliation;

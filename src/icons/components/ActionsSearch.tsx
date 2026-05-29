@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSearch = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.527 10.791a6.504 6.504 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27h.79l4.24 4.26c.41.41.41 1.08 0 1.49s-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59m6.45-5.32c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5c0-2.489-2.01-4.499-4.5-4.5" /></svg>;
+export default ActionsSearch;

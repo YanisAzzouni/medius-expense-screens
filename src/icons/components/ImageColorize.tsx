@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageColorize = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.665 2.999c.265 0 .518.105.705.293l2.34 2.34a.99.99 0 0 1-.02 1.42l-3.12 3.12 1.22 1.22a.996.996 0 1 1-1.41 1.41l-.72-.721-8.77 8.77a.47.47 0 0 1-.35.15H3.5c-.28 0-.5-.22-.5-.5v-4.04q0-.21.15-.36l8.77-8.77-.72-.72a.996.996 0 0 1 0-1.41c.39-.38 1.02-.39 1.41 0l1.23 1.21 3.12-3.12A1 1 0 0 1 17.665 3M5 17.08 6.92 19l8.06-8.06-1.92-1.92z" /></svg>;
+export default ImageColorize;

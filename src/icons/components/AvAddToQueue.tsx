@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvAddToQueue = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3a2 2 0 0 1 2 2v12c0 1.1-.9 2-2 2h-5v1c0 .55-.45 1-1 1H9c-.55 0-1-.45-1-1v-1H3c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM4 5c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm8 2c.55 0 1 .45 1 1v2h2c.55 0 1 .45 1 1s-.45 1-1 1h-2v2c0 .55-.45 1-1 1s-1-.45-1-1v-2H9c-.55 0-1-.45-1-1s.45-1 1-1h2V8c0-.55.45-1 1-1" /></svg>;
+export default AvAddToQueue;

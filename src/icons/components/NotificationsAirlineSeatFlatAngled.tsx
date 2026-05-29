@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsAirlineSeatFlatAngled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.699 11.44c.19-.52.77-.791 1.29-.601l17.14 6.18c.52.19.79.77.6 1.29s-.77.79-1.29.6l-3.58-1.29v.63c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-3.52l-5.55-2c-.52-.19-.79-.77-.61-1.29m8.75-3.271a2.006 2.006 0 0 1 2.56-1.19l6.69 2.41a4 4 0 0 1 2.41 5.15l-.69 1.89-12.36-4.47zm-5.89-3.12c1.5-.72 3.29-.09 4.01 1.4a3.01 3.01 0 0 1-1.41 4c-1.5.72-3.29.09-4-1.4-.72-1.5-.09-3.29 1.4-4" /></svg>;
+export default NotificationsAirlineSeatFlatAngled;

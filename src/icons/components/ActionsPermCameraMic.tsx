@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPermCameraMic = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.125 3c.56 0 1.1.24 1.47.65L16.835 5h3.17c1.1 0 2 .9 1.99 2v12c0 1.1-.9 2-2 2h-7v-2.09a6.02 6.02 0 0 0 4.89-4.75c.12-.61-.38-1.16-.99-1.16-.48 0-.88.35-.98.83a3.99 3.99 0 0 1-3.91 3.17c-1.93 0-3.53-1.36-3.92-3.17-.1-.48-.49-.83-.98-.83-.61 0-1.11.55-.99 1.16.48 2.43 2.44 4.33 4.89 4.75V21h-7c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h3.17l1.23-1.35c.38-.41.92-.65 1.48-.65zm-2.12 4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2s2-.9 2-2V9c0-1.1-.9-2-2-2" /></svg>;
+export default ActionsPermCameraMic;

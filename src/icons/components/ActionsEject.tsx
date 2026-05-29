@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsEject = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 16.6c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1-.45-1-1s.45-1 1-1zM11.17 5.85a.99.99 0 0 1 1.66 0l4.8 7.2c.45.66-.03 1.55-.83 1.55H7.2c-.8 0-1.28-.89-.83-1.55z" /></svg>;
+export default ActionsEject;

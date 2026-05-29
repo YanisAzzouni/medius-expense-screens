@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageIso = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM5 19h13c.55 0 1-.45 1-1V5zm11.25-3.5c.41 0 .75.34.75.75s-.34.75-.75.75h-3.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75zm-8-10c-.41 0-.75.34-.75.75V7.5H6.25c-.41 0-.75.34-.75.75s.34.75.75.75H7.5v1.25c0 .41.34.75.75.75s.75-.34.75-.75V9h1.25c.41 0 .75-.34.75-.75s-.34-.75-.75-.75H9V6.25c0-.41-.34-.75-.75-.75" /></svg>;
+export default ImageIso;

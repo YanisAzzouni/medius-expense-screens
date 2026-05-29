@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsDoneOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.36 3.515c.78-.78 2.04-.78 2.83 0l1.4 1.4c.78.78.78 2.05 0 2.83L9.84 20.485c-.78.78-2.05.78-2.83 0l-5.6-5.6c-.78-.78-.78-2.05 0-2.83l1.4-1.4c.78-.78 2.05-.78 2.83 0l2.79 2.79zm2.11 2.12a.983.983 0 0 0-1.4 0L8.43 16.275l-3.5-3.5a.985.985 0 0 0-1.4 0 .985.985 0 0 0 0 1.4l4.2 4.2c.39.39 1.01.39 1.4 0l11.34-11.34a.984.984 0 0 0 0-1.4" /></svg>;
+export default ActionsDoneOutline;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationDesktopAccessDisabled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.511 1.063c.265 0 .519.105.705.292l19.88 19.88a.996.996 0 1 1-1.41 1.41l-5.29-5.29h-.9v2h1c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1h1v-2h-7c-1.1 0-2-.9-2-2V3.445l-.69-.68a.995.995 0 0 1 .705-1.703m19.975.292c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-.44l-2-2h1.45c.55 0 1-.45 1-1v-10c0-.55-.45-1-1-1H7.047l-2-2zm-18 13c0 .55.45 1 1 1h8.91l-9.91-9.91z" /></svg>;
+export default CommunicationDesktopAccessDisabled;

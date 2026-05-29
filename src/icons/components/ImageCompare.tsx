@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageCompare = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11 1c.55 0 1 .45 1 1v20c0 .55-.45 1-1 1s-1-.45-1-1v-1H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h5V2c0-.55.45-1 1-1m8 2c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-5v-9l5 6V6c0-.55-.45-1-1-1h-4V3zM5 18h5v-6z" /></svg>;
+export default ImageCompare;

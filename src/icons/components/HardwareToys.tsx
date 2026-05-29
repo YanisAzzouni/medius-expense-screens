@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareToys = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 12c3 0 5.5 2.5 5.5 5.5 0 2.57-1.83 4.77-4.24 5.35-.64.15-1.26-.32-1.26-.97zm0 0c0 3-2.5 5.5-5.5 5.5-2.57 0-4.77-1.83-5.35-4.24-.15-.64.32-1.26.97-1.26zm5.5-5.5c2.57 0 4.77 1.83 5.35 4.24.15.64-.32 1.26-.97 1.26H12c0-3 2.5-5.5 5.5-5.5m-6.76-5.35c.64-.15 1.26.32 1.26.97V12c-3 0-5.5-2.5-5.5-5.5 0-2.57 1.83-4.77 4.24-5.35" /></svg>;
+export default HardwareToys;

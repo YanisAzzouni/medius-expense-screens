@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareKeyboardCapslock = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17 15.996c.55 0 1 .45 1 1s-.45 1-1 1H7c-.55 0-1-.45-1-1s.45-1 1-1zm-4.995-9.992c.264 0 .518.105.705.293l4.59 4.59a.996.996 0 1 1-1.41 1.41L12 8.406l-3.89 3.89a.996.996 0 1 1-1.41-1.41l4.6-4.59a1 1 0 0 1 .705-.292" /></svg>;
+export default HardwareKeyboardCapslock;

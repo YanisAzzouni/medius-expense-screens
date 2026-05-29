@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsHourglassEmpty = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16 2c1.1 0 2 .9 2 2v3.18c0 .53-.21 1.04-.59 1.42L14 12l3.42 3.43c.37.37.58.88.58 1.41V20c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2v-3.16c0-.53.21-1.04.58-1.42L10 12 6.59 8.59C6.21 8.21 6 7.7 6 7.17V4c0-1.1.9-2 2-2zM8 16.5V19c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.5l-4-4zM9 4c-.55 0-1 .45-1 1v2.5l4 4 4-4V5c0-.55-.45-1-1-1z" /></svg>;
+export default ActionsHourglassEmpty;

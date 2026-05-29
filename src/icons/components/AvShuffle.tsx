@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvShuffle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="m17.756 16.55 1.19-1.19c.31-.32.85-.1.85.35v3.79c0 .28-.22.5-.5.5h-3.79a.5.5 0 0 1-.36-.85l1.2-1.2-3.13-3.13 1.41-1.41zM19.296 4c.28 0 .5.22.5.5v3.79a.5.5 0 0 1-.85.36l-1.19-1.19-11.85 11.83a.996.996 0 1 1-1.41-1.41l11.84-11.84-1.19-1.19a.5.5 0 0 1 .36-.85zm-14.085.407c.265 0 .518.106.705.293l4.47 4.47-1.42 1.4-4.46-4.46a.996.996 0 0 1 .705-1.703" /></svg>;
+export default AvShuffle;

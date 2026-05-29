@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialNotificationsPaused = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14 19.75a2 2 0 1 1-4 0zm-2-17.5c.83 0 1.5.67 1.5 1.5v.68c2.86.68 4.5 3.25 4.5 6.32v5l1.29 1.29c.63.63.19 1.71-.71 1.71H5.41c-.89 0-1.33-1.08-.7-1.71L6 15.75v-5c0-3.08 1.63-5.64 4.5-6.32v-.68c0-.83.67-1.5 1.5-1.5m-1.6 5.5c-.5 0-.9.4-.9.9s.4.9.9.9h1.9l-2.5 3.03c-.19.24-.3.53-.3.84v.01c0 .73.59 1.32 1.32 1.32h2.78c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-1.9l2.5-3.03c.19-.24.3-.53.3-.84 0-.74-.59-1.33-1.32-1.33z" /></svg>;
+export default SocialNotificationsPaused;

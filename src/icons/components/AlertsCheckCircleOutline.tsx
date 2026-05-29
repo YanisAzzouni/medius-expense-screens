@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AlertsCheckCircleOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 2c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8m3.88 4.29c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41l-6.59 6.59a.996.996 0 0 1-1.41 0L6.71 13.7a.996.996 0 1 1 1.41-1.41L10 14.17z" /></svg>;
+export default AlertsCheckCircleOutline;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationPhonelinkLock = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.5 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2h-10c-1.1 0-2-.9-2-2v-2c0-.55.45-1 1-1s1 .45 1 1v1h10V4h-10v1c0 .55-.45 1-1 1s-1-.45-1-1V3c0-1.1.9-2 2-2zm-11 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H4.7c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C4.7 8.1 6.1 7 7.5 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3" /></svg>;
+export default CommunicationPhonelinkLock;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceWifiLock = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20.5 12a2.5 2.5 0 0 1 2.5 2.5V16c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-5c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1v-1.5a2.5 2.5 0 0 1 2.5-2.5M12 2c4.5 0 8.66 1.49 12 4l-2.69 3.58a5 5 0 0 0-.81-.08c-2.76 0-5 2.24-5 5v2.84l-1.9 2.53c-.8 1.07-2.4 1.07-3.2 0L0 6c3.34-2.51 7.5-4 12-4m8.5 11c-.83 0-1.5.67-1.5 1.5V16h3v-1.5c0-.83-.67-1.5-1.5-1.5" /></svg>;
+export default DeviceWifiLock;

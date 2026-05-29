@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsAdb = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 15.78c0 3.87-3.13 7-7 7s-7-3.13-7-7v-4h14zm-.78-13.73-2.1 2.1C17.86 5.42 19 7.46 19 9.78v1H5v-1c0-2.32 1.14-4.36 2.88-5.63l-2.1-2.1.82-.83 2.31 2.31c.93-.47 1.97-.75 3.09-.75s2.16.28 3.1.75l2.3-2.31zM9 6.78c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m6 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1" /></svg>;
+export default NotificationsAdb;

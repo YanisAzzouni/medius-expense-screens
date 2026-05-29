@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsLoyalty = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11 2c.55 0 1.05.22 1.41.58l9 9c.36.36.59.87.59 1.42s-.22 1.05-.59 1.41l-7 7c-.36.37-.86.59-1.41.59s-1.05-.22-1.41-.58l-9-9C2.22 12.05 2 11.55 2 11V4c0-1.1.9-2 2-2zm4.5 9c-.69 0-1.32.28-1.77.73l-.73.73-.75-.72c-.59-.61-1.5-.9-2.44-.65-.87.23-1.57.96-1.76 1.84-.2.91.1 1.76.67 2.34l3.92 3.92c.2.2.51.2.71 0l3.92-3.92A2.501 2.501 0 0 0 15.5 11m-10-7C4.67 4 4 4.67 4 5.5S4.67 7 5.5 7 7 6.33 7 5.5 6.33 4 5.5 4" /></svg>;
+export default ActionsLoyalty;

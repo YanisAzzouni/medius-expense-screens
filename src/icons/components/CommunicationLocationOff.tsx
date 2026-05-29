@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationLocationOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.345 3.532c.264 0 .518.105.705.292l15.31 15.33a.996.996 0 1 1-1.41 1.41l-2.65-2.649a47 47 0 0 1-2.61 3.46c-.4.48-1.13.48-1.53 0-1.81-2.19-6.23-7.94-6.23-12.11 0-.53.07-1.05.18-1.56l-2.47-2.47a.996.996 0 0 1 .705-1.703m8.585-1.267c3.87 0 7 3.13 7 7 0 1.57-.63 3.36-1.51 5.11l-3.55-3.55c.35-.43.56-.97.56-1.56a2.5 2.5 0 0 0-2.5-2.5c-.59 0-1.13.21-1.56.55l-3.19-3.19a6.98 6.98 0 0 1 4.75-1.86" /></svg>;
+export default CommunicationLocationOff;

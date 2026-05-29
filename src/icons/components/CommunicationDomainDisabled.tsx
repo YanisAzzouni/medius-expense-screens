@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationDomainDisabled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.206 1.258c.265 0 .519.105.705.293l19.48 19.489a.996.996 0 1 1-1.41 1.41l-2.29-2.29h-13.9c-1.1 0-2-.9-2-2V4.26l-1.29-1.3a.995.995 0 0 1 .705-1.702m8.585.902c1.1 0 2 .9 2 2v2h8c1.1 0 2 .9 2 2v10.45l-2-2V9.16c0-.55-.45-1-1-1h-7v.45l-2.45-2.45h.45v-2h-2v.45l-2.45-2.45zm-6 16h2v-2h-2zm4 0h2v-2h-2zm4 0h3.9l-2-2h-1.9zm-8-4h2v-2h-2zm4 0h2v-2h-2zm10-2h-2v-2h2zm-14-2h2v-2h-2z" /></svg>;
+export default CommunicationDomainDisabled;

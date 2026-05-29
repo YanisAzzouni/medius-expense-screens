@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsRoundedCorner = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5 21H3v-2h2zm4 0H7v-2h2zm4 0h-2v-2h2zm8 0h-2v-2h2zM5 17H3v-2h2zm16 0h-2v-2h2zM5 13H3v-2h2zM16 3c2.76 0 5 2.24 5 5v5h-2V8c0-1.65-1.35-3-3-3h-5V3zM5 9H3V7h2zm0-4H3V3h2zm4 0H7V3h2z" /></svg>;
+export default ActionsRoundedCorner;

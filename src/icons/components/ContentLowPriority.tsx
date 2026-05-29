@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentLowPriority = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.999 4.853c.55 0 1 .45 1 1s-.45 1-1 1h-2.5a4.51 4.51 0 0 0-4.48 4.95c.23 2.34 2.33 4.05 4.68 4.05h.3v-.79c0-.45.54-.67.85-.35l1.79 1.79c.2.2.2.51 0 .71l-1.79 1.79a.5.5 0 0 1-.85-.35v-.8h-.27c-3.3 0-6.25-2.36-6.67-5.64-.52-3.96 2.58-7.36 6.44-7.36zm10 11c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1zm0-5.5c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1zm0-5.5c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default ContentLowPriority;

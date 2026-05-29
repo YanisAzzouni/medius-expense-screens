@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsRestorePage = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13.17 2c.53 0 1.04.21 1.41.58l4.83 4.83c.38.38.59.89.59 1.42V20c0 1.1-.9 2-2 2H5.99C4.89 22 4 21.1 4 20l.01-16c0-1.1.89-2 1.99-2zM12 8c-1.74 0-3.29.89-4.2 2.3L6.5 9v3.5c0 .28.22.5.5.5h3.5l-1.61-1.61a3.495 3.495 0 0 1 6.6 1.61c0 1.93-1.57 3.5-3.5 3.5-1.15 0-2.23-.57-2.88-1.52a.74.74 0 0 0-1.04-.19.75.75 0 0 0-.19 1.04A4.99 4.99 0 0 0 12 18c2.76 0 5-2.24 5-5s-2.24-5-5-5" /></svg>;
+export default ActionsRestorePage;

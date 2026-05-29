@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageCropOriginal = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM6 5c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm7.56 7.81c.2-.26.6-.26.79 0l2.55 3.39a.5.5 0 0 1-.4.8H7.52a.5.5 0 0 1-.39-.81l1.74-2.23a.5.5 0 0 1 .78-.01l1.56 1.88z" /></svg>;
+export default ImageCropOriginal;

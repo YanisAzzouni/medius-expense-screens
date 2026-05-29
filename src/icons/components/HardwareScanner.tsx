@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareScanner = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.85 5.306c.2-.52.78-.79 1.3-.6l14.65 5.35c.7.2 1.2 1 1.2 1.8v5.5c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2h12.6L4.45 6.605c-.52-.19-.79-.77-.6-1.3M5 16.356h2v-2H5zm5-2c-.55 0-1 .45-1 1s.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1z" /></svg>;
+export default HardwareScanner;

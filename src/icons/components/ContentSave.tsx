@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentSave = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.17 3c.53 0 1.04.21 1.42.59l2.82 2.83c.38.37.59.88.59 1.41V19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5a2 2 0 0 1 2-2zM12 13c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M7 5c-1.1 0-2 .9-2 2s.9 2 2 2h6c1.1 0 2-.9 2-2s-.9-2-2-2z" /></svg>;
+export default ContentSave;

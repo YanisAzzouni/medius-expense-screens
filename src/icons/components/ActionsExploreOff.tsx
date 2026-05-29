@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsExploreOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.516 3.926c.264 0 .518.105.705.292l15.55 15.56a.996.996 0 1 1-1.41 1.411l-.85-.85c-2.07 1.38-4.68 2-7.45 1.48-3.96-.75-7.13-3.93-7.88-7.88-.52-2.77.11-5.38 1.48-7.45l-.85-.85c-.39-.39-.39-1.03 0-1.42a1 1 0 0 1 .705-.293M6 18l6.261-2.91-3.35-3.35zm6-16c5.52 0 10 4.48 10 10 0 2.04-.609 3.93-1.659 5.51l-5.25-5.25 2.91-6.26-6.26 2.91-5.25-5.25A9.9 9.9 0 0 1 12 1.999" /></svg>;
+export default ActionsExploreOff;

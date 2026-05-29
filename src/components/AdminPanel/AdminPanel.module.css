@@ -1,0 +1,168 @@
+/* ─── Panel shell ─── */
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 100%;
+  background: var(--color-white);
+  border-right: 1px solid var(--color-chalk-200);
+  padding: 8px 16px 24px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+}
+
+/* ─── Company name ─── */
+.companyName {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-chalk-600);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ─── Nav wrapper ─── */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+/* ─── Section ─── */
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ─── Section header button ─── */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--type-body-default-size);
+  font-weight: var(--type-body-default-weight);
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-700);
+  text-align: left;
+  transition: background-color 80ms ease, color 80ms ease;
+  -webkit-font-smoothing: antialiased;
+  outline-offset: -2px;
+}
+
+.sectionHeader:focus-visible {
+  outline: 2px solid var(--color-olive-500);
+}
+
+.sectionHeader:hover:not(.sectionHeader_expanded) {
+  background: var(--color-chalk-200);
+}
+
+/* Expanded / selected state — olive-600 text, semibold */
+.sectionHeader_expanded {
+  color: var(--color-olive-600);
+  font-weight: 600;
+}
+
+/* ─── Section header inner (icon + label) ─── */
+.sectionHeaderInner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.sectionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  /* inherits color from button */
+}
+
+.sectionLabel {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-chalk-600);
+}
+
+.sectionHeader_expanded .chevron {
+  color: var(--color-olive-600);
+}
+
+/* ─── Sub-items list ─── */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+/* Outer wrapper mirrors Figma's px-[12px] container */
+.itemOuter {
+  width: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* The actual clickable button — fills the inner area */
+.item {
+  display: block;
+  width: 100%;
+  padding: 8px 0 8px 28px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--type-body-default-size);
+  font-weight: var(--type-body-default-weight);
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-700);
+  text-align: left;
+  transition: background-color 80ms ease, color 80ms ease;
+  -webkit-font-smoothing: antialiased;
+  outline-offset: -2px;
+  box-sizing: border-box;
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--color-olive-500);
+}
+
+.item:hover:not(.item_selected) {
+  background: var(--color-chalk-200);
+}
+
+/* Selected sub-item — olive-200 bg, olive-700 text */
+.item_selected {
+  background: var(--color-olive-200);
+  color: var(--color-olive-700);
+  cursor: default;
+}

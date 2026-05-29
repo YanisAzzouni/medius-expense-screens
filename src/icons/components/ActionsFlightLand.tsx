@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsFlightLand = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20.5 19.343c.55 0 1 .45 1 1s-.45 1-1 1h-17c-.55 0-1-.45-1-1s.45-1 1-1zM10.13 3.733c0-.71.67-1.22 1.35-1.04.36.1.64.37.75.73l2.58 8.45 5.31 1.42c.8.22 1.27 1.04 1.06 1.84-.22.8-1.04 1.27-1.84 1.06l-15.83-4.24a1 1 0 0 1-.74-.97v-3.75c0-.33.31-.57.63-.48l.33.09c.31.08.55.3.67.59l.75 1.86 4.98 1.32z" /></svg>;
+export default ActionsFlightLand;

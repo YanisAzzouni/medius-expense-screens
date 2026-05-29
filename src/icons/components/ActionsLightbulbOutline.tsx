@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsLightbulbOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15 21c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1v-1h6zM12 2c3.86 0 7 3.14 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H9c-.55 0-1-.45-1-1v-2.26C6.19 13.47 5 11.38 5 9c0-3.86 3.14-7 7-7m0 2C9.24 4 7 6.24 7 9c0 1.63.8 3.16 2.15 4.1l.85.6V16h4v-2.3l.85-.6A5 5 0 0 0 17 9c0-2.76-2.24-5-5-5" /></svg>;
+export default ActionsLightbulbOutline;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsFlipToBack = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4 7c.55 0 1 .45 1 1v10c0 .55.45 1 1 1h10c.55 0 1 .45 1 1s-.45 1-1 1H5c-1.1 0-2-.9-2-2V8c0-.55.45-1 1-1m5 10a2 2 0 0 1-2-2h2zm4 0h-2v-2h2zm4-2v2h-2v-2zm4 0c0 1.1-.9 2-2 2v-2zM9 13H7v-2h2zm12 0h-2v-2h2zM9 9H7V7h2zm12 0h-2V7h2zM9 5H7a2 2 0 0 1 2-2zm4 0h-2V3h2zm4 0h-2V3h2zm2-2c1.1 0 2 .9 2 2h-2z" /></svg>;
+export default ActionsFlipToBack;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsPowerOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.34 3.96c.265 0 .518.107.705.294l15.32 15.32c.39.39.39 1.03 0 1.42a.996.996 0 0 1-1.41 0l-3.76-3.76-.48.48v2c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1v-2l-2.92-2.94c-.37-.37-.58-.88-.58-1.41v-4.66c0-.14.02-.28.05-.41l-2.63-2.63A.996.996 0 0 1 4.34 3.96m10.875-1.246c.55 0 1 .45 1 1v3c.99-.01 2 .99 2 1.99v4.67c0 .34-.1.67-.25.97l-7.63-7.63h3.88v-3c0-.55.45-1 1-1m-6 0c.55 0 1 .45 1 1v2.88l-2-2v-.88c0-.55.45-1 1-1" /></svg>;
+export default NotificationsPowerOff;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalDrink = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.77 2c1.19 0 2.12 1.04 1.99 2.22l-1.77 16.01c-.12 1-.96 1.77-1.99 1.77H7c-1.03 0-1.87-.77-1.99-1.77L3.24 4.22C3.11 3.04 4.04 2 5.23 2zm-6.38 9.06a.49.49 0 0 0-.77 0C10.81 12.05 9 14.45 9 16c0 1.66 1.34 3 3 3s3-1.34 3.01-3c0-1.55-1.81-3.94-2.62-4.94M6.35 4c-.6 0-1.06.52-1 1.11L5.67 8h12.66l.31-2.89A1 1 0 0 0 17.65 4z" /></svg>;
+export default MapsLocalDrink;

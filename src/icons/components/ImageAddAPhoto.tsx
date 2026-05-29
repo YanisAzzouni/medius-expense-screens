@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageAddAPhoto = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.62 4.5c.56 0 1.1.24 1.47.65l1.24 1.35h3.17c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-16c-1.1 0-2-.9-2-2V10.22c.3.17.63.28 1 .28 1.1 0 2-.9 2-2v-1h1c1.1 0 2-.9 2-2 0-.37-.11-.7-.28-1zm-2.12 5c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5m0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6m-9-10c.55 0 1 .45 1 1v2h2c.55 0 1 .45 1 1s-.45 1-1 1h-2v2c0 .55-.45 1-1 1s-1-.45-1-1v-2h-2c-.55 0-1-.45-1-1s.45-1 1-1h2v-2c0-.55.45-1 1-1" /></svg>;
+export default ImageAddAPhoto;

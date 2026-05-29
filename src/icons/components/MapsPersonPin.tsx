@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsPersonPin = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 1.709c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-4l-2.3 2.29a.996.996 0 0 1-1.41 0L9 19.709H5c-1.1 0-2-.9-2-2v-14a2 2 0 0 1 2-2zm-7 10c-2 0-6 1.1-6 3.1v.9h12v-.9c0-2-4-3.1-6-3.1m0-6.7c-1.49 0-2.7 1.21-2.7 2.7s1.21 2.7 2.7 2.7 2.7-1.21 2.7-2.7-1.21-2.7-2.7-2.7" /></svg>;
+export default MapsPersonPin;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialGroup = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M8 13c2.33 0 7 1.17 7 3.5V18c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1v-1.5C1 14.17 5.67 13 8 13m8 0c2.33 0 7 1.17 7 3.5V18c0 .55-.45 1-1 1h-5.18c.11-.31.18-.65.18-1v-1.5c0-1.47-.79-2.58-1.93-3.41-.01-.01-.02-.03-.04-.04.35-.03.68-.05.97-.05M8 5c1.66 0 2.99 1.34 2.99 3S9.66 11 8 11 5 9.66 5 8s1.34-3 3-3m8 0c1.66 0 2.99 1.34 2.99 3s-1.33 3-2.99 3-3-1.34-3-3 1.34-3 3-3" /></svg>;
+export default SocialGroup;

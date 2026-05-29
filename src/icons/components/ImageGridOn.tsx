@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageGridOn = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zM4 19c0 .55.45 1 1 1h3v-4H4zm6 1h4v-4h-4zm6 0h3c.55 0 1-.45 1-1v-3h-4zM4 14h4v-4H4zm6 0h4v-4h-4zm6 0h4v-4h-4zM5 4c-.55 0-1 .45-1 1v3h4V4zm5 4h4V4h-4zm6-4v4h4V5c0-.55-.45-1-1-1z" /></svg>;
+export default ImageGridOn;

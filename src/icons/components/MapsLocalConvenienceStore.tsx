@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalConvenienceStore = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 4c.55 0 1 .45 1 1v2h2c.55 0 1 .45 1 1v11c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-3h-4v3c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1h2V5c0-.55.45-1 1-1zM8.5 7c-.28 0-.5.22-.5.5s.22.5.5.5H10v1H9c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h1.5c.28 0 .5-.22.5-.5s-.22-.5-.5-.5H9v-1h1c.55 0 1-.45 1-1V8c0-.55-.45-1-1-1zm7 0c-.28 0-.5.22-.5.5V9h-1V7.5c0-.28-.22-.5-.5-.5s-.5.22-.5.5V9c0 .55.45 1 1 1h1v1.5c0 .28.22.5.5.5s.5-.22.5-.5v-4c0-.28-.22-.5-.5-.5" /></svg>;
+export default MapsLocalConvenienceStore;

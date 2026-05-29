@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorTitle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5 6c0 .83.67 1.5 1.5 1.5h4V18c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V7.5h4c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5h-11C5.67 4.5 5 5.17 5 6" /></svg>;
+export default EditorTitle;

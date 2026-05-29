@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageBurstMode = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2 5c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1s-1-.45-1-1V6c0-.55.45-1 1-1m4 0c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1s-1-.45-1-1V6c0-.55.45-1 1-1m16 0c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1H10c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1zm-3.82 8.29a.498.498 0 0 0-.79 0L15.29 16l-1.4-1.68a.505.505 0 0 0-.78.01l-1.47 1.86c-.26.33-.02.81.39.8h7.96c.42 0 .65-.47.4-.8z" /></svg>;
+export default ImageBurstMode;

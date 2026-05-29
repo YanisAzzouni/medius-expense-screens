@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceSignalWifiStatusbarNull26x24px = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.987c6.7 0 11.168 3.794 11.612 4.14L13.44 20.293a1.803 1.803 0 0 1-2.88 0L.388 7.126C.832 6.781 5.299 2.986 12 2.986m0 1.917c-3.923 0-7.033 1.446-8.926 2.635l8.206 10.619a.9.9 0 0 0 1.44 0l8.206-10.62C19.033 6.35 15.923 4.905 12 4.905" /></svg>;
+export default DeviceSignalWifiStatusbarNull26x24px;

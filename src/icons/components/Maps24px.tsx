@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const Maps24px = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16 3c.55 0 1 .45 1 1v1h2.46c.31 0 .54.28.5.59A4.01 4.01 0 0 1 17 8.86V10h2.46c.31 0 .54.28.5.59A4.01 4.01 0 0 1 17 13.86V15h2.46c.31 0 .54.28.5.59A4.01 4.01 0 0 1 17 18.86V20c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1v-1.14a4.01 4.01 0 0 1-2.96-3.27c-.04-.31.19-.59.5-.59H7v-1.14a4.01 4.01 0 0 1-2.96-3.27c-.04-.31.19-.59.5-.59H7V8.86a4.01 4.01 0 0 1-2.96-3.27C4 5.28 4.23 5 4.54 5H7V4c0-.55.45-1 1-1zm-4 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0-5a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0-5c-1.11 0-2 .89-2 2a2 2 0 1 0 2-2" /></svg>;
+export default Maps24px;

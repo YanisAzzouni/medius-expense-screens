@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvHighQuality = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm-5 5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h.75v.75c0 .41.34.75.75.75s.75-.34.75-.75V15H17c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1zm-3.75 0c-.41 0-.75.34-.75.75v1.75h-2V9.75c0-.41-.34-.75-.75-.75S6 9.34 6 9.75v4.5c0 .41.34.75.75.75s.75-.34.75-.75V13h2v1.25c0 .41.34.75.75.75s.75-.34.75-.75v-4.5c0-.41-.34-.75-.75-.75m6.25 1.5v3h-2v-3z" /></svg>;
+export default AvHighQuality;

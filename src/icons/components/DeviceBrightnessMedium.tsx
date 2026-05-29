@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceBrightnessMedium = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.58 2.1c.78-.78 2.05-.78 2.83 0l1.9 1.9H18c1.1 0 2 .9 2 2v2.69l1.9 1.89c.78.78.78 2.05 0 2.83l-1.9 1.9V18c0 1.1-.9 2-2 2h-2.68l-1.9 1.9c-.78.78-2.05.78-2.83 0L8.69 20H6c-1.1 0-2-.9-2-2v-2.68l-1.9-1.9c-.78-.78-.78-2.05 0-2.83L4 8.69V6c0-1.1.9-2 2-2h2.69zm2.57 4.01c-.6-.12-1.15.38-1.15.99v9.8c0 .61.55 1.11 1.15.99C15.91 17.35 18 14.92 18 12a6.01 6.01 0 0 0-4.85-5.89" /></svg>;
+export default DeviceBrightnessMedium;

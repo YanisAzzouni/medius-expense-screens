@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsOfflineBolt = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.02c5.51 0 9.98 4.47 9.98 9.98s-4.47 9.98-9.98 9.98S2.02 17.51 2.02 12 6.49 2.02 12 2.02m1 4.05c0-.53-.71-.7-.94-.23l-3.68 7.17c-.18.33.07.73.44.73h2.66v4.14c0 .53.71.7.95.22l3.56-7.12a.502.502 0 0 0-.45-.72H13z" /></svg>;
+export default ActionsOfflineBolt;

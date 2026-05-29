@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPermDeviceInformation = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17 1.01c1.1 0 2 .89 2 1.99v18c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2zM7 5v14h10V5zm5 6c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1v-4c0-.55.45-1 1-1m1-4v2h-2V7z" /></svg>;
+export default ActionsPermDeviceInformation;

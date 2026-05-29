@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsPinDrop = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 20c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1-.45-1-1s.45-1 1-1zM12 2c3.31 0 6 2.69 6 6 0 3.49-3.62 8.19-5.24 10.12-.4.48-1.13.48-1.53 0C9.62 16.19 6 11.49 6 8c0-3.31 2.69-6 6-6m0 4c-1.1 0-2 .9-2 2s.9 2 2 2a2 2 0 1 0 0-4" /></svg>;
+export default MapsPinDrop;

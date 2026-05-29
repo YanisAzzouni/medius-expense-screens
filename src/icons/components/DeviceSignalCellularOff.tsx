@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceSignalCellularOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.842 4.273c.265 0 .519.106.705.293l15.82 15.82c.39.39.39 1.02-.009 1.41a.996.996 0 0 1-1.41 0l-1.29-1.29H3.338c-.89 0-1.33-1.08-.7-1.71l7.16-7.16-5.66-5.66a.996.996 0 0 1 .704-1.703m14.375-2.067c.63-.63 1.71-.18 1.71.71v14.2l-8.31-8.31z" /></svg>;
+export default DeviceSignalCellularOff;

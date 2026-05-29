@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsTapAndPlay = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.5 20c1.66 0 3 1.34 3 3h-3zm1.14-3.91c2.96.48 5.29 2.82 5.77 5.77.09.6-.39 1.14-1 1.14-.49 0-.9-.36-.98-.85-.36-2.08-2-3.72-4.08-4.08a1 1 0 0 1-.85-.98c0-.61.54-1.1 1.14-1m-.03-4.03c5.2.52 9.32 4.64 9.83 9.84.06.59-.41 1.1-1 1.1-.51 0-.94-.38-.99-.88a9 9 0 0 0-8.08-8.08c-.5-.05-.87-.49-.87-.99 0-.59.52-1.05 1.11-.99M18.5 1.01c1.1 0 2 .89 2 1.99v17c0 1.1-.9 2-2 2h-2.08c-.11-1.41-.43-2.75-.95-4h3.03V5h-10v6.01c-.64-.27-1.31-.48-2-.64V3c0-1.1.9-2 2-2z" /></svg>;
+export default NotificationsTapAndPlay;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareKeyboardVoice = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.08 11.5c.52 0 .92.46.85.97-.46 2.97-2.97 5.32-5.93 5.75v2.28c0 .55-.45 1-1 1s-1-.45-1-1v-2.28c-2.97-.45-5.47-2.78-5.93-5.75-.07-.51.33-.97.85-.97.41 0 .77.3.83.71.37 2.62 2.72 4.39 5.25 4.39s4.88-1.78 5.25-4.39c.06-.41.41-.71.83-.71M12 2.5c1.66 0 3 1.34 3 3l-.01 6c0 1.66-1.33 3-2.99 3s-3-1.34-3-3v-6c0-1.66 1.34-3 3-3" /></svg>;
+export default HardwareKeyboardVoice;

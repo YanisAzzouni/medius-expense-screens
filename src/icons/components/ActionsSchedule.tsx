@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSchedule = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.99 2C17.52 2 22 6.48 22 12s-4.48 10-10.01 10C6.47 22 2 17.52 2 12S6.47 2 11.99 2M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8m-.22 3c.4 0 .72.32.72.72v4.54l3.87 2.3c.35.2.46.65.25.99-.2.34-.64.44-.98.24l-4.15-2.49a.99.99 0 0 1-.49-.86V7.72c0-.4.32-.72.72-.72z" /></svg>;
+export default ActionsSchedule;

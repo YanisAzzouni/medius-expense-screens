@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsBluetooth = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.622 23.822h-2v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zM12.232.252c.369-.15.799-.07 1.089.22l4.33 4.31c.18.19.29.44.29.71s-.1.52-.29.71l-3.62 3.62 3.62 3.61c.18.19.29.44.29.71s-.1.52-.29.71l-4.32 4.32c-.19.19-.45.29-.71.29a1 1 0 0 1-.38-.08.99.99 0 0 1-.62-.92v-6.23l-3.86 3.85a.996.996 0 1 1-1.41-1.41l4.85-4.85-4.85-4.86a.996.996 0 1 1 1.41-1.41l3.86 3.85v-6.23c0-.4.24-.77.61-.92m1.39 15.8 1.909-1.91-1.91-1.91zm0-8.65 1.909-1.9-1.91-1.91z" /></svg>;
+export default ActionsSettingsBluetooth;

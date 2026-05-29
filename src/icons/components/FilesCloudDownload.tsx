@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const FilesCloudDownload = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 4a7.49 7.49 0 0 1 7.35 6.04c2.6.18 4.65 2.32 4.65 4.96 0 2.76-2.24 5-5 5H6c-3.31 0-6-2.69-6-6 0-3.09 2.34-5.64 5.35-5.96A7.5 7.5 0 0 1 12 4m-2 5v4H7l4.64 4.65c.2.2.51.2.71 0L17 13h-3V9z" /></svg>;
+export default FilesCloudDownload;

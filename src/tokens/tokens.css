@@ -1,0 +1,211 @@
+/* Medius Expense Design System — Global CSS Custom Properties */
+/* Auto-generated from token definitions. Edit tokens/*.ts, not this file. */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  /* ─── Color: Primary / Olive ─── */
+  --color-olive-100: #f8fafa;
+  --color-olive-200: #e3ecec;
+  --color-olive-300: #c5d7d8;
+  --color-olive-400: #6c9a9b;
+  --color-olive-500: #4f7e7f;
+  --color-olive-600: #3f6465;
+  --color-olive-700: #325051;
+  --color-olive-800: #283f40;
+  --color-olive-900: #192829;
+  --color-olive-1000: #10191a;
+
+  /* ─── Color: Neutral / Chalk ─── */
+  --color-chalk-100: #fafafa;
+  --color-chalk-200: #eaeaed;
+  --color-chalk-300: #d3d3d9;
+  --color-chalk-400: #91919f;
+  --color-chalk-500: #757584;
+  --color-chalk-600: #5d5d69;
+  --color-chalk-700: #4a4a54;
+  --color-chalk-800: #3a3a42;
+  --color-chalk-900: #25252a;
+  --color-chalk-1000: #17171a;
+
+  /* ─── Color: Base ─── */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ─── Color: Blue ─── */
+  --color-blue-100: #f6fafe;
+  --color-blue-200: #deedfa;
+  --color-blue-300: #b7d7f5;
+  --color-blue-400: #4296e5;
+  --color-blue-500: #2079cb;
+  --color-blue-600: #1a60a2;
+  --color-blue-700: #154d80;
+  --color-blue-800: #103c66;
+  --color-blue-900: #0b2742;
+  --color-blue-1000: #07192a;
+
+  /* ─── Color: Green ─── */
+  --color-green-100: #f6fbf8;
+  --color-green-200: #e0eee5;
+  --color-green-300: #bedbc8;
+  --color-green-400: #56a171;
+  --color-green-500: #388553;
+  --color-green-600: #2c6942;
+  --color-green-700: #235435;
+  --color-green-800: #1c4229;
+  --color-green-900: #122b1b;
+  --color-green-1000: #0c1c11;
+
+  /* ─── Color: Red ─── */
+  --color-red-100: #fef9fa;
+  --color-red-200: #fde6e7;
+  --color-red-300: #fac7ca;
+  --color-red-400: #f1636d;
+  --color-red-500: #d63e49;
+  --color-red-600: #ab313a;
+  --color-red-700: #89282f;
+  --color-red-800: #6d1f25;
+  --color-red-900: #471518;
+  --color-red-1000: #2e0d10;
+
+  /* ─── Color: Orange ─── */
+  --color-orange-100: #fffaf2;
+  --color-orange-200: #ffe8be;
+  --color-orange-300: #ffcd70;
+  --color-orange-400: #ca8300;
+  --color-orange-500: #a46a00;
+  --color-orange-600: #825400;
+  --color-orange-700: #684300;
+  --color-orange-800: #523500;
+  --color-orange-900: #352200;
+  --color-orange-1000: #211600;
+
+  /* ─── Color: Yellow ─── */
+  --color-yellow-100: #fdfbdb;
+  --color-yellow-200: #f8ef6e;
+  --color-yellow-300: #e4d839;
+  --color-yellow-400: #9c9527;
+  --color-yellow-500: #7f7920;
+  --color-yellow-600: #656019;
+  --color-yellow-700: #504c14;
+  --color-yellow-800: #403d10;
+  --color-yellow-900: #28260a;
+  --color-yellow-1000: #1a1806;
+
+  /* ─── Color: Teal ─── */
+  --color-teal-100: #f6fafb;
+  --color-teal-200: #ddeeef;
+  --color-teal-300: #b4dbdd;
+  --color-teal-400: #3aa0a6;
+  --color-teal-500: #17838a;
+  --color-teal-600: #12696e;
+  --color-teal-700: #0e5358;
+  --color-teal-800: #0b4245;
+  --color-teal-900: #072a2d;
+  --color-teal-1000: #051b1d;
+
+  /* ─── Color: Purple ─── */
+  --color-purple-100: #fbf9fc;
+  --color-purple-200: #f2e8f3;
+  --color-purple-300: #e2cde4;
+  --color-purple-400: #b67fba;
+  --color-purple-500: #9a639f;
+  --color-purple-600: #7b4e7e;
+  --color-purple-700: #623e65;
+  --color-purple-800: #4d3150;
+  --color-purple-900: #312033;
+  --color-purple-1000: #201420;
+
+  /* ─── Color: Pink ─── */
+  --color-pink-100: #fef8fb;
+  --color-pink-200: #fae6f1;
+  --color-pink-300: #f4c7e1;
+  --color-pink-400: #e168ad;
+  --color-pink-500: #c6458f;
+  --color-pink-600: #9e3771;
+  --color-pink-700: #7e2c5b;
+  --color-pink-800: #642347;
+  --color-pink-900: #41172e;
+  --color-pink-1000: #290f1e;
+
+  /* ─── Typography ─── */
+  --font-family: "Inter", sans-serif;
+
+  --type-impact-size: 40px;
+  --type-impact-weight: 700;
+  --type-impact-line-height: 48px;
+  --type-impact-letter-spacing: -0.02em;
+
+  --type-impact-small-size: 24px;
+  --type-impact-small-weight: 600;
+  --type-impact-small-line-height: auto;
+  --type-impact-small-letter-spacing: -0.02em;
+
+  --type-h1-size: 20px;
+  --type-h1-weight: 700;
+  --type-h1-line-height: 24px;
+  --type-h1-letter-spacing: -0.02em;
+
+  --type-h2-size: 18px;
+  --type-h2-weight: 700;
+  --type-h2-line-height: 24px;
+  --type-h2-letter-spacing: -0.02em;
+
+  --type-h3-size: 16px;
+  --type-h3-weight: 700;
+  --type-h3-line-height: 24px;
+  --type-h3-letter-spacing: -0.02em;
+
+  --type-h4-size: 14px;
+  --type-h4-weight: 700;
+  --type-h4-line-height: 24px;
+  --type-h4-letter-spacing: -0.01em;
+
+  --type-title-size: 18px;
+  --type-title-weight: 500;
+  --type-title-line-height: 24px;
+  --type-title-letter-spacing: -0.02em;
+
+  --type-body-default-size: 14px;
+  --type-body-default-weight: 400;
+  --type-body-default-line-height: 20px;
+  --type-body-default-letter-spacing: -0.01em;
+
+  --type-body-semibold-size: 14px;
+  --type-body-semibold-weight: 600;
+  --type-body-semibold-line-height: 20px;
+  --type-body-semibold-letter-spacing: -0.01em;
+
+  --type-body-bold-size: 14px;
+  --type-body-bold-weight: 700;
+  --type-body-bold-line-height: 20px;
+  --type-body-bold-letter-spacing: -0.01em;
+
+  --type-body-italic-size: 14px;
+  --type-body-italic-weight: 400;
+  --type-body-italic-line-height: 20px;
+  --type-body-italic-letter-spacing: -0.01em;
+  --type-body-italic-style: italic;
+
+  --type-small-size: 12px;
+  --type-small-weight: 400;
+  --type-small-line-height: 16px;
+  --type-small-letter-spacing: -0.01em;
+
+  --type-small-semibold-size: 12px;
+  --type-small-semibold-weight: 600;
+  --type-small-semibold-line-height: 16px;
+  --type-small-semibold-letter-spacing: -0.01em;
+
+  --type-small-bold-size: 12px;
+  --type-small-bold-weight: 700;
+  --type-small-bold-line-height: 16px;
+  --type-small-bold-letter-spacing: -0.01em;
+
+  /* ─── Elevation ─── */
+  --shadow-16: 0px 6.4px 14.4px rgba(0, 0, 0, 0.13),
+    0px 1.2px 3.6px rgba(0, 0, 0, 0.11);
+  --shadow-32: 0px 12.8px 28.8px rgba(0, 0, 0, 0.16),
+    0px 2.4px 7.4px rgba(0, 0, 0, 0.05);
+  --shadow-bottom-line: inset 0px -1px 0px #e6e9f1;
+}

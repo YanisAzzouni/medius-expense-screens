@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceSignalWifiOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.415 2.704c.264 0 .518.105.705.293l15.81 15.819a.996.996 0 1 1-1.41 1.41l-2.61-2.61-2.35 2.93c-.8 1-2.32 1-3.12 0L.36 7.987c.23-.18 1.55-1.24 3.7-2.23l-1.35-1.35a.996.996 0 0 1 .705-1.702M12 3.986c6.71 0 11.19 3.66 11.64 4l-5.21 6.5L8.31 4.366c1.14-.24 2.37-.38 3.69-.38" /></svg>;
+export default DeviceSignalWifiOff;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsNoEncryptionGmailerrorred = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.32 5.427c.265 0 .518.104.705.292l15.36 15.37a.997.997 0 1 1-1.41 1.41l-.29-.29H5.905c-1.1 0-2-.9-2-2v-10c0-.75.42-1.4 1.04-1.75l-1.33-1.33a.996.996 0 0 1 .705-1.702m7.585-4.218c2.76 0 5 2.24 5 5v2h1c1.1 0 2 .9 2 2v7.56l-9.56-9.56h4.66v-2c0-1.71-1.39-3.1-3.1-3.1s-3.1 1.39-3.1 3.1v.46l-1.72-1.72c.56-2.15 2.5-3.74 4.82-3.74" /></svg>;
+export default NotificationsNoEncryptionGmailerrorred;

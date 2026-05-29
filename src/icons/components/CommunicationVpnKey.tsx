@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationVpnKey = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5.769 6.121a6 6 0 0 1 6.88 3.88h8.35c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1-.9 2-2 2s-2-.9-2-2v-2h-4.35a5.99 5.99 0 0 1-5.65 4c-3.74 0-6.68-3.43-5.86-7.3.48-2.29 2.34-4.12 4.63-4.58m1.23 3.88c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2" /></svg>;
+export default CommunicationVpnKey;

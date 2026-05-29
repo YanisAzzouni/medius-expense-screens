@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsFlipToFront = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5 21a2 2 0 0 1-2-2h2zm4-2v2H7v-2zm4 2h-2v-2h2zm4 0h-2v-2h2zM5 17H3v-2h2zM19 3c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-9 2c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-5 8H3v-2h2zm0-4H3V7h2z" /></svg>;
+export default ActionsFlipToFront;

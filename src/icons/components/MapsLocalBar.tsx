@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalBar = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.55 3c.8 0 1.45.65 1.45 1.45 0 .35-.13.7-.37.96L13 14v5h4c.55 0 1 .45 1 1s-.45 1-1 1H7c-.55 0-1-.45-1-1s.45-1 1-1h4v-5L3.37 5.41C3.13 5.15 3 4.8 3 4.45 3 3.65 3.65 3 4.45 3zM5.66 5l1.77 2h9.14l1.78-2z" /></svg>;
+export default MapsLocalBar;

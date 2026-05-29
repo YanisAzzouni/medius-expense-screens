@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentBackspace = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21.897 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-15c-.69 0-1.23-.36-1.59-.88l-5.04-7.56c-.22-.34-.22-.77 0-1.11l5.04-7.57c.36-.53.9-.88 1.59-.88zm-3.7 4.7a.996.996 0 0 0-1.41 0l-2.89 2.89-2.89-2.89a.996.996 0 1 0-1.41 1.41l2.89 2.89-2.89 2.89a.997.997 0 1 0 1.41 1.41l2.89-2.89 2.89 2.89c.39.39 1.02.39 1.41 0 .38-.39.38-1.03 0-1.41L15.307 12l2.89-2.89a.996.996 0 0 0 0-1.41" /></svg>;
+export default ContentBackspace;

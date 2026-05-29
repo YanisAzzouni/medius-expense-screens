@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentOutlinedFlag = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.88 3.5c.38 0 .73.21.9.55l.72 1.45h5c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1h-5.39a1 1 0 0 1-.89-.55l-.72-1.45h-5v6c0 .55-.45 1-1 1s-1-.45-1-1v-15c0-.55.45-1 1-1zm-5.38 2v6h6l1 2h4v-6h-5l-1-2z" /></svg>;
+export default ContentOutlinedFlag;

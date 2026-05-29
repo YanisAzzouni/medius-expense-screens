@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsPhoneMissed = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M.913 16.292c6.32-5.59 15.85-5.59 22.18 0 .83.74.84 2.05.04 2.84l-1.2 1.2c-.71.71-1.83.77-2.62.15l-1.96-1.56c-.47-.38-.75-.95-.75-1.55v-2.58c-2.99-.98-6.221-.97-9.2 0v2.57c0 .61-.28 1.18-.75 1.55l-1.97 1.57c-.78.62-1.91.56-2.62-.15l-1.201-1.2c-.79-.79-.79-2.1.05-2.84m9.09-13.2c.55 0 1 .45 1 1s-.45 1-1 1h-1.6l3.55 3.55 4.95-4.95a.996.996 0 1 1 1.41 1.41l-5.66 5.66a.995.995 0 0 1-1.41 0l-4.24-4.24v1.57c0 .55-.45 1-1 1s-1-.45-1-1v-4c0-.55.45-1 1-1z" /></svg>;
+export default NotificationsPhoneMissed;

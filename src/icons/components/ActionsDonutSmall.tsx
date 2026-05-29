@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsDonutSmall = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.873 2.2a.998.998 0 0 1 1.21.98v17.64c0 .64-.59 1.12-1.21.98-4.47-1-7.79-5.01-7.79-9.8s3.32-8.8 7.79-9.8M20.913 13c.63 0 1.12.6.98 1.22-.85 3.76-3.8 6.73-7.56 7.58-.63.14-1.22-.34-1.22-.98v-6.81c0-.55.45-1 1.01-1.01zm-7.8-9.82c0-.64.59-1.12 1.22-.98 3.75.85 6.7 3.81 7.55 7.57.14.63-.34 1.22-.98 1.22h-6.79c-.55 0-1-.45-1-1z" /></svg>;
+export default ActionsDonutSmall;

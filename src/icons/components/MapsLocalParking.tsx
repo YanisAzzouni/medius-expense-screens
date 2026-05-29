@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalParking = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.29 3c3.05 0 5.77 2.19 6.16 5.21A6.007 6.007 0 0 1 12.5 15h-3v4c0 1.1-.9 2-2 2s-2-.9-2-2V5c0-1.1.9-2 2-2zM9.5 7v4h3.2c1.1 0 2-.9 2-2s-.9-2-2-2z" /></svg>;
+export default MapsLocalParking;

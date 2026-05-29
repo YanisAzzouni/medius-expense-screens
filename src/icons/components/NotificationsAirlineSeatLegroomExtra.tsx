@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsAirlineSeatLegroomExtra = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.5 3.314v6h3.51c.76 0 1.45.45 1.79 1.13l3.41 6.98 1.09-.5c.74-.34 1.65-.09 2.03.63.4.76.069 1.7-.69 2.06l-1.95.89c-.99.45-2.151.04-2.631-.94l-2.56-5.25h-7c-1.66 0-3-1.34-3-3v-8zm-8 0c.55 0 1 .45 1 1v8c0 1.66 1.34 3 3 3h5c.55 0 1 .45 1 1s-.45 1-1 1h-5c-2.76 0-5-2.24-5-5v-8c0-.55.45-1 1-1" /></svg>;
+export default NotificationsAirlineSeatLegroomExtra;

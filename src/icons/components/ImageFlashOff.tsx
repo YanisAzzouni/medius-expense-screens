@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageFlashOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.84 3.943c.265 0 .519.105.706.292l14.32 14.32c.39.39.39 1.02-.01 1.41a.996.996 0 0 1-1.41 0l-3.44-3.44-2.65 4.55c-.26.44-.93.26-.93-.25v-7.15h-2c-.55 0-1-.45-1-1v-2.73l-4.29-4.3a.996.996 0 0 1 .705-1.702m11.845 6.732c.77 0 1.25.83.86 1.5l-.45.78-2.28-2.28zm.12-8c.75 0 1.23.78.9 1.45l-3.15 6.29-6.13-6.13v-.61c0-.55.45-1 1-1z" /></svg>;
+export default ImageFlashOff;

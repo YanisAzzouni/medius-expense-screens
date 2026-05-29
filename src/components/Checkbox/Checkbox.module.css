@@ -1,0 +1,129 @@
+/* ─── Wrapper (label) ─── */
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  user-select: none;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper_disabled {
+  cursor: not-allowed;
+}
+
+/* ─── Visually-hidden native input ─── */
+/* Kept in the DOM so focus, form submission, and keyboard work natively */
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ─── Custom visual box ─── */
+.box {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 80ms ease, border-color 80ms ease,
+    box-shadow 80ms ease;
+}
+
+/* Focus ring via sibling selector — works because .input is immediately before .box */
+.input:focus-visible + .box {
+  box-shadow: 0 0 0 1px var(--color-olive-500), 0 0 3px 0 var(--color-olive-600);
+}
+
+/* ──────────────────────────────────────────
+   Box variants
+   currentColor drives the SVG mark colour:
+   — white on coloured backgrounds
+   — chalk-400 on disabled
+────────────────────────────────────────── */
+
+/* Unchecked / Default */
+.box_unchecked {
+  background: var(--color-white);
+  border: 1px solid var(--color-chalk-300);
+  color: white;
+}
+.wrapper:not(.wrapper_disabled):hover .box_unchecked {
+  background: var(--color-olive-200);
+  border-color: var(--color-olive-600);
+}
+
+/* Unchecked / Danger */
+.box_unchecked_danger {
+  background: var(--color-red-200);
+  border: 1px solid var(--color-red-500);
+  color: white;
+}
+.wrapper:not(.wrapper_disabled):hover .box_unchecked_danger {
+  border-color: var(--color-red-600);
+}
+
+/* Unchecked / Disabled */
+.box_unchecked_disabled {
+  background: var(--color-chalk-100);
+  border: 1px solid var(--color-chalk-300);
+  color: var(--color-chalk-400);
+}
+
+/* Checked (or indeterminate) / Default */
+.box_checked {
+  background: var(--color-olive-700);
+  border: 1px solid transparent;
+  color: white;
+}
+.wrapper:not(.wrapper_disabled):hover .box_checked {
+  background: var(--color-olive-800);
+}
+
+/* Checked / Danger */
+.box_checked_danger {
+  background: var(--color-red-700);
+  border: 1px solid transparent;
+  color: white;
+}
+.wrapper:not(.wrapper_disabled):hover .box_checked_danger {
+  background: var(--color-red-800);
+}
+
+/* Checked / Disabled — chalk box, gray icon */
+.box_checked_disabled {
+  background: var(--color-chalk-100);
+  border: 1px solid var(--color-chalk-300);
+  color: var(--color-chalk-400);
+}
+
+/* ─── Label text ─── */
+.labelText {
+  font-size: var(--type-body-default-size);   /* 14px */
+  font-weight: var(--type-body-default-weight);
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-1000);
+}
+
+.wrapper_danger .labelText {
+  color: var(--color-red-600);
+}
+
+.wrapper_disabled .labelText {
+  color: var(--color-chalk-500);
+}

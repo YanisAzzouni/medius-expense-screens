@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceMobileFriendly = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.721 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2h-10c-1.1 0-2-.9-2-2v-2c0-.55.45-1 1-1s1 .45 1 1v1h10V4h-10v1c0 .55-.45 1-1 1s-1-.45-1-1V3c0-1.1.9-2 2-2zm-6.72 7.17a.9.9 0 0 1 1.27 1.27l-5.85 5.85a.996.996 0 0 1-1.41 0l-2.47-2.47a.9.9 0 0 1 1.27-1.27l1.92 1.92z" /></svg>;
+export default DeviceMobileFriendly;

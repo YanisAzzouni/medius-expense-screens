@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsYoutubeSearchedFor = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.276 14.473h-.8l-.27-.27a6.48 6.48 0 0 0 1.51-5.09c-.34-2.64-2.35-4.86-4.95-5.46-4.24-.98-7.99 2.35-7.99 6.32h-2.1a.5.5 0 0 0-.31.89l3.4 2.75c.19.2.51.21.71.01l2.9-2.79c.32-.31.1-.86-.35-.86h-2.25c0-2.49 2-4.48 4.46-4.5 2.44-.02 4.54 2.05 4.54 4.49 0 2.48-2.02 4.51-4.5 4.51-.45 0-.89-.07-1.3-.19-.34-.1-.71 0-.96.26-.53.53-.32 1.45.39 1.66.59.17 1.22.27 1.87.27 1.61 0 3.08-.59 4.22-1.57l.27.27v.79l4.27 4.25c.41.41 1.07.41 1.48 0s.41-1.08 0-1.49z" /></svg>;
+export default ActionsYoutubeSearchedFor;

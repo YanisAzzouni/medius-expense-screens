@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvFastRewind = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.81 7.108c.67-.46 1.58.01 1.58.82v8.14c0 .81-.92 1.29-1.58.82l-5.77-4.07a1 1 0 0 1 0-1.64zm-9.01 0c.67-.46 1.58.01 1.58.82v8.14c0 .81-.91 1.28-1.58.81l-5.77-4.07c-.56-.39-.56-1.23 0-1.63z" /></svg>;
+export default AvFastRewind;

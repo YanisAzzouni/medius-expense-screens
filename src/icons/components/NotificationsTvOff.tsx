@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsTvOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.415 2.646c.265 0 .518.106.705.293l18.14 18.15h-.03c.3.39.29.95-.07 1.31a.996.996 0 0 1-1.41 0l-1.29-1.29H3c-1.1 0-2-.9-2-2v-12c0-.94.65-1.72 1.53-1.94l-.82-.82a.996.996 0 0 1 .705-1.703M15.64 1.46c.2-.2.51-.2.71 0s.2.51 0 .71l-2.94 2.94H21a2 2 0 0 1 2 2v12c0 .26-.05.51-.15.73L21 17.988v-9.88c0-.55-.45-1-1-1h-9.88l-2-2h2.47l-2.94-2.94c-.2-.2-.2-.51 0-.71s.51-.2.71 0L12 5.099zM4 7.109c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12.46l-12-12z" /></svg>;
+export default NotificationsTvOff;

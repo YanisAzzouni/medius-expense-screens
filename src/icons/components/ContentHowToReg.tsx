@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentHowToReg = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.598 13.164a.995.995 0 0 1 1.334-.068l.086.078a.99.99 0 0 1 0 1.39l-5.14 5.18c-.39.39-1.03.39-1.42 0l-2.07-2.09a.99.99 0 0 1 0-1.39l.01-.01a.983.983 0 0 1 1.4 0l1.37 1.37zm-8.9.8c.32 0 .61.02 1 .06l-.84.82a2.997 2.997 0 0 0-.02 4.26l.86.86h-9v-2c0-2.66 5.33-4 8-4m0-10c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4" /></svg>;
+export default ContentHowToReg;

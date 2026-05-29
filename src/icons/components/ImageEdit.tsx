@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageEdit = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="m17.808 9.941-10.92 10.91a.47.47 0 0 1-.35.15h-3.04c-.28 0-.499-.22-.5-.5v-3.04q0-.21.151-.36l10.91-10.91zM17.664 3c.264 0 .518.105.705.293l2.34 2.34c.39.39.39 1.02 0 1.41l-1.83 1.829-3.75-3.75 1.83-1.83A1 1 0 0 1 17.664 3" /></svg>;
+export default ImageEdit;

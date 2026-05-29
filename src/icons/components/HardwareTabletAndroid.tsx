@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareTabletAndroid = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 0c1.66 0 3 1.34 3 3v18c0 1.66-1.34 3-3 3H6c-1.66 0-3-1.34-3-3V3c0-1.66 1.34-3 3-3zm-7.5 21c-.28 0-.5.22-.5.5s.22.5.5.5h3c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zM4.75 3v16h14.5V3z" /></svg>;
+export default HardwareTabletAndroid;

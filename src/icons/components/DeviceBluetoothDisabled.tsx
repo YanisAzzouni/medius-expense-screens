@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceBluetoothDisabled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5.41 4.404c.264 0 .518.105.704.292l13.18 13.19c.39.38.39 1.02.01 1.41a.995.995 0 0 1-1.41 0l-1.59-1.59-3.59 3.59c-.63.63-1.71.18-1.71-.71v-6.18l-3.89 3.89a.996.996 0 1 1-1.41-1.41l4.89-4.89-5.89-5.89a.996.996 0 0 1 .705-1.702m7.594 13.762 1.88-1.88-1.88-1.88zm-2-14.76c0-.89 1.08-1.33 1.71-.7l4.29 4.29c.39.4.39 1.03 0 1.42l-2.18 2.17-1.41-1.41 1.47-1.47-1.88-1.88v2.94l-2-2z" /></svg>;
+export default DeviceBluetoothDisabled;

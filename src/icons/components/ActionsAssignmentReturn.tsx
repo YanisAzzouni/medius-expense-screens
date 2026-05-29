@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAssignmentReturn = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c1.3 0 2.4.84 2.82 2H19c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h4.18C9.6 2.84 10.7 2 12 2M7.35 13.64c-.2.2-.2.51 0 .71L12 19v-3h4v-4h-4V9zM12 4c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1" /></svg>;
+export default ActionsAssignmentReturn;

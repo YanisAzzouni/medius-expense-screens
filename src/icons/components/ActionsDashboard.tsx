@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsDashboard = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10 15c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1zm10-4c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-8c0-.55.45-1 1-1zM10 3c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm10 0c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1z" /></svg>;
+export default ActionsDashboard;

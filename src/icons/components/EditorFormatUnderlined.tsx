@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorFormatUnderlined = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 19c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1-.45-1-1s.45-1 1-1zM16.75 3c.69 0 1.25.56 1.25 1.25v6.54c0 3.05-2.18 5.77-5.21 6.16A6.007 6.007 0 0 1 6 11V4.25a1.25 1.25 0 0 1 2.5 0V11c0 2.17 1.98 3.89 4.23 3.42 1.64-.33 2.77-1.85 2.77-3.52V4.25c0-.69.56-1.25 1.25-1.25" /></svg>;
+export default EditorFormatUnderlined;

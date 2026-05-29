@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationNoSim = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.975 3.546c.265 0 .518.106.705.293L20.73 19.9a.996.996 0 1 1-1.41 1.41l-1.17-1.17c-.29.16-.62.26-.97.26h-10c-1.1 0-2-.9-2-2V7.409l.12-.13-2.03-2.03a.995.995 0 0 1 .705-1.703M17.18 2.4c1.1 0 2 .9 2 2v11.11L8.13 4.459l2.06-2.06z" /></svg>;
+export default CommunicationNoSim;

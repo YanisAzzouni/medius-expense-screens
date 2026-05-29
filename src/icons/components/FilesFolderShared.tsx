@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const FilesFolderShared = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.17 4c.53 0 1.04.21 1.42.59L12 6h8c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-12c0-1.1.89-2 1.99-2zM15 14c-1.33 0-4 .67-4 2v1h8v-1c0-1.33-2.67-2-4-2m0-5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2" /></svg>;
+export default FilesFolderShared;

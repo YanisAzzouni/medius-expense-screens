@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsChromeReaderMode = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3.5c1.1 0 2 .9 2 2v13c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2v-13c0-1.1.9-2 2-2zm-9 15h8c.55 0 1-.45 1-1v-11c0-.55-.45-1-1-1h-8zm7.25-4.5c.41 0 .75.34.75.75s-.34.75-.75.75h-5.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75zm0-2.5c.41 0 .75.34.75.75s-.34.75-.75.75h-5.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75zm0-2.5c.41 0 .75.34.75.75s-.34.75-.75.75h-5.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" /></svg>;
+export default ActionsChromeReaderMode;

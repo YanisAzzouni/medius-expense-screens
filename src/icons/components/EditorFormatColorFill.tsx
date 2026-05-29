@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorFormatColorFill = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M22 19.797c1.1 0 2 .9 2 2s-.9 2-2 2H2c-1.1 0-2-.9-2-2s.9-2 2-2zM7.615.204c.265 0 .519.106.705.293l8.24 8.239c.59.59.59 1.54 0 2.12l-5.5 5.5c-.29.29-.68.44-1.06.44s-.77-.15-1.06-.44l-5.5-5.5c-.59-.58-.59-1.53 0-2.12l5.15-5.15-1.68-1.68A.995.995 0 0 1 7.615.204M19 11.297c.02.02 2 2.176 2 3.5 0 1.1-.9 2-2 2s-2-.9-2-2c0-1.324 1.98-3.48 2-3.5m-13.79-1.5h9.58L10 5.007z" /></svg>;
+export default EditorFormatColorFill;

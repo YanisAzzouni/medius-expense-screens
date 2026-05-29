@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSwapVert = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.997 10.005c.55 0 1 .45 1 1v6.01h1.8c.44 0 .669.54.349.85l-2.79 2.78c-.2.19-.51.19-.71 0l-2.79-2.78c-.32-.31-.1-.85.35-.85h1.79v-6.01c0-.55.45-1 1-1m-6.351-6.65c.19-.19.51-.19.7 0l2.79 2.79c.32.31.1.85-.35.85h-1.79v6.01c0 .55-.45 1-1 1s-1-.45-1-1v-6.01h-1.79c-.45 0-.67-.54-.35-.85z" /></svg>;
+export default ActionsSwapVert;

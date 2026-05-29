@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsFastfood = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.052 21c.55 0 1 .45 1 1s-.45 1-1 1h-13c-.55 0-1-.45-1-1s.45-1 1-1zm2-20c.55 0 1 .45 1 1v3h3.9c.59 0 1.05.51.99 1.1l-1.54 15.43c-.1.82-.79 1.47-1.63 1.47h-1.7l-.02-8c0-4.23-3.1-6.84-6.78-7.69l-.12-1.21c-.05-.59.41-1.1 1-1.1h3.9V2c0-.55.45-1 1-1m-2 16c.55 0 1 .45 1 1s-.45 1-1 1h-13c-.55 0-1-.45-1-1s.45-1 1-1zm-6.5-8.01c3.37 0 6.74 1.62 7.39 4.85.12.6-.37 1.16-.99 1.16h-12.8c-.61 0-1.11-.56-.99-1.16.66-3.23 4.02-4.85 7.39-4.85" /></svg>;
+export default MapsFastfood;

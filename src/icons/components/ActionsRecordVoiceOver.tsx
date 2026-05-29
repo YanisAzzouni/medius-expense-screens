@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsRecordVoiceOver = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.002 15.226c2.67 0 8 1.34 8 4v1c0 .55-.45 1-1 1h-14c-.55 0-1-.45-1-1v-1c0-2.66 5.33-4 8-4m10.18-12.11c.49-.49 1.33-.45 1.75.1 2.76 3.65 2.75 8.48 0 12.02-.42.55-1.25.59-1.74.1l-.03-.03c-.39-.39-.46-1.01-.14-1.46 1.99-2.84 2-6.51.03-9.25-.33-.46-.27-1.08.13-1.48m-10.18 2.11a4 4 0 1 1 0 8 4 4 0 0 1 0-8m6.71 1.4c.59-.59 1.59-.45 1.97.29.78 1.51.78 3.21.02 4.66-.38.73-1.37.85-1.95.27l-.03-.03c-.36-.36-.44-.89-.25-1.36.32-.79.32-1.67 0-2.46-.19-.47-.11-1.01.23-1.36z" /></svg>;
+export default ActionsRecordVoiceOver;

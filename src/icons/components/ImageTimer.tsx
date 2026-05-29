@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageTimer = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.001 4.5c2.12 0 4.07.74 5.62 1.98l.75-.75a.993.993 0 0 1 1.4 0l.01.01c.39.39.38 1.02 0 1.4l-.75.75a8.994 8.994 0 0 1-7.03 14.61c-5.06 0-9.13-4.16-9-9.24.12-4.8 4.2-8.76 9-8.76m0 2c-3.87 0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7m0 2c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1s-1-.45-1-1v-4c0-.55.45-1 1-1m2-7c.55 0 1 .45 1 1s-.45 1-1 1h-4c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default ImageTimer;

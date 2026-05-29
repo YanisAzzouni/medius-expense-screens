@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvSortByAlpha = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13.024 21.35c-.2.2-.51.2-.71 0l-1.97-1.98h4.66zm7.681-15.07c.8 0 1.28.91.82 1.57l-5.72 8.29h5.33c.44 0 .8.36.78.81 0 .43-.35.79-.79.79h-6.72c-.8 0-1.28-.91-.82-1.57l5.73-8.28h-5.09a.8.8 0 0 1-.79-.8v-.01c0-.44.35-.8.79-.8zm-13.7-.01c.49 0 .94.3 1.12.76l3.73 9.54a.848.848 0 0 1-.79 1.16c-.35 0-.67-.22-.8-.56l-.71-1.9h-5.11l-.71 1.9c-.13.33-.45.55-.8.55-.6 0-1.01-.6-.79-1.16l3.74-9.53c.18-.46.63-.76 1.12-.76m-1.95 7.37h3.88l-1.94-5.18zm7.25-10.99c.2-.2.51-.2.71 0l2 2.01h-4.72z" /></svg>;
+export default AvSortByAlpha;

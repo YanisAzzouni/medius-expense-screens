@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvMic = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.91 11.5c.609 0 1.099.54 1 1.14-.49 3-2.891 5.35-5.911 5.78v2.08c0 .55-.45 1-1 1s-1-.45-1-1v-2.08a6.99 6.99 0 0 1-5.91-5.78c-.09-.6.39-1.14 1-1.14.49 0 .9.36.98.85.41 2.35 2.46 4.15 4.93 4.15s4.52-1.8 4.93-4.15c.08-.49.49-.85.98-.85m-5.911-9c1.66 0 3 1.34 3 3v6c0 1.66-1.34 3-3 3s-3-1.34-3-3v-6c0-1.66 1.34-3 3-3" /></svg>;
+export default AvMic;

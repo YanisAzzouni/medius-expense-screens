@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationPhonelinkRing = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.014 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2h-10c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2zm-10 19h10V4h-10zm15.59-11.8c.3-.3.78-.26 1.04.06 1.79 2.2 1.79 5.26-.01 7.39-.27.31-.74.34-1.03.05l-.05-.05a.71.71 0 0 1-.05-.92c1.27-1.7 1.28-3.93.02-5.57-.21-.28-.2-.68.05-.93zm-1.576 1.974c.218.034.406.17.506.366.5.92.5 1.97.01 2.86-.22.4-.77.47-1.09.15l-.08-.08c-.2-.2-.26-.5-.15-.76.21-.49.21-1.03 0-1.52a.69.69 0 0 1 .15-.76l.06-.06a.69.69 0 0 1 .594-.196" /></svg>;
+export default CommunicationPhonelinkRing;

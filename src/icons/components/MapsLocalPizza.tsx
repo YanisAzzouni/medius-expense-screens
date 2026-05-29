@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalPizza = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.52c2.99 0 5.73 1.09 7.83 2.88.71.6.86 1.65.4 2.46l-7.36 13.11a.997.997 0 0 1-1.74 0L3.77 7.86c-.46-.81-.31-1.85.4-2.46C6.28 3.6 9.01 2.52 12 2.52m0 9c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2m-3-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2" /></svg>;
+export default MapsLocalPizza;

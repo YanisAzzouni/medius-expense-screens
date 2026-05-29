@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAccessibilityNew = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.51 6.24a1.032 1.032 0 0 1 .48 2.01c-1.6.36-3.34.61-4.99.75v12c0 .55-.45 1-1 1s-1-.45-1-1v-5h-2v5c0 .55-.45 1-1 1s-1-.45-1-1V9a38 38 0 0 1-5-.75c-.55-.13-.89-.7-.75-1.26.14-.55.69-.87 1.24-.75C6.87 6.77 9.52 7 12 7s5.13-.23 7.51-.76M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2" /></svg>;
+export default ActionsAccessibilityNew;

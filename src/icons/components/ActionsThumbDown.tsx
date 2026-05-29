@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsThumbDown = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.158 2.308c1.1 0 2 .9 2 2v9.99c0 .53-.21 1.04-.58 1.41l-5.53 5.54c-.58.59-1.52.59-2.11.01-.36-.36-.51-.87-.41-1.37l.95-4.58h-5.65c-2.15 0-3.6-2.2-2.75-4.18l3.26-7.61a1.99 1.99 0 0 1 1.83-1.21zm6.01 0c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2s-2-.9-2-2v-8c0-1.1.9-2 2-2" /></svg>;
+export default ActionsThumbDown;

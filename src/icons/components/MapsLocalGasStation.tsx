@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalGasStation = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.75 2.999c1.1 0 2 .9 2 2v7h1c1.1 0 2 .9 2 2v4.5c0 .55.45 1 1 1s1-.45 1-1v-7.21c-.39.17-.8.25-1.27.2-1.1-.12-2.04-1.01-2.2-2.11-.18-1.24.53-2.31 1.58-2.71l-1.58-1.58a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l3.19 3.19-.01.01c.45.45.73 1.08.73 1.77v9.5a2.5 2.5 0 0 1-2.76 2.49c-1.3-.13-2.24-1.32-2.24-2.63v-4.86h-1.5v6.5c0 .55-.45 1-1 1h-8c-.55 0-1-.45-1-1v-15c0-1.1.9-2 2-2zm-5 2c-.55 0-1 .45-1 1v4h6v-4c0-.55-.45-1-1-1zm11 3c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1" /></svg>;
+export default MapsLocalGasStation;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationPrintDisabled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.206 1.242c.265 0 .519.106.705.293l19.52 19.52a.996.996 0 1 1-1.41 1.41l-2.83-2.83c-.36.36-.85.58-1.4.58h-8c-1.1 0-2-.9-2-2v-2h-2c-1.1 0-2-.9-2-2v-4c0-1.65 1.33-2.99 2.98-3l-4.27-4.27a.995.995 0 0 1 .705-1.703m6.585 15.973c0 .55.45 1 1 1h6c.27 0 .51-.11.7-.28l-4.72-4.72h-2.98zm11-10c1.66 0 3 1.34 3 3v4c0 1.1-.9 2-2 2h-.37l-9-9zm0 2c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m-2-7c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1h-7.37l-3.48-3.49c.17-.3.48-.51.85-.51z" /></svg>;
+export default CommunicationPrintDisabled;

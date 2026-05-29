@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentArchive = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 3c.47 0 .88.21 1.15.55l1.39 1.68c.29.34.46.79.46 1.27V19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V6.5c0-.48.17-.93.46-1.27l1.38-1.68C5.12 3.21 5.53 3 6 3zm-8 9H6.5l5.15 5.15c.19.19.51.19.7 0L17.5 12H14v-2h-4zM5.93 4l-.81 1h13.75l-.94-1z" /></svg>;
+export default ContentArchive;

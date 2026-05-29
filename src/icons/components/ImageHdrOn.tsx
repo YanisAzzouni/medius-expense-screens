@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageHdrOn = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M7.25 9c.41 0 .75.34.75.75v4.5c0 .41-.34.75-.75.75s-.75-.34-.75-.75V12.5h-2v1.75c0 .41-.34.75-.75.75S3 14.66 3 14.25v-4.5c0-.41.34-.75.75-.75s.75.34.75.75V11h2V9.75c0-.41.34-.75.75-.75M13 9c.82 0 1.5.68 1.5 1.5v3c0 .82-.68 1.5-1.5 1.5h-3c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zm6.5 0c.83 0 1.5.67 1.5 1.5v1c0 .6-.4 1.1-.9 1.4l.49 1.14a.693.693 0 0 1-1.27.55L18.6 13h-1.1v1.25c0 .41-.34.75-.75.75s-.75-.34-.75-.75V10c0-.55.45-1 1-1zM11 10.5v3h2v-3zm6.5 1h2v-1h-2z" /></svg>;
+export default ImageHdrOn;

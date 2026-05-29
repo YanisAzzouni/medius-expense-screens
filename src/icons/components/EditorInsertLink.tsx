@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorInsertLink = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.045 7c.52 0 .95.43.95.95s-.43.95-.95.95h-2.93c-1.5 0-2.88 1.01-3.16 2.48a3.11 3.11 0 0 0 3.04 3.72h3.05c.52 0 .95.43.95.95s-.43.95-.95.95h-3.05c-2.92 0-5.26-2.51-4.97-5.49C2.277 8.91 4.606 7 7.216 7zm6.73 0c2.61 0 4.951 1.91 5.201 4.51a5.01 5.01 0 0 1-4.98 5.49h-3.05c-.52 0-.95-.43-.95-.95s.43-.95.95-.95h3.05a3.11 3.11 0 0 0 3.04-3.72c-.28-1.47-1.66-2.48-3.16-2.48h-2.93c-.52 0-.95-.43-.95-.95s.43-.95.95-.95zm-1.78 4c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default EditorInsertLink;

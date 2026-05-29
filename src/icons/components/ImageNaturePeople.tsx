@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageNaturePeople = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.975 2.086a6.994 6.994 0 0 1 7.11 7 7 7 0 0 1-6.17 6.95v3.88h2c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1v-4h-.5c-.28 0-.5-.22-.5-.5v-3.5c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v3.5c0 .28-.22.5-.5.5h-.5v3h8.01v-3.94a6.986 6.986 0 0 1-5.83-6.701c-.11-3.82 3.05-7.13 6.88-7.19m-10.56 5.83a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" /></svg>;
+export default ImageNaturePeople;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentDrafts = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.99 2.934c.62-.37 1.4-.37 2.02 0l8.04 4.71c.57.35.94.98.94 1.7l.01 10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-10c0-.72.38-1.35.95-1.7zm2.02 2c-.62-.37-1.4-.37-2.02 0l-7.25 4.25 7.2 4.5c.65.4 1.47.4 2.12 0l7.2-4.5z" /></svg>;
+export default ContentDrafts;

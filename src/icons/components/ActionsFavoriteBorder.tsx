@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsFavoriteBorder = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.34 4.167c2.64-1.81 5.9-.96 7.66 1.1 1.76-2.06 5.02-2.9 7.66-1.1A5.47 5.47 0 0 1 22 8.447c.13 3.88-3.3 6.99-8.55 11.75l-.11.1c-.76.7-1.93.7-2.69.01l-.1-.09C5.3 15.448 1.86 12.338 2 8.458c.06-1.71.94-3.33 2.34-4.29m12.16 1.01c-1.54 0-3.04.99-3.56 2.36h-1.87c-.53-1.37-2.03-2.36-3.57-2.36-2 0-3.5 1.5-3.5 3.5 0 2.89 3.14 5.74 7.9 10.05l.1.1.1-.1c4.76-4.31 7.9-7.16 7.9-10.05 0-2-1.5-3.5-3.5-3.5" /></svg>;
+export default ActionsFavoriteBorder;

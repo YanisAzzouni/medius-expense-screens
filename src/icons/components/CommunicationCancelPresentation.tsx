@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationCancelPresentation = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM4 5c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm10.585 3.407a1.005 1.005 0 0 1 .715 1.703L13.41 12l1.89 1.89a.996.996 0 1 1-1.41 1.41L12 13.41l-1.89 1.89a.996.996 0 1 1-1.41-1.41L10.59 12 8.7 10.11a.996.996 0 1 1 1.41-1.41L12 10.59l1.88-1.89a1 1 0 0 1 .705-.293" /></svg>;
+export default CommunicationCancelPresentation;

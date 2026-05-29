@@ -1,0 +1,237 @@
+/* ─── Base ─── */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-olive-500);
+  outline-offset: 2px;
+}
+
+/* ─── Sizes ─── */
+.sizeDefault {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+}
+
+.sizeSmall {
+  height: 24px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Icon-only (square) ─── */
+.iconOnly.sizeDefault {
+  width: 40px;
+  padding: 0;
+}
+
+.iconOnly.sizeSmall {
+  width: 24px;
+  padding: 0;
+}
+
+/* ─── Primary / Default ─── */
+.primary_default {
+  background: var(--color-olive-700);
+  color: var(--color-white);
+}
+.primary_default:hover:not(:disabled):not(.loading) {
+  background: var(--color-olive-800);
+}
+.primary_default:active:not(:disabled):not(.loading) {
+  background: var(--color-olive-900);
+}
+.primary_default.loading {
+  background: var(--color-olive-900);
+}
+
+/* ─── Primary / Danger ─── */
+.primary_danger {
+  background: var(--color-red-700);
+  color: var(--color-white);
+}
+.primary_danger:hover:not(:disabled):not(.loading) {
+  background: var(--color-red-800);
+}
+.primary_danger:active:not(:disabled):not(.loading) {
+  background: var(--color-red-900);
+}
+.primary_danger.loading {
+  background: var(--color-red-900);
+}
+.primary_danger:focus-visible {
+  outline-color: var(--color-red-400);
+}
+
+/* ─── Primary / AI ─── */
+.primary_ai {
+  background: var(--color-purple-600);
+  color: var(--color-white);
+}
+.primary_ai:hover:not(:disabled):not(.loading) {
+  background: var(--color-purple-700);
+}
+.primary_ai:active:not(:disabled):not(.loading) {
+  background: var(--color-purple-800);
+}
+.primary_ai.loading {
+  background: var(--color-purple-800);
+}
+.primary_ai:focus-visible {
+  outline-color: var(--color-purple-400);
+}
+
+/* ─── Secondary / Default ─── */
+.secondary_default {
+  background: transparent;
+  border: 1px solid var(--color-chalk-300);
+  color: var(--color-chalk-900);
+}
+.secondary_default:hover:not(:disabled):not(.loading) {
+  background: var(--color-chalk-100);
+}
+.secondary_default:active:not(:disabled):not(.loading) {
+  background: var(--color-chalk-200);
+}
+.secondary_default.loading {
+  background: var(--color-chalk-100);
+}
+
+/* ─── Secondary / Danger ─── */
+.secondary_danger {
+  background: transparent;
+  border: 1px solid var(--color-red-300);
+  color: var(--color-red-700);
+}
+.secondary_danger:hover:not(:disabled):not(.loading) {
+  background: var(--color-red-100);
+}
+.secondary_danger:active:not(:disabled):not(.loading) {
+  background: var(--color-red-200);
+}
+.secondary_danger:focus-visible {
+  outline-color: var(--color-red-400);
+}
+
+/* ─── Secondary / AI ─── */
+.secondary_ai {
+  background: var(--color-purple-600);
+  border: none;
+  color: var(--color-white);
+}
+.secondary_ai:hover:not(:disabled):not(.loading) {
+  background: var(--color-purple-700);
+}
+.secondary_ai:active:not(:disabled):not(.loading) {
+  background: var(--color-purple-800);
+}
+.secondary_ai:focus-visible {
+  outline-color: var(--color-purple-400);
+}
+
+/* ─── Tertiary / Default ─── */
+.tertiary_default {
+  background: transparent;
+  color: var(--color-olive-500);
+}
+.tertiary_default:hover:not(:disabled):not(.loading) {
+  background: var(--color-olive-100);
+}
+.tertiary_default:active:not(:disabled):not(.loading) {
+  background: var(--color-olive-200);
+}
+
+/* ─── Tertiary / Danger ─── */
+.tertiary_danger {
+  background: transparent;
+  color: var(--color-red-500);
+}
+.tertiary_danger:hover:not(:disabled):not(.loading) {
+  background: var(--color-red-100);
+}
+.tertiary_danger:active:not(:disabled):not(.loading) {
+  background: var(--color-red-200);
+}
+.tertiary_danger:focus-visible {
+  outline-color: var(--color-red-400);
+}
+
+/* ─── Tertiary / AI ─── */
+.tertiary_ai {
+  background: transparent;
+  color: var(--color-purple-500);
+}
+.tertiary_ai:hover:not(:disabled):not(.loading) {
+  background: var(--color-purple-100);
+}
+.tertiary_ai:active:not(:disabled):not(.loading) {
+  background: var(--color-purple-200);
+}
+.tertiary_ai:focus-visible {
+  outline-color: var(--color-purple-400);
+}
+
+/* ─── Disabled (all variants) ─── */
+.button:disabled {
+  cursor: not-allowed;
+  background: var(--color-chalk-200) !important;
+  border-color: transparent !important;
+  color: var(--color-chalk-400) !important;
+}
+
+/* Secondary disabled keeps a faint border */
+.secondary_default:disabled,
+.secondary_danger:disabled {
+  border-color: var(--color-chalk-200) !important;
+}
+
+/* ─── Loading ─── */
+.loading {
+  cursor: wait;
+}
+
+/* ─── Icon slot ─── */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+/* ─── Spinner ─── */
+.spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

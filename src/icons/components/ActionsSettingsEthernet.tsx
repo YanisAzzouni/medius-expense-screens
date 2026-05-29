@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsEthernet = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5.59 6.25A1 1 0 0 1 7 6.12a1 1 0 0 1 .13 1.41L3.42 12l3.71 4.47A1 1 0 0 1 7 17.88a1 1 0 0 1-1.41-.13l-4.24-5.11a1 1 0 0 1 0-1.28zM17 6.12a1.01 1.01 0 0 1 1.41.13l4.24 5.11c.31.37.31.91 0 1.28l-4.24 5.11a1 1 0 0 1-1.41.13c-.42-.35-.48-.98-.13-1.41L20.58 12l-3.71-4.47A1 1 0 0 1 17 6.12M9 13H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z" /></svg>;
+export default ActionsSettingsEthernet;

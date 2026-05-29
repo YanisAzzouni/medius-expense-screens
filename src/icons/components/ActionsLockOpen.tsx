@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsLockOpen = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 1.5c2.76 0 5 2.24 5 5v2h1c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2v-10c0-1.1.9-2 2-2h9v-2c0-1.65-1.35-3-3-3-1.37 0-2.56.93-2.9 2.25a1 1 0 0 1-1.22.72.996.996 0 0 1-.72-1.22A4.996 4.996 0 0 1 12 1.5m-5 9c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-8c0-.55-.45-1-1-1zm5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2" /></svg>;
+export default ActionsLockOpen;

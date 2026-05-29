@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPictureInPictureAlt = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1.1 0 2 .88 2 1.98V19c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V4.98C1 3.88 1.9 3 3 3zM4 4.97c-.55 0-1 .45-1 1v12.05c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V5.97c0-.55-.45-1-1-1zM18 11c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-6c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1z" /></svg>;
+export default ActionsPictureInPictureAlt;

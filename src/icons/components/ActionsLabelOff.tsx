@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsLabelOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.636 3.499c.39-.38 1.02-.37 1.4.01l15.56 15.57a.996.996 0 1 1-1.41 1.41l-1.29-1.29h-12c-1.1 0-2-.9-2-2v-10c0-.55.23-1.05.59-1.41l-.87-.87a.99.99 0 0 1 .02-1.42m13.26 1.7c.67 0 1.27.33 1.63.84l3.96 5.58c.25.35.25.81 0 1.16l-2.23 3.15-10.7-10.73z" /></svg>;
+export default ActionsLabelOff;

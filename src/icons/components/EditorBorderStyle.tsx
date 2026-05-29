@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorBorderStyle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 3c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1 .45-1 1v14c0 .55-.45 1-1 1s-1-.45-1-1V5c0-1.1.9-2 2-2zM9 21H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm0-4h-2v-2h2zm0-4h-2v-2h2zm0-6v2h-2V7z" /></svg>;
+export default EditorBorderStyle;

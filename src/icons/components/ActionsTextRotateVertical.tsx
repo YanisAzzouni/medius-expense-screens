@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsTextRotateVertical = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.137 4.105c.55 0 1 .45 1 1v12h.79c.449 0 .67.54.35.85l-1.79 1.79c-.19.2-.51.2-.7 0l-1.79-1.79c-.32-.31-.1-.85.35-.85h.79v-12c0-.56.45-1 1-1m9 1c.46 0 .87.27 1.06.69l3.88 8.97a.96.96 0 0 1-.88 1.34c-.39 0-.74-.24-.89-.6l-.66-1.6h-5l-.66 1.6c-.15.36-.5.6-.89.6a.967.967 0 0 1-.89-1.34l3.88-8.97c.18-.42.59-.69 1.05-.69m-1.87 7h3.74l-1.87-5.02z" /></svg>;
+export default ActionsTextRotateVertical;

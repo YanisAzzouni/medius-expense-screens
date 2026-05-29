@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsInvertColors = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.005 2.554c.264 0 .518.105.705.293l4.95 4.949c3.12 3.12 3.12 8.19 0 11.31a7.98 7.98 0 0 1-5.66 2.34c-2.05 0-4.1-.78-5.66-2.34-3.12-3.12-3.12-8.19 0-11.31l4.96-4.95a1 1 0 0 1 .705-.292M7.76 9.216A5.93 5.93 0 0 0 6 13.456c0 1.6.62 3.1 1.76 4.24a5.93 5.93 0 0 0 4.24 1.76V4.966z" /></svg>;
+export default ActionsInvertColors;

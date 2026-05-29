@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const PlacesKitchen = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 2.01c1.1 0 2 .88 2 1.99v16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4a2 2 0 0 1 2-2zM7 10.98c-.55 0-1 .45-1 1V19c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-7.02c0-.55-.45-1-1-1zM9 12c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1s-1-.45-1-1v-3c0-.55.45-1 1-1M7 4c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zm2 1c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1s-1-.45-1-1V6c0-.55.45-1 1-1" /></svg>;
+export default PlacesKitchen;

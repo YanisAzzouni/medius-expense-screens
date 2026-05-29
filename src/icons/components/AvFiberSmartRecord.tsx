@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvFiberSmartRecord = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9 4a8 8 0 1 1 0 16A8 8 0 0 1 9 4m8 1.55c0-.68.71-1.1 1.32-.82A7.99 7.99 0 0 1 23 12c0 3.23-1.92 6.01-4.68 7.26-.61.29-1.32-.14-1.32-.82v-.18c0-.37.23-.68.57-.84A5.99 5.99 0 0 0 21 12c0-2.39-1.4-4.46-3.43-5.42-.34-.16-.57-.48-.57-.85z" /></svg>;
+export default AvFiberSmartRecord;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AlertErrorFilled = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.325 3c.26 0 .52.11.7.29l4.68 4.68c.18.19.29.44.29.71v6.64c0 .27-.1.52-.29.71l-4.68 4.68c-.19.18-.44.29-.71.29h-6.63c-.26 0-.52-.11-.71-.3l-4.68-4.68c-.18-.19-.29-.44-.29-.71V8.68c0-.26.11-.52.29-.7l4.69-4.69c.18-.18.44-.29.7-.29zm-3.32 11.7c-.72 0-1.3.58-1.3 1.3s.58 1.3 1.3 1.3 1.3-.58 1.3-1.3-.58-1.3-1.3-1.3m0-7.7c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1V8c0-.55-.45-1-1-1" /></svg>;
+export default AlertErrorFilled;

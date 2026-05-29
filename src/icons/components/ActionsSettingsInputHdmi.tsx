@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsInputHdmi = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16 2c1.1 0 2 .9 2 2v3c.55 0 1 .45 1 1v4.7c0 .19-.06.39-.17.55L16 19v2c0 .55-.45 1-1 1H9c-.55 0-1-.45-1-1v-2l-2.83-5.75A.97.97 0 0 1 5 12.7V8c0-.55.45-1 1-1V4c0-1.1.9-2 2-2zM8 4v3h2V5.5c0-.28.22-.5.5-.5s.5.22.5.5V7h2V5.5c0-.28.22-.5.5-.5s.5.22.5.5V7h2V4z" /></svg>;
+export default ActionsSettingsInputHdmi;

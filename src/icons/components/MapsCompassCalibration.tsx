@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsCompassCalibration = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.006 13a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0-10c3.51 0 6.72 1.28 9.18 3.4.45.38.49 1.06.07 1.48l-3.6 3.6a.98.98 0 0 1-1.31.08 7.05 7.05 0 0 0-8.68.01c-.4.31-.96.28-1.32-.08l-3.6-3.6c-.42-.42-.38-1.1.06-1.48C5.285 4.29 8.495 3 12.005 3" /></svg>;
+export default MapsCompassCalibration;

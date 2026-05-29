@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImagePhotoLibrary = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3 6c.55 0 1 .45 1 1v12c0 .55.45 1 1 1h12c.55 0 1 .45 1 1s-.45 1-1 1H4c-1.1 0-2-.9-2-2V7c0-.55.45-1 1-1m17-4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm-3.61 9.49a.5.5 0 0 0-.78 0l-2.58 3.22-1.63-2.18c-.2-.26-.6-.26-.8 0l-2 2.67a.5.5 0 0 0 .4.8h9.96c.42 0 .65-.48.39-.81z" /></svg>;
+export default ImagePhotoLibrary;

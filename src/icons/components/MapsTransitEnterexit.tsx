@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsTransitEnterexit = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.794 17.703h-6.5c-1.1 0-2-.9-2-2v-6.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v3.27l5.95-5.77c.57-.55 1.48-.54 2.04.02s.56 1.47.01 2.04l-5.85 5.94h3.35c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5" /></svg>;
+export default MapsTransitEnterexit;

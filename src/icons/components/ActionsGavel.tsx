@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsGavel = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.808 20.587c.55 0 1 .45 1 1s-.45 1-1 1h-10c-.55 0-1-.45-1-1s.45-1 1-1zm8.8-3.03c.78.78.78 2.05 0 2.83s-2.05.78-2.83 0L6.047 7.657l2.83-2.83zm-11.31-2.83-1.41 1.41c-.78.78-2.05.78-2.83 0l-2.83-2.83c-.78-.78-.78-2.05 0-2.83l1.41-1.41zm1.41-12.72c.78-.79 2.05-.79 2.83-.01l2.83 2.83c.78.78.78 2.05 0 2.83l-1.42 1.42-5.65-5.66z" /></svg>;
+export default ActionsGavel;

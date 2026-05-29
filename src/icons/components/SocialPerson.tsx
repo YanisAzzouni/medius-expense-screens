@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialPerson = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 14c2.67 0 8 1.34 8 4v1c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-1c0-2.66 5.33-4 8-4m0-10c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4" /></svg>;
+export default SocialPerson;

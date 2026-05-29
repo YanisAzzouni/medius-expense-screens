@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsMapAdd = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M8.355 3.22a2 2 0 0 1 1.3.01l5 1.75c.23.08.47.282.69.202 0 .451.366.818.818.818H18v2a1 1 0 0 0 1 1h2l-.005 8.54c0 .86-.55 1.63-1.36 1.9l-3.99 1.34c-.42.14-.88.14-1.3-.01l-5-1.75a.97.97 0 0 0-.69.01l-2.93 1.14c-1.31.51-2.72-.45-2.72-1.86V6.46c0-.86.55-1.62 1.36-1.9zm.65 13.56 6 2.11V7.22l-6-2.11zM20 0c.55 0 1 .45 1 1v2h2c.55 0 1 .45 1 1s-.45 1-1 1h-2v2c0 .55-.45 1-1 1s-1-.45-1-1V5h-2c-.55 0-1-.45-1-1s.45-1 1-1h2V1c0-.55.45-1 1-1" /></svg>;
+export default MapsMapAdd;

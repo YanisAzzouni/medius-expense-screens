@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsFace = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2M9.26 5.77c-.98 2.39-2.85 4.32-5.21 5.37-.03.28-.05.57-.05.86 0 4.41 3.59 8 8 8s8-3.59 8-8c0-.79-.12-1.55-.33-2.26A9.975 9.975 0 0 1 9.26 5.77M9 11.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5m6 0a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5" /></svg>;
+export default ActionsFace;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsViewStream = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.5 12.5c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-15c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1zm0-7c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-15c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1z" /></svg>;
+export default ActionsViewStream;

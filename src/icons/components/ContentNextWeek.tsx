@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentNextWeek = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14 2.5c.55 0 1.05.22 1.41.59.37.36.59.86.59 1.41v2h4c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-11c0-1.1.9-2 2-2h4v-2c0-1.1.9-2 2-2zm-2.5 8a.7.7 0 0 0-1 0 .7.7 0 0 0 0 1L13 14l-2.5 2.5a.7.7 0 0 0 0 1 .7.7 0 0 0 1 0l3.15-3.14c.2-.2.2-.51 0-.71zm-1.5-4h4v-2h-4z" /></svg>;
+export default ContentNextWeek;

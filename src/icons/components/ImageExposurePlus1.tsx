@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageExposurePlus1 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 18.5h-2V7.88L15 8.9V7.2l4.7-1.7h.3zM9 7.5c.55 0 1 .45 1 1v3h3c.55 0 1 .45 1 1s-.45 1-1 1h-3v3c0 .55-.45 1-1 1s-1-.45-1-1v-3H5c-.55 0-1-.45-1-1s.45-1 1-1h3v-3c0-.55.45-1 1-1" /></svg>;
+export default ImageExposurePlus1;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageBrightness3 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.793 10.37c-.75-4.76-5-8.35-9.82-8.37-.49 0-.97.03-1.44.1-.5.07-.6.73-.14.96a9.97 9.97 0 0 1 5.53 8.94c0 3.92-2.25 7.31-5.53 8.95-.45.23-.36.89.14.96q.705.09 1.44.09c4.82-.02 9.07-3.61 9.82-8.37.09-.55.11-1.09.11-1.63s-.02-1.08-.11-1.63" /></svg>;
+export default ImageBrightness3;

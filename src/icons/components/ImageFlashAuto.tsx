@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageFlashAuto = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.048 2.175c.72 0 1.21.74.92 1.41l-3.38 7.59h2.26c.77 0 1.25.83.86 1.5l-5.19 8.9c-.26.44-.93.26-.93-.25v-7.15h-2c-.55 0-1-.45-1-1v-10c0-.55.45-1 1-1zm6.54 0c.6 0 1.13.38 1.33.95l2.44 6.86a.89.89 0 0 1-.84 1.19c-.38 0-.71-.24-.84-.6l-.49-1.4h-3.2l-.49 1.4c-.12.36-.46.6-.84.6a.903.903 0 0 1-.85-1.2l2.44-6.86c.21-.56.74-.94 1.34-.94m-1.15 5.65h2.3l-1.15-3.65z" /></svg>;
+export default ImageFlashAuto;

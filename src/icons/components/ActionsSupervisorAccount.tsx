@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSupervisorAccount = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9 13c.66 0 1.5.1 2.37.28C9.33 14.41 9 15.9 9 16.75V19H3c-.55 0-1-.45-1-1v-1.5C2 14.17 6.67 13 9 13m7.5 1c1.83 0 5.5.92 5.5 2.75V18c0 .55-.45 1-1 1h-9c-.55 0-1-.45-1-1v-1.25c0-1.83 3.67-2.75 5.5-2.75m0-7c1.38 0 2.49 1.12 2.49 2.5S17.88 12 16.5 12a2.5 2.5 0 0 1 0-5M9 5c1.66 0 2.99 1.34 2.99 3S10.66 11 9 11 6 9.66 6 8s1.34-3 3-3" /></svg>;
+export default ActionsSupervisorAccount;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvMusicVideo = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM4 5c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm12 1c.55 0 1 .45 1 1s-.45 1-1 1h-2v7.03a3 3 0 0 1-3.55 2.92c-1.21-.21-2.2-1.2-2.4-2.41A2.995 2.995 0 0 1 11 12c.35 0 .69.07 1 .18V8c0-1.1.9-2 2-2z" /></svg>;
+export default AvMusicVideo;

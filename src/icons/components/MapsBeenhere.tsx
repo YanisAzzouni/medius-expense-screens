@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsBeenhere = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 1.103c1.1 0 2 .9 2 2v12.93c0 .69-.35 1.3-.88 1.66l-7.56 5.04c-.34.22-.77.22-1.11 0l-7.57-5.04c-.53-.36-.88-.97-.88-1.66l.01-12.93c0-1.1.89-2 1.99-2zm-.71 5.29a.996.996 0 0 0-1.41 0L10 13.273l-2.88-2.88a.996.996 0 1 0-1.41 1.41l3.59 3.59c.39.39 1.02.39 1.41 0l7.59-7.59a.996.996 0 0 0-.01-1.41" /></svg>;
+export default MapsBeenhere;

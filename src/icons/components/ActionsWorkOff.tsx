@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsWorkOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.039 1.956c.264 0 .518.106.705.293l18.33 18.34a.997.997 0 1 1-1.41 1.41l-1.29-1.29H3.634c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h.74l-2.04-2.05a.996.996 0 0 1 .705-1.703m10.595-.247c1.11 0 2 .89 2 2v2h4c1.11 0 2 .89 2 2v9.6l-11.6-11.6h3.6v-2h-4v1.6l-1.96-1.96c.16-.94.97-1.64 1.96-1.64z" /></svg>;
+export default ActionsWorkOff;

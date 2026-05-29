@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsPhoneForwarded = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5.851 3.67c1.02 0 1.87.759 1.99 1.769l.29 2.52c.07.61-.14 1.21-.57 1.64l-1.85 1.85c1.44 2.84 3.76 5.15 6.59 6.59l1.84-1.84a1.99 1.99 0 0 1 1.64-.57l2.54.29c1.01.12 1.77.97 1.76 1.98v1.73c0 1.13-.94 2.07-2.07 2-8.53-.53-15.36-7.35-15.89-15.89-.07-1.13.87-2.07 2-2.07zm11.24-.8a.5.5 0 0 1 .86-.351l3.79 3.79c.19.19.19.51-.01.7l-3.79 3.79c-.31.32-.85.1-.85-.35V8.66h-3.5c-.28 0-.5-.22-.5-.5v-3c0-.28.22-.5.5-.5h3.5z" /></svg>;
+export default NotificationsPhoneForwarded;

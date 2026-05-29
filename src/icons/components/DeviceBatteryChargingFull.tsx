@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceBatteryChargingFull = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13 2c.55 0 1 .45 1 1v1h1.67C16.4 4 17 4.6 17 5.33v15.34c0 .73-.6 1.33-1.34 1.33H8.34C7.6 22 7 21.4 7 20.66V5.33C7 4.6 7.6 4 8.33 4H10V3c0-.55.45-1 1-1zm0 7c0-.52-.7-.69-.94-.24l-2.67 5a.5.5 0 0 0 .44.74H11V18c0 .52.7.69.94.24l2.67-5a.504.504 0 0 0-.44-.74H13z" /></svg>;
+export default DeviceBatteryChargingFull;

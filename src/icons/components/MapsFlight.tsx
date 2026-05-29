@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsFlight = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21.5 14.66c0-.36-.19-.69-.49-.89L13.5 9.08v-5.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5.5l-7.51 4.69a1.05 1.05 0 0 0 .87 1.89l6.64-2.08v5.5l-1.8 1.35a.48.48 0 0 0-.2.4v.59c0 .33.32.57.64.48l2.86-.82 2.86.82c.32.09.64-.15.64-.48v-.59a.48.48 0 0 0-.2-.4l-1.8-1.35v-5.5l6.64 2.08c.68.21 1.36-.3 1.36-1" /></svg>;
+export default MapsFlight;

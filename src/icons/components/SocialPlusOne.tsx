@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialPlusOne = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9.5 8.364c.55 0 1 .45 1 1v3h3c.55 0 1 .45 1 1s-.45 1-1 1h-3v3c0 .55-.45 1-1 1s-1-.45-1-1v-3h-3c-.55 0-1-.45-1-1s.45-1 1-1h3v-3c0-.55.45-1 1-1m8.77-2.7a.995.995 0 0 1 1.23.97v10.73c0 .55-.45 1-1 1s-1-.45-1-1v-9.6l-1.42.28a.907.907 0 0 1-1.08-.89c0-.41.29-.78.7-.87z" /></svg>;
+export default SocialPlusOne;

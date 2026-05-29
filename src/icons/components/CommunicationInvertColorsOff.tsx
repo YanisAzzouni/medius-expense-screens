@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationInvertColorsOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.63 4.68c.39-.39 1.03-.39 1.42 0L20.37 20a.996.996 0 1 1-1.41 1.41l-2-2a7.98 7.98 0 0 1-5.02 1.77c-2.05 0-4.1-.78-5.66-2.33a8.004 8.004 0 0 1-.57-10.68L3.63 6.09a.996.996 0 0 1 0-1.41M7.15 9.6a5.9 5.9 0 0 0-1.21 3.59c0 1.6.62 3.1 1.76 4.24a5.93 5.93 0 0 0 4.24 1.76v-4.8zm4.795-7.302c.265 0 .519.105.705.293l4.94 4.949c2.34 2.33 2.9 5.73 1.75 8.61l-7.4-7.4V4.7L9.91 6.72 8.5 5.31l2.74-2.72a1 1 0 0 1 .705-.292" /></svg>;
+export default CommunicationInvertColorsOff;

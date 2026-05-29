@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareDock = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15 21c.55 0 1 .45 1 1s-.45 1-1 1H9c-.55 0-1-.45-1-1s.45-1 1-1zm1-19.99c1.1 0 2 .89 2 1.99v14c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2zM8 5v10h8V5z" /></svg>;
+export default HardwareDock;

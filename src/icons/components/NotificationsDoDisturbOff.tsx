@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsDoDisturbOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.706 2.246c.265 0 .519.106.705.293l18.05 18.05c.39.39.39 1.02-.01 1.41a.996.996 0 0 1-1.41 0l-2.07-2.07a9.9 9.9 0 0 1-5.68 1.78c-5.52 0-10-4.48-10-10 0-2.11.66-4.07 1.78-5.69l-2.07-2.07a.996.996 0 0 1 .705-1.703m9.585-.537c5.52 0 10 4.48 10 10a9.9 9.9 0 0 1-1.55 5.33l-4.33-4.33h.88v-2h-2.88l-7.45-7.45a9.9 9.9 0 0 1 5.33-1.55m-5 9v2h3.46l-2-2z" /></svg>;
+export default NotificationsDoDisturbOff;

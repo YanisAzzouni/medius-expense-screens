@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareDeviceHub = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="m17 16.001-4-4v-3.18c1.35-.49 2.26-1.89 1.93-3.46a3.01 3.01 0 0 0-2.42-2.32A3 3 0 0 0 9 6.001c0 1.3.84 2.4 2 2.82v3.18l-4 4H4c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-2.05l4-4.2 4 4.2v2.05c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1z" /></svg>;
+export default HardwareDeviceHub;

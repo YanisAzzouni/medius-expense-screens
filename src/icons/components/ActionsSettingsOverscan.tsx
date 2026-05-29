@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsOverscan = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM4 4.99c-.55 0-1 .45-1 1v12.02c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V5.99c0-.55-.45-1-1-1zM14 16l-1.6 2.01a.5.5 0 0 1-.78 0L10 16zm-8-2-2.01-1.6a.5.5 0 0 1 0-.78L6 10zm14.01-2.38a.5.5 0 0 1 0 .78L18 14v-4zm-8.39-5.63a.5.5 0 0 1 .78 0L14 8h-4z" /></svg>;
+export default ActionsSettingsOverscan;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSwapHoriz = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.136 11.855c.31-.32.85-.1.85.35v1.79h6.01c.55 0 1 .45 1 1s-.45 1-1 1h-6.01v1.8c0 .44-.54.67-.85.35l-2.78-2.79a.513.513 0 0 1 0-.71zm10.88-5.65c0-.44.54-.67.85-.35l2.78 2.79c.19.19.19.51-.01.7l-2.78 2.79c-.31.32-.85.1-.85-.35v-1.79h-6.01c-.55 0-1-.45-1-1s.45-1 1-1h6.02z" /></svg>;
+export default ActionsSwapHoriz;

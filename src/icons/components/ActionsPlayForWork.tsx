@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPlayForWork = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.9 13.5c.61 0 1.11.55.99 1.15A6.01 6.01 0 0 1 12 19.5c-2.92 0-5.35-2.09-5.89-4.85-.12-.6.38-1.15.99-1.15.49 0 .89.35.99.83A3.99 3.99 0 0 0 12 17.5c1.93 0 3.53-1.36 3.92-3.17.1-.48.49-.83.98-.83m-4.9-9c.55 0 1 .45 1 1v4.59h2.3a.5.5 0 0 1 .35.85l-3.29 3.29c-.2.2-.51.2-.71 0l-3.29-3.29c-.32-.31-.1-.85.35-.85H11V5.5c0-.55.45-1 1-1" /></svg>;
+export default ActionsPlayForWork;

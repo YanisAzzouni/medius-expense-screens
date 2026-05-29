@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareTabletMac = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 0a2.5 2.5 0 0 1 2.5 2.5v19A2.5 2.5 0 0 1 19 24H5a2.5 2.5 0 0 1-2.5-2.5v-19A2.5 2.5 0 0 1 5 0zm-7 20c-.83 0-1.5.67-1.5 1.5S11.17 23 12 23s1.5-.67 1.5-1.5S12.83 20 12 20M4.5 3v16h15V3z" /></svg>;
+export default HardwareTabletMac;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentReplyAll = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.081 5.497c.63-.63 1.71-.18 1.71.71v1.59c7 1 10 6 11 11-2.5-3.5-6-5.1-11-5.1v1.68c0 .89-1.08 1.34-1.71.71l-4.59-4.59a.996.996 0 0 1 0-1.41zm-6.1.11c.67-.67 1.81-.19 1.81.75 0 .28-.11.55-.31.75l-3.69 3.69 3.69 3.69c.2.2.31.47.31.75 0 .94-1.14 1.42-1.81.74l-4.48-4.48a.996.996 0 0 1 0-1.41z" /></svg>;
+export default ContentReplyAll;

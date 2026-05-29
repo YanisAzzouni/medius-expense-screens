@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const PlacesGolfCourse = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M8.5 3.298c0-.74.78-1.22 1.45-.89l4.76 2.33c.74.36.74 1.42.01 1.79l-4.22 2.15v9.05c2.84.16 5 .98 5 1.97 0 1.1-2.69 2-6 2s-6-.9-6-2c0-.74 1.21-1.38 3-1.73v.73c0 .55.45 1 1 1s1-.45 1-1zm10.5 14.4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" /></svg>;
+export default PlacesGolfCourse;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceMobileOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3.1 2.758c.265 0 .518.105.705.292l13.39 13.39 2 2 2.41 2.42a.996.996 0 1 1-1.41 1.41l-1.02-1.02c-.13.98-.96 1.75-1.98 1.75h-10c-1.1 0-2-.9-2-2V7.27l-2.8-2.81A.996.996 0 0 1 3.1 2.758M7.195 19h9.73l-9.73-9.73zm10-18c1.1 0 2 .9 2 2v12.61l-2-2V5h-8.61l-3.07-3.07c.35-.56.97-.93 1.68-.93z" /></svg>;
+export default DeviceMobileOff;

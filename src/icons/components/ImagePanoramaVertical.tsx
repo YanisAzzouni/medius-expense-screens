@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImagePanoramaVertical = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.365 2c.4 0 .63.23.63.57 0 .09-.02.2-.06.31a26.2 26.2 0 0 0-1.64 9.12c0 3.09.54 6.18 1.64 9.12.04.11.06.21.07.31 0 .33-.24.57-.63.57H4.625c-.4 0-.63-.24-.63-.57 0-.09.02-.2.07-.31A26.2 26.2 0 0 0 5.705 12c0-3.09-.55-6.18-1.65-9.12a.9.9 0 0 1-.06-.31c0-.34.23-.57.63-.57zM6.535 4c.77 2.6 1.16 5.28 1.16 8s-.39 5.4-1.16 8h10.91c-.77-2.6-1.16-5.28-1.16-8s.39-5.4 1.16-8z" /></svg>;
+export default ImagePanoramaVertical;

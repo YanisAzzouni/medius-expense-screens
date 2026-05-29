@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvVolumeDown = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12.54 5.705c.63-.63 1.71-.18 1.71.71v11.17c0 .89-1.08 1.34-1.71.71l-3.29-3.29h-3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h3zm3.71 2.27a4.5 4.5 0 0 1 2.5 4.03c0 1.77-1.02 3.29-2.5 4.02z" /></svg>;
+export default AvVolumeDown;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NavigationFullscreenExit = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M9 14c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1s-1-.45-1-1v-2H6c-.55 0-1-.45-1-1s.45-1 1-1zm9 0c.55 0 1 .45 1 1s-.45 1-1 1h-2v2c0 .55-.45 1-1 1s-1-.45-1-1v-3c0-.55.45-1 1-1zM9 5c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1s.45-1 1-1h2V6c0-.55.45-1 1-1m6 0c.55 0 1 .45 1 1v2h2c.55 0 1 .45 1 1s-.45 1-1 1h-3c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1" /></svg>;
+export default NavigationFullscreenExit;

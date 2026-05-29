@@ -1,0 +1,76 @@
+/* ─── Base pill ─── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 900px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+}
+
+/* ─── Dot ─── */
+.dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ─── Label ─── */
+.label {
+  font-size: var(--type-small-semibold-size);     /* 12px */
+  font-weight: var(--type-small-semibold-weight);  /* 600 */
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: inherit;
+}
+
+/* ─── Neutral: white bg + chalk-200 border ─── */
+.variant_neutral {
+  background: var(--color-white);
+  border-color: var(--color-chalk-200);
+  color: var(--color-chalk-700);
+}
+
+/* ─── Grey: chalk-200 bg ─── */
+.variant_grey {
+  background: var(--color-chalk-200);
+  color: var(--color-chalk-700);
+}
+
+/* ─── Blue ─── */
+.variant_blue {
+  background: var(--color-blue-200);
+  color: var(--color-blue-600);
+}
+
+/* ─── Green ─── */
+.variant_green {
+  background: var(--color-green-200);
+  color: var(--color-green-500);
+}
+
+/* ─── Yellow ─── */
+.variant_yellow {
+  background: var(--color-yellow-100);
+  color: var(--color-yellow-500);
+}
+
+/* ─── Orange ─── */
+.variant_orange {
+  background: var(--color-orange-200);
+  color: var(--color-orange-600);
+}
+
+/* ─── Red ─── */
+.variant_red {
+  background: var(--color-red-200);
+  color: var(--color-red-600);
+}

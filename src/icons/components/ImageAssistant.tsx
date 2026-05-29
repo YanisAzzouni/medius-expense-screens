@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageAssistant = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 1.709c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-4l-2.3 2.29a.996.996 0 0 1-1.41 0L9 19.709H5c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2zm-8.88 7.12L6 10.709l4.12 1.88 1.88 4.12 1.88-4.12 4.12-1.88-4.12-1.88L12 4.709z" /></svg>;
+export default ImageAssistant;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ContentInbox = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14c0 1.1-.9 2-2 2H4.99C3.88 21 3 20.1 3 19l.01-14c0-1.11.87-2 1.98-2zM6 5c-.55 0-1 .45-1 1v9h3.13c.47 0 .85.34.98.8.35 1.27 1.52 2.2 2.89 2.2s2.54-.93 2.89-2.2c.13-.46.51-.8.98-.8H19V6c0-.55-.45-1-1-1z" /></svg>;
+export default ContentInbox;

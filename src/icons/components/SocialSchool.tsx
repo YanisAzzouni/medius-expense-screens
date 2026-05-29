@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const SocialSchool = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.454 15.986c0 .73-.4 1.41-1.04 1.76l-5 2.73c-.6.33-1.32.33-1.92 0l-5-2.73a2.01 2.01 0 0 1-1.04-1.76v-2.81l6.04 3.3c.6.33 1.32.33 1.92 0l6.04-3.3zm-7.96-12.47c.6-.32 1.32-.32 1.92 0l9.52 5.19c.32.18.52.51.52.88v6.41c0 .55-.45 1-1 1s-1-.45-1-1v-5.91l-8.04 4.39c-.6.33-1.32.33-1.92 0l-8.43-4.6c-.69-.38-.69-1.38 0-1.76z" /></svg>;
+export default SocialSchool;

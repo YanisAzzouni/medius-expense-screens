@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageCameraRoll = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10 1.5c.55 0 1 .45 1 1v1h1c1.1 0 2 .9 2 2h6c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2h-6c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-15c0-1.1.9-2 2-2h1v-1c0-.55.45-1 1-1zm0 17h2v-2h-2zm4 0h2v-2h-2zm4 0h2v-2h-2zm-8-9h2v-2h-2zm4 0h2v-2h-2zm4-2v2h2v-2z" /></svg>;
+export default ImageCameraRoll;

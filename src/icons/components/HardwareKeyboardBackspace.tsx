@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareKeyboardBackspace = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.791 10.995H6.621l2.88-2.88a.996.996 0 1 0-1.41-1.41l-4.59 4.59a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-2.88-2.89h13.17c.55 0 1-.45 1-1s-.45-1-1-1" /></svg>;
+export default HardwareKeyboardBackspace;

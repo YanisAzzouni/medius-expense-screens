@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvGames = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.64 13.86c.2-.2.51-.2.71 0l2.5 2.5c.1.09.15.22.15.35V21c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1v-4.29c0-.14.05-.26.14-.35zM21 9.01c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-4.3a.5.5 0 0 1-.35-.15l-2.5-2.5c-.2-.2-.2-.51 0-.71l2.5-2.5c.1-.1.22-.15.36-.14zM7.29 9c.14 0 .26.05.35.14l2.5 2.5c.2.2.2.51 0 .71l-2.5 2.5c-.09.1-.22.15-.35.15H3c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1zM14 2c.55 0 1 .45 1 1v4.29c0 .14-.05.26-.14.35l-2.5 2.5c-.2.2-.51.2-.71 0l-2.5-2.5A.47.47 0 0 1 9 7.29V3c0-.55.45-1 1-1z" /></svg>;
+export default AvGames;

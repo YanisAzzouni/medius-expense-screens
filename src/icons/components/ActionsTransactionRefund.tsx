@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsTransactionRefund = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10.941 16.151c.31-.32.85-.099.85.351v1.79h9c.55 0 1 .45 1 1s-.45 1-1 1h-9v1.79a.5.5 0 0 1-.86.35l-2.79-2.79a.49.49 0 0 1 .01-.7zM19 3c1.11 0 2 .89 2 2v7.5a1 1 0 1 1-2 0V11H3v5c0 .55.45 1 1 1a1 1 0 1 1 0 2H3c-1.11 0-2-.89-2-2l.01-12c0-1.11.88-2 1.99-2zM3 7h16V5H3z" /></svg>;
+export default ActionsTransactionRefund;

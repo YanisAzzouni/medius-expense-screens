@@ -1,0 +1,202 @@
+/* ─── Modal card ─── */
+.modal {
+  width: 1003px;
+  max-width: calc(100vw - 48px);
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow:
+    0px 2.4px 7.4px rgba(0, 0, 0, 0.05),
+    0px 12.8px 28.8px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* ─── Header ─── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-space-600, #2f455c);
+  white-space: nowrap;
+}
+
+.headerTags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Trailing icon inside the Actions button */
+.actionsLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ─── Tabs (add padding so it aligns with modal content) ─── */
+.modal > [role="tablist"] {
+  margin: 12px 24px 0;
+}
+
+/* ─── Banner ─── */
+.modal > [role="alert"] {
+  margin: 12px 24px 0;
+}
+
+/* ─── Body ─── */
+.body {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  padding: 16px 24px 24px;
+}
+
+/* ─── Form column ─── */
+.formColumn {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ─── FieldRow ─── */
+.fieldRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.fieldLabel {
+  flex: 0 0 120px;
+  min-height: 40px; /* matches input height for vertical centering */
+  display: flex;
+  align-items: center;
+  font-size: var(--type-small-semibold-size);
+  font-weight: var(--type-small-semibold-weight);
+  line-height: var(--type-small-semibold-line-height);
+  letter-spacing: var(--type-small-semibold-letter-spacing);
+  color: var(--color-chalk-700);
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.fieldRequired {
+  color: var(--color-red-500);
+}
+
+.fieldControl {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ─── Split row (amount+currency, vat+%) ─── */
+.splitRow {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Override width:100% coming from the .field container inside TextInput/Select */
+.splitPrimary {
+  flex: 1 !important;
+  min-width: 0;
+  width: auto !important;
+}
+
+.splitSecondary {
+  flex: 0 0 110px;
+  width: auto !important;
+}
+
+.vatPercent {
+  flex: 0 0 90px;
+  width: auto !important;
+}
+
+/* ─── Checkbox group ─── */
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 10px; /* align first checkbox baseline with field label */
+}
+
+/* ─── "Add extra VAT line" button — indent to match field inputs ─── */
+.addVatLine {
+  padding-left: 128px; /* 120px label + 8px gap */
+}
+
+/* ─── Preview (right) column ─── */
+.previewColumn {
+  width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ─── Receipt placeholder ─── */
+.receiptPlaceholder {
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--color-chalk-50, var(--color-chalk-100));
+  border: 1.5px dashed var(--color-chalk-300);
+  border-radius: 8px;
+}
+
+.receiptIcon {
+  color: var(--color-chalk-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.receiptLabel {
+  font-size: var(--type-small-size);
+  font-weight: var(--type-small-weight);
+  color: var(--color-chalk-500);
+}
+
+/* ─── Save row ─── */
+.saveRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}

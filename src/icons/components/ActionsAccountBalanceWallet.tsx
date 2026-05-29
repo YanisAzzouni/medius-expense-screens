@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsAccountBalanceWallet = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.5 3c1.1 0 2 .9 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9v1c0 1.1-.9 2-2 2h-14a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 13h-9c-.55 0-1-.45-1-1V9c0-.55.45-1 1-1h9zm-6-5.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S17 12.83 17 12s-.67-1.5-1.5-1.5" /></svg>;
+export default ActionsAccountBalanceWallet;

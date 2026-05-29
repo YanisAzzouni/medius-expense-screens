@@ -1,0 +1,93 @@
+/* ─── Base tag ─── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+/* ─── Sizes ─── */
+
+/* Default: pl-4 pr-6 py-4 rounded-6, 16px icon */
+.size_default {
+  padding: 4px 6px 4px 4px;
+  border-radius: 6px;
+}
+
+.size_default .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Small: px-4 py-0 rounded-4, 12px icon */
+.size_small {
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+.size_small .icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* ─── Icon wrapper ─── */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Scale child SVGs/icons to fill the wrapper */
+.icon > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ─── Label text ─── */
+/* Inter Regular 12px / line-height 16px / letter-spacing -0.01em */
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: inherit;
+}
+
+/* ─── Colour variants ─── */
+
+.color_neutral {
+  background: var(--color-chalk-100);
+  border-color: var(--color-chalk-200);
+  color: var(--color-chalk-700);
+}
+
+.color_grey {
+  background: var(--color-chalk-300);
+  color: var(--color-chalk-1000);
+}
+
+.color_blue {
+  background: var(--color-blue-200);
+  color: var(--color-blue-700);
+}
+
+.color_green {
+  background: var(--color-green-200);
+  color: var(--color-green-700);
+}
+
+.color_orange {
+  background: var(--color-orange-200);
+  color: var(--color-orange-700);
+}
+
+.color_red {
+  background: var(--color-red-200);
+  color: var(--color-red-700);
+}

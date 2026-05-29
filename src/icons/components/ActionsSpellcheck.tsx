@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSpellcheck = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20.143 11.744a.993.993 0 0 1 1.4.01c.39.39.39 1.02 0 1.41l-8.08 8.09a.996.996 0 0 1-1.41 0l-3.68-3.68a.996.996 0 1 1 1.41-1.41l2.97 2.97zm-12.39-9.29c.56 0 1.06.34 1.27.87l4.25 10.81a.964.964 0 0 1-.9 1.32.99.99 0 0 1-.91-.62l-.9-2.38h-5.64l-.88 2.37c-.15.38-.51.63-.91.63a.97.97 0 0 1-.9-1.32l4.25-10.81c.21-.53.71-.87 1.27-.87m-2.07 8h4.14l-2.07-5.52z" /></svg>;
+export default ActionsSpellcheck;

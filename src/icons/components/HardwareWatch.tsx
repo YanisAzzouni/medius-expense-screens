@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareWatch = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.31 0c.97 0 1.81.71 1.97 1.67l.68 4.06A7.98 7.98 0 0 1 20 12c0 2.54-1.19 4.81-3.04 6.27l-.68 4.06c-.16.96-.99 1.67-1.97 1.67H9.7c-.98 0-1.82-.71-1.98-1.67l-.67-4.06A7.94 7.94 0 0 1 4 12a7.94 7.94 0 0 1 3.05-6.27l.67-4.06C7.88.71 8.72 0 9.7 0zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6" /></svg>;
+export default HardwareWatch;

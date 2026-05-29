@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorFormatTextdirectionLToR = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.104 15.564c0-.45.54-.67.86-.35l2.79 2.79c.19.19.19.51-.01.7l-2.79 2.79c-.31.32-.85.1-.85-.35v-1.79h-11c-.55 0-1-.45-1-1s.45-1 1-1h11zm-1-13.21c.55 0 1 .45 1 1s-.45 1-1 1h-1v10c0 .55-.45 1-1 1s-1-.45-1-1v-10h-2v10c0 .55-.45 1-1 1s-1-.45-1-1v-4c-2.34 0-4.21-2.01-3.98-4.39.2-2.08 2.06-3.61 4.15-3.61z" /></svg>;
+export default EditorFormatTextdirectionLToR;

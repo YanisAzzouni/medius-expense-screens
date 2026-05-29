@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const PlacesNoMeetingRoom = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M2.976 1.978c.264 0 .518.105.705.293l8.17 8.17h-1.29v2h2v-1.29l9.17 9.17c.39.39.39 1.02-.01 1.41a.997.997 0 0 1-1.41 0l-5.75-5.75v3.46c0 .55-.45 1-1 1h-9c-.55 0-1-.45-1-1s.45-1 1-1h1V6.98L2.27 3.68a.995.995 0 0 1 .705-1.702m10.585.462c.55 0 1 .45 1 1h4c.55 0 1 .45 1 1v10.88l-2-2V5.44h-3v4.88L6.68 2.44z" /></svg>;
+export default PlacesNoMeetingRoom;

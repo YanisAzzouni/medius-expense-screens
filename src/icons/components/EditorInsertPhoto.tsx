@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorInsertPhoto = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm-4.1 9.53c-.2-.27-.6-.27-.8-.01L11 16.51l-2.1-2.53a.494.494 0 0 0-.78.02l-2.49 3.2c-.26.33-.03.81.39.81h11.99a.5.5 0 0 0 .4-.8z" /></svg>;
+export default EditorInsertPhoto;

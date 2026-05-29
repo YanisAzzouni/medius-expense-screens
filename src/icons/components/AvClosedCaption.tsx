@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvClosedCaption = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM7 9c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-.5c0-.28-.22-.5-.5-.5H10c-.28 0-.5.22-.5.5h-2v-3h2c0 .28.22.5.5.5h.5c.28 0 .5-.22.5-.5V10c0-.55-.45-1-1-1zm7 0c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-.5c0-.28-.22-.5-.5-.5H17c-.28 0-.5.22-.5.5h-2v-3h2c0 .28.22.5.5.5h.5c.28 0 .5-.22.5-.5V10c0-.55-.45-1-1-1z" /></svg>;
+export default AvClosedCaption;

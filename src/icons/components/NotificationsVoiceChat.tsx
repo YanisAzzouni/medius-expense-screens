@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsVoiceChat = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H6l-4 4 .01-18c0-1.1.89-2 1.99-2zM7 6c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.2l2.38 1.9c.65.52 1.62.06 1.62-.78V8.08c0-.84-.97-1.3-1.62-.78L14 9.2V7c0-.55-.45-1-1-1z" /></svg>;
+export default NotificationsVoiceChat;

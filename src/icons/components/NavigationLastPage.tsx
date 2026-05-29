@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NavigationLastPage = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.001 6c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1s-1-.45-1-1V7c0-.55.45-1 1-1m-10.005.407c.265 0 .519.106.705.293l4.59 4.6c.39.39.39 1.02 0 1.41l-4.59 4.59a.996.996 0 1 1-1.41-1.41l3.89-3.89-3.89-3.89c-.38-.38-.38-1.02 0-1.41a1 1 0 0 1 .705-.293" /></svg>;
+export default NavigationLastPage;

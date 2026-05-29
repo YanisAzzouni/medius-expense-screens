@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationVoicemail = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.5 6.5c3.04 0 5.5 2.46 5.5 5.5s-2.46 5.5-5.5 5.5h-13C2.46 17.5 0 15.04 0 12s2.46-5.5 5.5-5.5S11 8.96 11 12c0 1.33-.47 2.55-1.26 3.5h4.52A5.45 5.45 0 0 1 13 12c0-3.04 2.46-5.5 5.5-5.5m-13 2C3.57 8.5 2 10.07 2 12s1.57 3.5 3.5 3.5S9 13.93 9 12 7.43 8.5 5.5 8.5m13 0c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5S22 13.93 22 12s-1.57-3.5-3.5-3.5" /></svg>;
+export default CommunicationVoicemail;

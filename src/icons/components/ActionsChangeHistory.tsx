@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsChangeHistory = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.15 4.917a1 1 0 0 1 1.699 0l8.2 13.109a1 1 0 0 1-.85 1.53H3.8c-.78 0-1.26-.86-.85-1.53zm-5.54 12.64h12.779l-6.39-10.23z" /></svg>;
+export default ActionsChangeHistory;

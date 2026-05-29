@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsTabUnselected = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M3 21c-1.1 0-2-.9-2-2h2zm4 0H5v-2h2zm4 0H9v-2h2zm4 0h-2v-2h2zm4-2v2h-2v-2zm4 0c0 1.1-.9 2-2 2v-2zM3 17H1v-2h2zm20 0h-2v-2h2zM3 13H1v-2h2zm20 0h-2v-2h2zM3 9H1V7h2zm18-6c1.1 0 2 .9 2 2v4h-9c-.55 0-1-.45-1-1V3zM3 5H1c0-1.1.9-2 2-2zm4 0H5V3h2zm4 0H9V3h2z" /></svg>;
+export default ActionsTabUnselected;

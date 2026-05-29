@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NavigationUnfoldMore = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M8.835 15.417c.264 0 .518.106.705.293L12 18.17l2.47-2.45a.997.997 0 1 1 1.41 1.41l-3.17 3.17a.996.996 0 0 1-1.41 0l-3.17-3.18a.996.996 0 0 1 .705-1.703m3.16-12.01c.264 0 .518.106.705.293l3.17 3.18a.996.996 0 1 1-1.41 1.41L12 5.83 9.53 8.29a.996.996 0 1 1-1.41-1.41l3.17-3.18a1 1 0 0 1 .705-.293" /></svg>;
+export default NavigationUnfoldMore;

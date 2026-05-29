@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsSatellite = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm-4.1 9.53c-.2-.27-.6-.27-.8-.01L11 16.51l-2.1-2.53a.5.5 0 0 0-.78.01l-2.49 3.2c-.26.33-.02.81.39.82h11.99a.5.5 0 0 0 .4-.8zM10.91 5c-.49 0-.9.36-.98.85-.36 2.08-2 3.72-4.08 4.08-.49.08-.85.49-.85.98 0 .61.54 1.1 1.14 1a7 7 0 0 0 5.77-5.78c.09-.6-.39-1.13-1-1.13M5 8c1.66 0 3-1.34 3-3H5z" /></svg>;
+export default MapsSatellite;

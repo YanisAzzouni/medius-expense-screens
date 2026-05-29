@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvRadio = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M15.05 1.704c.46-.19.98.03 1.17.49s-.03.98-.49 1.17l-7.43 3H20c1.1 0 2 .9 2 2v12a2 2 0 0 1-2 2H4c-1.1 0-2-.9-2-2v-12c0-.83.51-1.57 1.24-1.85zM7 14.364c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m-2-6c-.55 0-1 .45-1 1v3h12v-1c0-.55.45-1 1-1s1 .45 1 1v1h2v-3c0-.55-.45-1-1-1z" /></svg>;
+export default AvRadio;

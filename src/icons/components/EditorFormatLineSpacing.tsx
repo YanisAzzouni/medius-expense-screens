@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorFormatLineSpacing = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.537 3.855c.2-.2.51-.2.71 0l2.29 2.3c.32.31.1.85-.35.85h-1.29v10h1.29a.5.5 0 0 1 .36.85l-2.29 2.29c-.2.2-.51.2-.71 0l-2.29-2.29c-.32-.31-.1-.85.35-.85h1.29v-10h-1.29a.5.5 0 0 1-.36-.85zm16.36 13.15c.55 0 1 .45 1 1s-.45 1-1 1h-10c-.55 0-1-.45-1-1s.45-1 1-1zm0-6c.55 0 1 .45 1 1s-.45 1-1 1h-10c-.55 0-1-.45-1-1s.45-1 1-1zm0-6c.55 0 1 .45 1 1s-.45 1-1 1h-10c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default EditorFormatLineSpacing;

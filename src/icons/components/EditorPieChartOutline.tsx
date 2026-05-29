@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const EditorPieChartOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m-1 2.07C7.07 4.56 4 7.94 4 12s3.07 7.44 7 7.94zM14 13c-.55 0-1 .45-1 1v5.93A8 8 0 0 0 19.93 13zm-1-3c0 .55.45 1 1 1h5.93c-.45-3.6-3.32-6.48-6.93-6.93z" /></svg>;
+export default EditorPieChartOutline;

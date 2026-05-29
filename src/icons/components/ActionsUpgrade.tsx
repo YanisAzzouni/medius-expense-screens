@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsUpgrade = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" fillRule="evenodd" d="M19 4H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M7 11.45l4.65-5.288a.46.46 0 0 1 .7 0L17 11.451h-3V16h-4v-4.55zM10 17h4v1h-4zm4 2h-4v1h4z" clipRule="evenodd" /></svg>;
+export default ActionsUpgrade;

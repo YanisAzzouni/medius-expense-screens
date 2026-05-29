@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationUnsubscribe = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18 13.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m.5-10c1.1 0 1.99.9 1.99 2v7.19c-.74-.43-1.57-.69-2.49-.69-2.76 0-5 2.24-5 5 0 .17.03.33.05.5H4.5c-1.1 0-2-.9-2-2v-10c0-1.1.9-2 2-2zm-2 13c-.28 0-.5.22-.5.5s.22.5.5.5h3c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm2-9.55c0-.67-.7-1.1-1.29-.8L11.5 9 5.79 6.15c-.59-.3-1.29.14-1.29.8 0 .34.19.65.49.8l5.61 2.8c.56.28 1.23.28 1.79 0l5.62-2.8c.3-.15.49-.46.49-.8" /></svg>;
+export default CommunicationUnsubscribe;

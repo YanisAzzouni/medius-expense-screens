@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalHospital = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2l.01-14c0-1.1.89-2 1.99-2zm-8 3c-.55 0-1 .45-1 1v3H7c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h3v3c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-3h3c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1h-3V7c0-.55-.45-1-1-1z" /></svg>;
+export default MapsLocalHospital;

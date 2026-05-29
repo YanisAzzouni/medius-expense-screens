@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationStayPrimaryPortrait = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.995 1.01c1.1 0 2 .89 2 1.99v18c0 1.1-.9 2-2 2h-10c-1.1 0-1.99-.9-1.99-2V3c0-1.1.89-2 1.99-2zM6.995 5v14h10V5z" /></svg>;
+export default CommunicationStayPrimaryPortrait;

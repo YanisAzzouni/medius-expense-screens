@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsWatchLater = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m-.25 5a.77.77 0 0 0-.76.75v4.69c0 .35.18.67.48.85l4.08 2.51c.36.22.83.11 1.05-.24.22-.36.1-.83-.26-1.05L12.5 12.2V7.75c0-.41-.34-.75-.75-.75" /></svg>;
+export default ActionsWatchLater;

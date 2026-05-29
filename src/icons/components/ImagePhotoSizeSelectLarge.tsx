@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImagePhotoSizeSelectLarge = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13 11c1.1 0 2 .9 2 2v8H3c-1.1 0-2-.9-2-2v-8zm6 10h-2v-2h2zm4-2c0 1-1 2-2 2v-2zm-12.82-3.75a.492.492 0 0 0-.79-.01l-2.1 2.7-1.39-1.67a.5.5 0 0 0-.78.01l-1.49 1.91c-.26.33-.02.81.39.82H12a.5.5 0 0 0 .4-.8zM23 17h-2v-2h2zm0-4h-2v-2h2zM3 9H1V7h2zm20 0h-2V7h2zM3 5H1c0-1 1-2 2-2zm4 0H5V3h2zm4 0H9V3h2zm4 0h-2V3h2zm4 0h-2V3h2zm2-2c1 0 2 1 2 2h-2z" /></svg>;
+export default ImagePhotoSizeSelectLarge;

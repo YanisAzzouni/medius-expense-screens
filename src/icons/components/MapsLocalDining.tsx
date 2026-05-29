@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalDining = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.54 4.833c1.92-1.91 4.66-2.27 6.12-.811 1.47 1.47 1.1 4.21-.81 6.12-1.59 1.59-3.74 2.09-5.27 1.38l-1.47 1.47 6.18 6.18a.996.996 0 1 1-1.41 1.41l-6.18-6.18-6.18 6.16a.996.996 0 1 1-1.41-1.41l9.05-9.05c-.71-1.53-.21-3.68 1.38-5.27m-11.71-.24c.3-.62 1.13-.751 1.61-.271l6.19 6.18-2.831 2.83-4.19-4.18a4.02 4.02 0 0 1-.78-4.56" /></svg>;
+export default MapsLocalDining;

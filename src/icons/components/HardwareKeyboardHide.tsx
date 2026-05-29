@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareKeyboardHide = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M14.79 18.114c.44 0 .66.54.35.85l-2.79 2.79c-.19.19-.51.19-.7 0l-2.79-2.79c-.32-.31-.1-.85.35-.85zM20 2.103c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-10c0-1.1.89-2 1.99-2zm-11 10c-.55 0-1 .45-1 1s.45 1 1 1h6c.55 0 1-.45 1-1s-.45-1-1-1zm-4-2h2v-2H5zm3 0h2v-2H8zm3 0h2v-2h-2zm3 0h2v-2h-2zm3 0h2v-2h-2zm-12-3h2v-2H5zm3 0h2v-2H8zm3 0h2v-2h-2zm3 0h2v-2h-2zm3 0h2v-2h-2z" /></svg>;
+export default HardwareKeyboardHide;

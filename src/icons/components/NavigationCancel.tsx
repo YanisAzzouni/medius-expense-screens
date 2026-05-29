@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NavigationCancel = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.53 0 10 4.47 10 10s-4.47 10-10 10S2 17.53 2 12 6.47 2 12 2m4.3 5.7a.996.996 0 0 0-1.41 0L12 10.59 9.11 7.7A.996.996 0 1 0 7.7 9.11L10.59 12 7.7 14.89a.997.997 0 1 0 1.41 1.41L12 13.41l2.89 2.89c.39.39 1.02.39 1.41 0 .38-.39.38-1.03 0-1.41L13.41 12l2.89-2.89a.996.996 0 0 0 0-1.41" /></svg>;
+export default NavigationCancel;

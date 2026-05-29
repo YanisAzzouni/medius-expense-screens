@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsDoneAll = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.79 12.112c.265 0 .518.105.705.292l4.88 4.9-.7.7a.997.997 0 0 1-1.41 0l-4.18-4.18c-.39-.39-.39-1.03 0-1.42a1 1 0 0 1 .705-.292m19.715-6.118a.976.976 0 0 1 1.4.01h.01c.39.39.39 1.02 0 1.41l-10.59 10.58a.996.996 0 0 1-1.41 0l-4.18-4.18a.996.996 0 1 1 1.41-1.41l3.48 3.47zm-4.945-.282c.264 0 .518.106.705.293.38.38.38 1.02 0 1.4l-5.64 5.65-1.41-1.41 5.64-5.64a1 1 0 0 1 .705-.293" /></svg>;
+export default ActionsDoneAll;

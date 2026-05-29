@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalLibrary = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.68 8.093c1.21-.21 2.32.75 2.32 1.98v6.92c0 .96-.77 1.89-1.71 2.02-2.52.32-4.81 1.37-6.68 2.9-.35.28-.92.25-1.27-.04a13.1 13.1 0 0 0-6.63-2.87c-.99-.13-1.71-1.01-1.71-2.69v-6.24c0-1.23 1.11-2.19 2.32-1.98 2.56.46 4.86 1.65 6.68 3.35 1.82-1.7 4.12-2.89 6.68-3.35M12 1.893c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3" /></svg>;
+export default MapsLocalLibrary;

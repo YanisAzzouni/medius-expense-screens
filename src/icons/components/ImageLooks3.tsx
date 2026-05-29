@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageLooks3 = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.995 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5.005c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm-9 4c-.55 0-.99.45-.99 1s.44 1 .99 1h3.01l-.01 2h-1c-.55 0-1 .45-1 1s.45 1 1 1h1l.01 2h-3.01c-.55 0-1 .45-1 1s.45 1 1 1h3.01a2 2 0 0 0 2-2v-1.5c0-.83-.67-1.5-1.5-1.5.83 0 1.5-.67 1.5-1.5V9c0-1.1-.9-2-2-2z" /></svg>;
+export default ImageLooks3;

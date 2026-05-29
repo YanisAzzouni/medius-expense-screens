@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const NotificationsDoDisturbAlt = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2M7.1 18.3C8.5 19.4 10.2 20 12 20c4.4 0 8-3.6 8-8 0-1.8-.6-3.5-1.7-4.9zM12 4c-4.4 0-8 3.6-8 8 0 1.8.6 3.5 1.7 4.9L16.9 5.7C15.5 4.6 13.8 4 12 4" /></svg>;
+export default NotificationsDoDisturbAlt;

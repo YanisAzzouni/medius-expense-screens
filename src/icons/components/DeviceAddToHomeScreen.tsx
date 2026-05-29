@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceAddToHomeScreen = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M18.296 1.01c1.1 0 2 .89 2 1.99v18c0 1.1-.9 2-2 2h-10c-1.1 0-2-.9-2-2v-3c0-.55.45-1 1-1s1 .45 1 1v1h10V5h-10v1c0 .55-.45 1-1 1s-1-.45-1-1V3c0-1.1.9-2 2-2zm-7 6.99c.55 0 1 .45 1 1v5c0 .55-.45 1-1 1s-1-.45-1-1v-2.59l-4.89 4.89a.996.996 0 1 1-1.41-1.41L8.886 10h-2.59c-.55 0-1-.45-1-1s.45-1 1-1z" /></svg>;
+export default DeviceAddToHomeScreen;

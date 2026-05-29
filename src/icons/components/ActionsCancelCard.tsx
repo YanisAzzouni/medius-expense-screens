@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsCancelCard = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21.178 15a1.005 1.005 0 0 1 .715 1.702l-1.89 1.89.6.6c.21-.282.349-.62.386-.988v.001c-.037.37-.175.708-.384.99l1.288 1.287a.996.996 0 1 1-1.41 1.41l-1.89-1.89-1.89 1.89a.996.996 0 1 1-1.41-1.41l1.89-1.89-1.89-1.89a.995.995 0 0 1 0-1.409.995.995 0 0 1 1.41 0l1.89 1.89 1.88-1.89a1 1 0 0 1 .705-.293M19 4c1.11 0 2 .89 2 2v6H3v5c0 .55.506 1 1.125 1H12v2H3c-1.11 0-2-.89-2-2l.01-12c0-1.11.88-2 1.99-2zM3 8h16V6H3z" /></svg>;
+export default ActionsCancelCard;

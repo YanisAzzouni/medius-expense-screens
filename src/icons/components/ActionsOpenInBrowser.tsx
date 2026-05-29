@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsOpenInBrowser = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 4a2 2 0 0 1 2 2v12c0 1.1-.9 2-2 2h-3c-.55 0-1-.45-1-1s.45-1 1-1h3V8H5v10h3c.55 0 1 .45 1 1s-.45 1-1 1H5c-1.1 0-2-.9-2-2V6a2 2 0 0 1 2-2zm-7.35 6.35c.19-.19.51-.19.7.01l2.79 2.79c.32.31.1.85-.35.85H13v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H9.21c-.45 0-.67-.54-.35-.86z" /></svg>;
+export default ActionsOpenInBrowser;

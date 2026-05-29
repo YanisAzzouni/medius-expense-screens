@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageMusicOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M4.345 3.267c.264 0 .518.105.705.292l15.31 15.32a.996.996 0 1 1-1.41 1.41l-5.02-5.02v1.58c0 1.99-1.39 3.79-3.35 4.1a4.008 4.008 0 0 1-4.59-4.65c.24-1.4 1.27-2.59 2.61-3.07 1.23-.43 2.39-.22 3.33.32v-.28l-8.29-8.3a.996.996 0 0 1 .705-1.702m11.585-.268c1.1 0 2 .9 2 2s-.9 2-2 2h-2v2.61l-2-2V4c0-.55.45-1 1-1z" /></svg>;
+export default ImageMusicOff;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const DeviceGpsFixed = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 1c.55 0 1 .45 1 1v1.06c4.17.46 7.48 3.77 7.94 7.94H22c.55 0 1 .45 1 1s-.45 1-1 1h-1.06A8.995 8.995 0 0 1 13 20.94V22c0 .55-.45 1-1 1s-1-.45-1-1v-1.06A8.995 8.995 0 0 1 3.06 13H2c-.55 0-1-.45-1-1s.45-1 1-1h1.06A8.995 8.995 0 0 1 11 3.06V2c0-.55.45-1 1-1m0 4c-3.87 0-7 3.13-7 7s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7m0 3c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4" /></svg>;
+export default DeviceGpsFixed;

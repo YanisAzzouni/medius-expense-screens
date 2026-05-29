@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageGradient = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM7 18h2v-2H7zm4 0h2v-2h-2zm4 0h2v-2h-2zM6 5c-.55 0-1 .45-1 1v5h2v2H5v2h2v-2h2v2h2v-2h2v2h2v-2h2v-2h2V6c0-.55-.45-1-1-1zm11 10h2v-2h-2zm-6-4v2H9v-2zm4 0v2h-2v-2zM9 9v2H7V9zm4 0v2h-2V9zm4 0v2h-2V9z" /></svg>;
+export default ImageGradient;

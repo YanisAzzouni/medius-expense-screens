@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareDeviceUnknown = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2zM7 19h10V5H7zm6-1h-2v-2h2zM8.7 9.05c.52-1.52 2.04-2.53 3.81-2.3 1.55.2 2.79 1.49 2.98 3.04.29 2.32-1.94 2.71-2.48 4.18-.08.2-.12.42-.12.67h-1.76c0-.42.06-.77.16-1.08 0-.01 0-.03.01-.05 0-.02.01-.03.02-.05.06-.16.12-.31.2-.45h.01c.74-1.27 2.23-1.5 2.23-2.82 0-.93-.82-1.75-1.75-1.75-.75 0-1.42.52-1.66 1.21-.11.31-.37.54-.7.54h-.13c-.59 0-1.02-.58-.82-1.14" /></svg>;
+export default HardwareDeviceUnknown;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSpeakerNotesOff = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1.451 1.684c.35-.35.92-.35 1.27 0l19.45 19.46a.9.9 0 0 1 0 1.27c-.35.35-.92.35-1.27 0l-5.09-5.09h-9l-4 4 .02-16.99-1.38-1.38a.9.9 0 0 1 0-1.27m19.36-.36c1.1 0 2 .9 2 2v12c0 1.08-.86 1.95-1.93 1.99l-6.99-6.99h3.92c.55 0 1-.45 1-1s-.45-1-1-1h-5.92l-7-7zm-13 10c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m0-3c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m4-3c-.55 0-1 .45-1 1s.45 1 1 1h6c.55 0 1-.45 1-1s-.45-1-1-1z" /></svg>;
+export default ActionsSpeakerNotesOff;

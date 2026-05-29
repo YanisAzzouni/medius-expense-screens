@@ -1,0 +1,179 @@
+/* ─── Tablist ─── */
+/* Full-width row with a bottom border that runs under all tabs */
+.tablist {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--color-chalk-200);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ─── Tab item wrapper ─── */
+/* Presentation-only div that groups the tab button + optional close button */
+.tabItem {
+  display: inline-flex;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+/* ─── Tab button ─── */
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 36px;
+  padding: 0 16px;
+
+  /* Pull the tab 1px down so its bottom border overlaps the tablist border */
+  margin-bottom: -1px;
+  position: relative;
+
+  border: none;
+  border-bottom: 1px solid var(--color-chalk-200);
+  border-radius: 4px 4px 0 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+
+  font-family: var(--font-family);
+  font-size: var(--type-body-default-size);  /* 14px */
+  font-weight: var(--type-body-default-weight);
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-900);
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 100ms ease, border-color 100ms ease;
+}
+
+/* Hover */
+.tab:hover:not(:disabled):not(.tab_active) {
+  background: var(--color-olive-100);
+  border-bottom-color: var(--color-olive-600);
+}
+
+/* Focus-visible: soft olive glow, white background */
+.tab:focus-visible {
+  background: var(--color-white);
+  border-bottom-color: var(--color-chalk-200);
+  box-shadow: 0 0 0 1px var(--color-olive-500), 0 0 3px 0 var(--color-olive-600);
+  z-index: 1;
+}
+
+/* ─── Active state ─── */
+.tab_active {
+  background: var(--color-olive-200);
+  border-bottom-color: var(--color-olive-700);
+  font-weight: var(--type-body-semibold-weight);
+}
+
+.tab_active:hover {
+  background: var(--color-olive-200);
+  border-bottom-color: var(--color-olive-700);
+}
+
+/* ─── Disabled state ─── */
+.tab_disabled,
+.tab:disabled {
+  background: var(--color-chalk-100);
+  border-bottom-color: var(--color-chalk-200);
+  color: var(--color-chalk-300);
+  cursor: not-allowed;
+}
+
+/* ─── Tab icon ─── */
+.tabIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: inherit;
+}
+
+/* ─── Tab label ─── */
+.tabLabel {
+  flex: 0 0 auto;
+}
+
+/* ─── Badge / counter ─── */
+.tabBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--color-chalk-200);
+  color: var(--color-chalk-700);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Active tab badge */
+.tab_active .tabBadge {
+  background: var(--color-olive-300);
+  color: var(--color-olive-800);
+}
+
+/* Disabled tab badge */
+.tab_disabled .tabBadge,
+.tab:disabled .tabBadge {
+  background: var(--color-chalk-100);
+  color: var(--color-chalk-300);
+}
+
+/* ─── Close button ─── */
+.tabClose {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  flex-shrink: 0;
+
+  margin-bottom: -1px;
+  border: none;
+  border-bottom: 1px solid var(--color-chalk-200);
+  border-radius: 0 4px 0 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-chalk-400);
+  outline: none;
+  transition: background-color 100ms ease, color 100ms ease;
+  padding: 0 6px 0 0;
+}
+
+.tabClose:hover {
+  color: var(--color-chalk-700);
+  background: var(--color-olive-100);
+  border-bottom-color: var(--color-olive-600);
+}
+
+.tabClose:focus-visible {
+  box-shadow: 0 0 0 1px var(--color-olive-500), 0 0 3px 0 var(--color-olive-600);
+  z-index: 1;
+}
+
+.tabClose_active {
+  background: var(--color-olive-200);
+  border-bottom-color: var(--color-olive-700);
+  color: var(--color-chalk-600);
+}
+
+.tabClose_active:hover {
+  background: var(--color-olive-300);
+  border-bottom-color: var(--color-olive-700);
+}
+
+.tabClose_disabled,
+.tabClose:disabled {
+  background: var(--color-chalk-100);
+  border-bottom-color: var(--color-chalk-200);
+  color: var(--color-chalk-200);
+  cursor: not-allowed;
+}

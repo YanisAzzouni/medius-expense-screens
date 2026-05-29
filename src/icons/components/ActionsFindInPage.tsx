@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsFindInPage = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M13.17 2c.53 0 1.04.21 1.41.59l4.83 4.83c.38.37.59.88.59 1.41v10.76l-3.83-3.84c.71-1.08 1.03-2.44.7-3.9-.43-1.93-2.05-3.45-4-3.78a5.013 5.013 0 0 0-5.83 5.61c.32 2.35 2.35 4.2 4.72 4.31a4.98 4.98 0 0 0 3-.82l4.43 4.43c-.34.25-.74.4-1.19.4H5.99C4.89 22 4 21.1 4 20l.01-16c0-1.1.89-2 1.99-2zM12 10c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3" /></svg>;
+export default ActionsFindInPage;

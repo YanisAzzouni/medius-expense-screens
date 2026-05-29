@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationCallReceived = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.008 5.001a.996.996 0 0 0-1.41 0l-10.89 10.88v-5.59c0-.55-.45-1-1-1s-1 .45-1 1v8c0 .55.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1h-5.59l10.89-10.89c.38-.38.38-1.02 0-1.4" /></svg>;
+export default CommunicationCallReceived;

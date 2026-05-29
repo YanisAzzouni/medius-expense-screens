@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsBrightness = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M21 3c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zM4 4.99c-.55 0-1 .45-1 1v12.02c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V5.99c0-.55-.45-1-1-1zm7.64 1.86c.2-.2.51-.2.71 0L13.5 8h2c.28 0 .5.22.5.5v2l1.15 1.14c.2.2.2.51 0 .71L16 13.5v2c0 .28-.22.5-.5.5h-2l-1.14 1.15c-.2.2-.51.2-.71 0L10.5 16h-2c-.28 0-.5-.22-.5-.5v-2l-1.15-1.14c-.2-.2-.2-.51 0-.71L8 10.5v-2c0-.28.22-.5.5-.5h2zM12 15c1.66 0 3-1.34 3-3s-1.34-3-3-3z" /></svg>;
+export default ActionsSettingsBrightness;

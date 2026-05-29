@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsScan = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.72 1c1.17 0 2.12.95 2.12 2.12v18.37c0 1.17-.95 2.12-2.12 2.12H7.12c-1.17 0-2.12-.95-2.12-2.12V3.12C5 1.95 5.95 1 7.12 1zM7.12 4.06c-.13 0-.24.11-.24.24v16.02c0 .13.11.24.24.24h10.6c.13 0 .24-.11.24-.24V4.3c0-.13-.11-.24-.24-.24zm2.05 10.76h2.27V16H7.99v-2.94h1.18zM16.85 16H13.8v-1.17h1.87v-1.77h1.18zm.01-6.11v1.18H7.98V9.89zm-5.42-3.76H9.17v2.22H7.99V4.96h3.45zm5.41 2.22h-1.18V6.14H13.8V4.96h3.05z" /></svg>;
+export default ActionsScan;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsLocalPharmacy = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.72 3.003c.24-.65.96-.99 1.61-.75.65.23.99.95.75 1.6l-.71 1.97h.53c1.36 0 2.32 1.34 1.89 2.63l-1.78 5.37 1.78 5.37c.43 1.29-.54 2.63-1.9 2.63H5.11c-1.36 0-2.33-1.34-1.89-2.63l1.79-5.37-1.8-5.37a2 2 0 0 1 1.9-2.63H15.7zm-4.71 6.82c-.55 0-1 .45-1 1v2h-2c-.55.001-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1v-2h2c.55 0 1-.45 1-1s-.45-1-1-1h-2v-2c0-.55-.45-1-1-1" /></svg>;
+export default MapsLocalPharmacy;

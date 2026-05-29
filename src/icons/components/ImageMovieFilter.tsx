@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageMovieFilter = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.7 6.55c.19.28.5.45.83.45h2c.2 0 .32-.22.21-.39L8 4h2l1.7 2.55c.18.28.5.45.83.45h2c.2 0 .32-.22.21-.39L13 4h2l1.7 2.55c.18.28.5.45.83.45h2c.2 0 .32-.22.21-.39L18 4h3.5c.28 0 .5.22.5.5V18c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-12c0-1.1.89-2 1.99-2h1zm2.05 6.2L6 14l2.75 1.25L10 18l1.25-2.75L14 14l-2.75-1.25L10 10zm6.31-2.69L13 11l2.06.94L16 14l.94-2.06L19 11l-2.06-.94L16 8z" /></svg>;
+export default ImageMovieFilter;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const HardwareKeyboardReturn = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M19.291 7.995v3H6.121l2.88-2.88a.996.996 0 1 0-1.41-1.41l-4.59 4.59a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-2.88-2.89h14.17c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1" /></svg>;
+export default HardwareKeyboardReturn;

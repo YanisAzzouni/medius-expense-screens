@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsSettingsPhone = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.747 3.018c1.02 0 1.87.76 1.99 1.77l.29 2.52c.07.61-.14 1.21-.57 1.64l-1.85 1.85c1.44 2.84 3.76 5.15 6.59 6.59l1.84-1.84c.43-.43 1.03-.64 1.64-.57l2.54.29c1.01.12 1.77.97 1.76 1.98v1.73c0 1.13-.94 2.07-2.07 2-8.53-.53-15.36-7.35-15.89-15.89-.07-1.13.87-2.07 2-2.07zm6.24 7.99h-2v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z" /></svg>;
+export default ActionsSettingsPhone;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const OthersStarOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M11.078 4.424c.34-.81 1.5-.81 1.84 0l1.89 4.45 4.84.42c.88.07 1.23 1.17.56 1.75l-3.67 3.18 1.1 4.73c.2.86-.73 1.54-1.49 1.08l-4.15-2.51-4.15 2.5c-.76.46-1.689-.22-1.49-1.08l1.1-4.72-3.67-3.18c-.67-.58-.31-1.68.57-1.75l4.83-.41zm-.779 5.96-4.38.38 3.32 2.88-1 4.28 3.76-2.27 3.77 2.28-1-4.28 3.32-2.88-4.38-.38-1.71-4.04z" /></svg>;
+export default OthersStarOutline;

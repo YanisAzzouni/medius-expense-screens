@@ -1,0 +1,148 @@
+/* ─── Navbar bar ─── */
+.navbar {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 24px;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-chalk-200);
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* ─── Logo ─── */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 48px;
+  cursor: pointer;
+}
+
+.logoSvg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ─── Tabs row ─── */
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 0;           /* tabs sit flush; gap is handled via padding on each tab */
+  flex-shrink: 0;
+  height: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Individual nav tab ─── */
+.navTab {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 48px;
+  padding: 0 8px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--type-body-default-size);
+  font-weight: var(--type-body-default-weight);
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-600);
+  white-space: nowrap;
+  transition: background-color 80ms ease, color 80ms ease;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  outline-offset: -2px;
+}
+
+.navTab:focus-visible {
+  outline: 2px solid var(--color-olive-500);
+}
+
+.navTab:hover:not(.navTab_active) {
+  background: var(--color-chalk-200);
+  color: var(--color-chalk-900);
+}
+
+/* Active / selected tab */
+.navTab_active {
+  background: var(--color-olive-200);
+  color: var(--color-olive-700);
+  cursor: default;
+}
+
+.navTabIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  /* inherits color from button → Icon SVG uses currentColor */
+}
+
+.navTabLabel {
+  /* inherits font from button */
+}
+
+/* ─── Spacer ─── */
+.spacer {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ─── User avatar button ─── */
+.userBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 80ms ease;
+  outline-offset: 2px;
+}
+
+.userBtn:focus-visible {
+  outline: 2px solid var(--color-olive-500);
+}
+
+.userBtn:hover {
+  background: var(--color-chalk-100);
+}
+
+/* Avatar circle */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--color-olive-700);
+  background: transparent;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-olive-700);
+  -webkit-font-smoothing: antialiased;
+  transition: border-color 80ms ease, color 80ms ease, background-color 80ms ease;
+  pointer-events: none; /* clicks go to userBtn */
+}
+
+.userBtn:hover .avatar {
+  background: var(--color-olive-100);
+  border-color: var(--color-olive-500);
+  color: var(--color-olive-500);
+}

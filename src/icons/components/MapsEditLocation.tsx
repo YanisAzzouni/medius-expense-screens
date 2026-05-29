@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const MapsEditLocation = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 2.265c3.86 0 7 3.14 7 7 0 4.17-4.42 9.92-6.23 12.11-.4.48-1.13.48-1.53 0C9.42 19.185 5 13.435 5 9.266c0-3.86 3.14-7 7-7m-3.49 9.05v1.44h1.44l3.92-3.93-1.43-1.43zm5.88-5.34a.38.38 0 0 0-.54 0l-.7.7 1.44 1.44.7-.7a.38.38 0 0 0 0-.54z" /></svg>;
+export default MapsEditLocation;

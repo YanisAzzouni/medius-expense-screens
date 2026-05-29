@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const PlacesAirportShuttle = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M16.17 5c.53 0 1.04.21 1.41.58l4.83 4.83c.38.38.59.89.59 1.42V14c0 1.1-.9 2-2 2 0 1.66-1.34 3-3 3s-3-1.34-3-3H9c0 1.66-1.34 3-3 3s-3-1.34-3-3c-1.1 0-2-.9-2-2V7a2 2 0 0 1 2-2zM6 14.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5m12 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5M4 7c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h3V7zm5 4h4V7H9zm6-4v4h5l-4-4z" /></svg>;
+export default PlacesAirportShuttle;

@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageCameraRear = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M10 19.564a.5.5 0 0 1 .85-.36l1.79 1.79c.2.2.2.51 0 .71l-1.79 1.79c-.31.32-.85.1-.85-.35v-.79H6c-.55 0-1-.45-1-1s.45-1 1-1h4zm8 .79c.55 0 1 .45 1 1s-.45 1-1 1h-3c-.55 0-1-.45-1-1s.45-1 1-1zm-1-20c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2zm-5.01 2c-1.1 0-1.99.9-1.99 2a2 2 0 0 0 2 2c1.1 0 2-.9 1.99-2 0-1.1-.9-2-2-2" /></svg>;
+export default ImageCameraRear;

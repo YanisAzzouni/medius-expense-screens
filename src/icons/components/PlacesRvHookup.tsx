@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const PlacesRvHookup = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M5.11 7.523c.33-.33.89-.09.89.37v.74h11c1.1 0 2 .9 2 2v6h1c.55 0 1 .45 1 1s-.45 1-1 1h-7c0 1.66-1.34 3-3 3s-3-1.34-3-3H5c-1.1 0-2-.9-2-2v-2c0-.55.45-1 1-1h6v-3H6v.74c0 .47-.56.7-.89.37l-1.74-1.74c-.2-.21-.2-.54 0-.74zM10 17.633c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1m3-4h4v-2c0-.55-.45-1-1-1h-3zm3-10.74c0-.47.56-.7.89-.37l1.74 1.74c.2.21.2.54 0 .74l-1.74 1.74c-.33.33-.89.09-.89-.37v-.74H9c-.55 0-1-.45-1-1s.45-1 1-1h7z" /></svg>;
+export default PlacesRvHookup;

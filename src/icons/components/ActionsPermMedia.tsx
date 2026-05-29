@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsPermMedia = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M1 6c.55 0 1 .45 1 1v12c0 .55.45 1 1 1h16c.55 0 1 .45 1 1s-.45 1-1 1H2c-1.1 0-2-.9-2-2l.01-9H0V7c0-.55.45-1 1-1m10.17-4c.53 0 1.04.21 1.42.59L14 4h8c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2l.01-12c0-1.1.89-2 1.99-2zm.74 7.51a.508.508 0 0 0-.8.01L7.6 14.2c-.25.33-.01.8.4.79h11.99c.41 0 .65-.48.39-.81l-2.49-3.2a.5.5 0 0 0-.78-.01l-2.1 2.53z" /></svg>;
+export default ActionsPermMedia;

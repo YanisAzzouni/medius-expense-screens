@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const AvSkipPrevious = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M6.995 6c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1s-1-.45-1-1V7c0-.55.45-1 1-1m9.43 1.11c.67-.46 1.58.01 1.58.82v8.14c0 .81-.92 1.29-1.58.82l-5.77-4.07a1 1 0 0 1 0-1.64z" /></svg>;
+export default AvSkipPrevious;

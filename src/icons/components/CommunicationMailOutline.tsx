@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const CommunicationMailOutline = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M20 4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-12c0-1.1.89-2 1.99-2zm-6.94 8.34c-.65.41-1.47.41-2.12 0L4 8v9c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V8zM4 6l8 5 8-5z" /></svg>;
+export default CommunicationMailOutline;

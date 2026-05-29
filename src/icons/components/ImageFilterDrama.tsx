@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ImageFilterDrama = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M12 4a7.49 7.49 0 0 1 7.35 6.04c2.6.18 4.65 2.32 4.65 4.96 0 2.76-2.24 5-5 5H6a5.996 5.996 0 0 1-.64-11.96A7.48 7.48 0 0 1 12 4m.48 2.02c-2-.17-3.79.74-4.89 2.2 2.18.6 3.86 2.39 4.29 4.63.12.6-.38 1.15-.99 1.15-.48 0-.88-.35-.98-.83a3.999 3.999 0 0 0-7.89 1.22C2.22 16.47 4.08 18 6.17 18H19c1.85 0 3.32-1.69 2.93-3.6-.28-1.43-1.62-2.4-3.07-2.4h-1.37v-.27c0-2.89-2.13-5.46-5.01-5.71" /></svg>;
+export default ImageFilterDrama;

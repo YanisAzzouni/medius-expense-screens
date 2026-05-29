@@ -1,0 +1,3 @@
+import type { SVGProps } from "react";
+const ActionsTextRotateUp = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true" {...props}><path fill="currentColor" d="M17.994 4.25c.2-.2.51-.2.71 0l1.79 1.8c.32.31.1.85-.35.85h-.79v12c0 .55-.45 1-1 1s-1-.45-1-1v-12h-.79c-.45 0-.67-.54-.36-.86zm-4.98 3.73a.96.96 0 0 1 1.34.88c0 .39-.24.74-.6.88l-1.6.66v5l1.6.65c.36.15.6.5.6.89 0 .69-.71 1.16-1.34.89l-8.97-3.88c-.42-.18-.69-.59-.69-1.05s.27-.87.69-1.04zm-7.68 4.92 5.02 1.87v-3.74z" /></svg>;
+export default ActionsTextRotateUp;
