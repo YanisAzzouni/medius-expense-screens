@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 56">
+  <!-- Background -->
+  <rect width="40" height="56" rx="4" fill="#f5f5f3"/>
+
+  <!-- Receipt body with jagged top -->
+  <path d="
+    M 12 22
+    L 13.5 17 L 15 22
+    L 16.5 17 L 18 22
+    L 19.5 17 L 21 22
+    L 22.5 17 L 24 22
+    L 25.5 17 L 27 22
+    L 28 22
+    L 28 40
+    L 12 40
+    Z
+  " fill="#d0d0cc"/>
+
+  <!-- Text lines -->
+  <rect x="15" y="26" width="10" height="2.5" rx="1.25" fill="white"/>
+  <rect x="15" y="31" width="10" height="2.5" rx="1.25" fill="white"/>
+  <rect x="15" y="36" width="7"  height="2.5" rx="1.25" fill="white"/>
+
+  <!-- Scroll / curl at the bottom -->
+  <rect x="10" y="38.5" width="20" height="5" rx="2.5" fill="#c0c0bc"/>
+</svg>

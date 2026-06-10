@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280">
+  <!-- Paper -->
+  <rect width="196" height="272" rx="4" fill="#fffefa"/>
+  <rect x="196" y="4" width="3" height="268" rx="2" fill="#00000008"/>
+
+  <!-- Header (royal blue) -->
+  <rect width="196" height="54" rx="4" fill="#1d4ed8"/>
+  <rect y="30" width="196" height="24" fill="#1d4ed8"/>
+  <!-- Airline logo area (white circle) -->
+  <circle cx="34" cy="27" r="14" fill="white" opacity="0.15"/>
+  <circle cx="34" cy="27" r="9" fill="white" opacity="0.25"/>
+  <!-- Merchant name -->
+  <rect x="54" y="18" width="80" height="8" rx="4" fill="white" opacity="0.95"/>
+  <!-- Sub-label -->
+  <rect x="62" y="31" width="64" height="5" rx="2.5" fill="white" opacity="0.55"/>
+  <!-- Booking ref -->
+  <rect x="58" y="41" width="80" height="4" rx="2" fill="white" opacity="0.4"/>
+  <!-- Date -->
+  <rect x="68" y="48" width="60" height="4" rx="2" fill="white" opacity="0.35"/>
+
+  <!-- Separator -->
+  <line x1="16" y1="67" x2="180" y2="67" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Route -->
+  <rect x="16" y="75" width="32" height="5" rx="2.5" fill="#374151"/>
+  <rect x="82" y="75" width="28" height="5" rx="2.5" fill="#9ca3af"/>
+  <rect x="148" y="75" width="32" height="5" rx="2.5" fill="#374151"/>
+  <!-- Arrow line -->
+  <line x1="53" y1="77" x2="80" y2="77" stroke="#d1d5db" stroke-width="1.5"/>
+  <line x1="116" y1="77" x2="144" y2="77" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <!-- Separator -->
+  <line x1="16" y1="89" x2="180" y2="89" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Items -->
+  <rect x="16" y="101" width="100" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="101" width="26" height="6" rx="3" fill="#374151"/>
+
+  <rect x="16" y="115" width="72" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="115" width="26" height="6" rx="3" fill="#374151"/>
+
+  <rect x="16" y="129" width="88" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="129" width="26" height="6" rx="3" fill="#374151"/>
+
+  <rect x="16" y="143" width="56" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="143" width="26" height="6" rx="3" fill="#374151"/>
+
+  <!-- Separator -->
+  <line x1="16" y1="158" x2="180" y2="158" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Subtotal -->
+  <rect x="16" y="167" width="44" height="5" rx="2.5" fill="#9ca3af"/>
+  <rect x="154" y="167" width="26" height="5" rx="2.5" fill="#9ca3af"/>
+
+  <!-- Tax -->
+  <rect x="16" y="179" width="36" height="5" rx="2.5" fill="#9ca3af"/>
+  <rect x="154" y="179" width="26" height="5" rx="2.5" fill="#9ca3af"/>
+
+  <!-- Thick separator -->
+  <line x1="16" y1="192" x2="180" y2="192" stroke="#374151" stroke-width="1.5"/>
+
+  <!-- Total -->
+  <rect x="16" y="202" width="36" height="8" rx="4" fill="#111827"/>
+  <rect x="136" y="202" width="44" height="8" rx="4" fill="#1d4ed8"/>
+
+  <!-- Payment -->
+  <rect x="16" y="220" width="114" height="5" rx="2.5" fill="#d1d5db"/>
+
+  <!-- Boarding pass stub separator -->
+  <line x1="16" y1="231" x2="180" y2="231" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Barcode (QR-style for flights) -->
+  <rect x="66" y="237" width="64" height="16" rx="2" fill="#f3f4f6"/>
+  <!-- Mini grid dots for QR feel -->
+  <rect x="70" y="241" width="3" height="3" fill="#1f2937"/>
+  <rect x="75" y="241" width="2" height="3" fill="#1f2937"/>
+  <rect x="79" y="241" width="3" height="3" fill="#1f2937"/>
+  <rect x="84" y="241" width="2" height="3" fill="#1f2937"/>
+  <rect x="88" y="241" width="3" height="3" fill="#1f2937"/>
+  <rect x="93" y="241" width="2" height="3" fill="#1f2937"/>
+  <rect x="97" y="241" width="3" height="3" fill="#1f2937"/>
+  <rect x="102" y="241" width="2" height="3" fill="#1f2937"/>
+  <rect x="106" y="241" width="3" height="3" fill="#1f2937"/>
+  <rect x="111" y="241" width="2" height="3" fill="#1f2937"/>
+  <rect x="115" y="241" width="3" height="3" fill="#1f2937"/>
+  <rect x="70" y="246" width="2" height="3" fill="#1f2937"/>
+  <rect x="74" y="246" width="3" height="3" fill="#1f2937"/>
+  <rect x="79" y="246" width="2" height="3" fill="#1f2937"/>
+  <rect x="83" y="246" width="3" height="3" fill="#1f2937"/>
+  <rect x="88" y="246" width="2" height="3" fill="#1f2937"/>
+  <rect x="92" y="246" width="3" height="3" fill="#1f2937"/>
+  <rect x="97" y="246" width="2" height="3" fill="#1f2937"/>
+  <rect x="101" y="246" width="3" height="3" fill="#1f2937"/>
+  <rect x="106" y="246" width="2" height="3" fill="#1f2937"/>
+  <rect x="110" y="246" width="3" height="3" fill="#1f2937"/>
+  <rect x="115" y="246" width="2" height="3" fill="#1f2937"/>
+  <!-- Seat/gate info beside QR -->
+  <rect x="28" y="240" width="32" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="28" y="248" width="24" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="136" y="240" width="32" height="4" rx="2" fill="#d1d5db"/>
+  <rect x="136" y="248" width="24" height="4" rx="2" fill="#d1d5db"/>
+
+  <!-- Footer label -->
+  <rect x="52" y="260" width="92" height="4" rx="2" fill="#e5e7eb"/>
+
+  <!-- Torn edge -->
+  <path d="M0 267 Q10 261 20 267 Q30 273 40 267 Q50 261 60 267 Q70 273 80 267 Q90 261 100 267 Q110 273 120 267 Q130 261 140 267 Q150 273 160 267 Q170 261 180 267 Q190 273 196 267 L196 280 L0 280 Z" fill="#f0ede8"/>
+</svg>

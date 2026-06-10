@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280">
+  <!-- Paper -->
+  <rect width="196" height="272" rx="4" fill="#fffefa"/>
+  <rect x="196" y="4" width="3" height="268" rx="2" fill="#00000008"/>
+
+  <!-- Header (purple) -->
+  <rect width="196" height="54" rx="4" fill="#6d28d9"/>
+  <rect y="30" width="196" height="24" fill="#6d28d9"/>
+  <!-- Logo area (play button triangle) -->
+  <circle cx="32" cy="27" r="13" fill="white" opacity="0.2"/>
+  <polygon points="28,21 28,33 40,27" fill="white" opacity="0.7"/>
+  <!-- Merchant name -->
+  <rect x="52" y="17" width="76" height="8" rx="4" fill="white" opacity="0.95"/>
+  <!-- Sub-label -->
+  <rect x="60" y="30" width="60" height="5" rx="2.5" fill="white" opacity="0.55"/>
+  <!-- Invoice number -->
+  <rect x="58" y="40" width="80" height="4" rx="2" fill="white" opacity="0.4"/>
+  <!-- Date -->
+  <rect x="70" y="48" width="56" height="4" rx="2" fill="white" opacity="0.35"/>
+
+  <!-- Separator -->
+  <line x1="16" y1="67" x2="180" y2="67" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Purchaser -->
+  <rect x="16" y="75" width="56" height="5" rx="2.5" fill="#9ca3af"/>
+  <rect x="78" y="75" width="88" height="5" rx="2.5" fill="#d1d5db"/>
+
+  <!-- Separator -->
+  <line x1="16" y1="89" x2="180" y2="89" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Items -->
+  <rect x="16" y="101" width="116" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="101" width="26" height="6" rx="3" fill="#374151"/>
+
+  <rect x="16" y="115" width="76" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="115" width="26" height="6" rx="3" fill="#374151"/>
+
+  <rect x="16" y="129" width="90" height="6" rx="3" fill="#374151"/>
+  <rect x="154" y="129" width="26" height="6" rx="3" fill="#374151"/>
+
+  <!-- Access duration badge -->
+  <rect x="16" y="143" width="72" height="6" rx="3" fill="#374151"/>
+  <rect x="94" y="143" width="36" height="6" rx="3" fill="#ede9fe"/>
+  <rect x="154" y="143" width="26" height="6" rx="3" fill="#374151"/>
+
+  <!-- Separator -->
+  <line x1="16" y1="158" x2="180" y2="158" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Subtotal -->
+  <rect x="16" y="167" width="44" height="5" rx="2.5" fill="#9ca3af"/>
+  <rect x="154" y="167" width="26" height="5" rx="2.5" fill="#9ca3af"/>
+
+  <!-- Tax -->
+  <rect x="16" y="179" width="36" height="5" rx="2.5" fill="#9ca3af"/>
+  <rect x="154" y="179" width="26" height="5" rx="2.5" fill="#9ca3af"/>
+
+  <!-- Thick separator -->
+  <line x1="16" y1="192" x2="180" y2="192" stroke="#374151" stroke-width="1.5"/>
+
+  <!-- Total -->
+  <rect x="16" y="202" width="36" height="8" rx="4" fill="#111827"/>
+  <rect x="136" y="202" width="44" height="8" rx="4" fill="#6d28d9"/>
+
+  <!-- Payment -->
+  <rect x="16" y="220" width="122" height="5" rx="2.5" fill="#d1d5db"/>
+
+  <!-- Barcode -->
+  <rect x="28" y="236" width="140" height="16" rx="2" fill="#f3f4f6"/>
+  <rect x="34" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="40" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="44" y="238" width="3" height="12" fill="#1f2937"/>
+  <rect x="49" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="53" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="59" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="63" y="238" width="3" height="12" fill="#1f2937"/>
+  <rect x="68" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="72" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="78" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="82" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="86" y="238" width="3" height="12" fill="#1f2937"/>
+  <rect x="91" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="95" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="101" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="105" y="238" width="3" height="12" fill="#1f2937"/>
+  <rect x="110" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="114" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="120" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="124" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="128" y="238" width="3" height="12" fill="#1f2937"/>
+  <rect x="133" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="139" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="143" y="238" width="3" height="12" fill="#1f2937"/>
+  <rect x="148" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="152" y="238" width="4" height="12" fill="#1f2937"/>
+  <rect x="158" y="238" width="2" height="12" fill="#1f2937"/>
+  <rect x="162" y="238" width="3" height="12" fill="#1f2937"/>
+
+  <!-- Footer label -->
+  <rect x="54" y="260" width="88" height="4" rx="2" fill="#e5e7eb"/>
+
+  <!-- Torn edge -->
+  <path d="M0 267 Q10 261 20 267 Q30 273 40 267 Q50 261 60 267 Q70 273 80 267 Q90 261 100 267 Q110 273 120 267 Q130 261 140 267 Q150 273 160 267 Q170 261 180 267 Q190 273 196 267 L196 280 L0 280 Z" fill="#f0ede8"/>
+</svg>

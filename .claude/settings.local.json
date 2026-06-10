@@ -27,7 +27,30 @@
       "mcp__Figma__get_metadata",
       "mcp__Control_Chrome__get_current_tab",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(npx storybook *)",
+      "Bash(lsof -i :6006 -sTCP:LISTEN)",
+      "Bash(lsof -i :6007 -sTCP:LISTEN)",
+      "Bash(curl -s \"http://localhost:6006/src/components/Button/Button.stories.tsx\")",
+      "Bash(curl -s \"http://localhost:6006/src/icons/Icon.tsx\")",
+      "Bash(echo \"---STATUS:$?\")",
+      "Bash(curl -s \"http://localhost:6006/src/icons/manifest.ts\" -I)",
+      "Bash(curl -s \"http://localhost:6006/src/icons/components/index.ts\")",
+      "Bash(curl -sv \"http://localhost:6006/src/icons/components/index.ts\")",
+      "Bash(curl -s \"http://localhost:6006/src/icons/components/ActionsMediusCard.tsx\" -I)",
+      "Bash(curl -s \"http://localhost:6006/src/icons/components/ActionsAddCard.tsx\" -I)",
+      "Bash(# Try clearing Storybook's Vite cache *)",
+      "Bash(curl -s \"http://localhost:6006/src/components/Button/Button.stories.tsx\" -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s \"http://localhost:6006/src/icons/Icon.tsx\" -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s \"http://localhost:6006/src/icons/manifest.ts\" -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s \"http://localhost:6006/src/icons/components/index.ts\" -o /dev/null -w \"%{http_code}\")",
+      "Bash(grep -n \"hardcoded\\\\|#[0-9a-fA-F]\\\\{3,6\\\\}\\\\|rgba\\\\|rgb\\(\" /Users/yanisazzouni/Desktop/medius-expense-design-system/src/components/Button/Button.tsx /Users/yanisazzouni/Desktop/medius-expense-design-system/src/components/ExpenseModal/ExpenseModal.module.css)",
+      "Bash(grep -rn \"#[0-9a-fA-F]\\\\{3,8\\\\}\" /Users/yanisazzouni/Desktop/medius-expense-design-system/src/components/ --include=\"*.module.css\")",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(grep -v \"line-height: 1$\")",
+      "Bash(echo \"Exit: $?\")"
     ]
   }
 }

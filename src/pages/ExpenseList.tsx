@@ -15,9 +15,15 @@ import type {
   SelectOption,
 } from "@medius-expense/design-system";
 import styles from "./ExpenseList.module.css";
-
-const RECEIPT_PLACEHOLDER =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='64' viewBox='0 0 48 64'%3E%3Crect width='48' height='64' rx='3' fill='%23f0f0ee'/%3E%3Crect x='8' y='10' width='32' height='3' rx='1.5' fill='%23c8c8c4'/%3E%3Crect x='8' y='18' width='28' height='2' rx='1' fill='%23d8d8d4'/%3E%3Crect x='8' y='24' width='24' height='2' rx='1' fill='%23d8d8d4'/%3E%3Crect x='8' y='30' width='30' height='2' rx='1' fill='%23d8d8d4'/%3E%3Crect x='8' y='36' width='20' height='2' rx='1' fill='%23d8d8d4'/%3E%3Crect x='8' y='46' width='32' height='2' rx='1' fill='%23c0c0bc'/%3E%3Crect x='8' y='52' width='20' height='2' rx='1' fill='%23c0c0bc'/%3E%3C/svg%3E";
+import {
+  EXPENSES,
+  EXPENSE_STATUS_META,
+  CATEGORY_ICON,
+  getReportLabel,
+  formatAmount,
+} from "../data/expenses";
+import receiptPlaceholder from "../assets/receipt-placeholder.svg";
+import type { Expense, ExpenseStatus } from "../data/expenses";
 
 const noop = () => {};
 
@@ -35,130 +41,58 @@ const COLUMNS: ColumnDef[] = [
   { key: "status",       title: "Status",  type: "status",    sortable: true },
 ];
 
-// ── Rows — mirrors Figma data exactly ────────────────────────────────────────
+// ── Rows derived from the mock database ──────────────────────────────────────
 
-const ROWS: RowData[] = [
-  {
-    id: "1",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Client Meeting - Coffee & Pastries", attributes: ["email"] },
-    category: "maps--local-dining",
-    report: { text: "Client meetings", onClick: noop },
-    date: "Sep 1, 2026",
-    amount: { amount: "35.00", currency: "EUR" },
+/** Map an Expense record to the shape DataTable expects for each row. */
+function expenseToRow(e: (typeof EXPENSES)[number]): RowData {
+  const { label, variant } = EXPENSE_STATUS_META[e.status];
+  const dateLabel = new Date(e.date).toLocaleDateString("en-US", {
+    month: "short", day: "numeric", year: "numeric",
+  });
+  return {
+    id: e.id,
+    alerts:       e.alerts,
+    thumbnail:    { src: e.receiptImage ?? receiptPlaceholder, alt: e.receiptImage ? `${e.title} receipt` : "No receipt" },
+    expenseTitle: { title: e.title, attributes: e.attributes },
+    category:     CATEGORY_ICON[e.category],
+    report:       { text: getReportLabel(e.reportId), onClick: noop },
+    date:         dateLabel,
+    amount: {
+      amount:    formatAmount(e.amount),
+      currency:  e.currency,
+      amount2:   e.reimbursementAmount  ? formatAmount(e.reimbursementAmount)  : undefined,
+      currency2: e.reimbursementCurrency ?? undefined,
+    },
     actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "To review", variant: "neutral" },
-  },
-  {
-    id: "2",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Team Lunch - Burgers & Fries", attributes: ["medius-card", "transaction-expected"] },
-    category: "maps--local-dining",
-    report: { text: "Team meetings", onClick: noop },
-    date: "Aug 13, 2026",
-    amount: { amount: "67.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "To review", variant: "neutral" },
-  },
-  {
-    id: "3",
-    alerts: { warning: true },
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Taxi Fare - Office to restaurant", attributes: ["medius-card"] },
-    category: "maps--local-taxi",
-    report: { text: "Client meetings", onClick: noop },
-    date: "Aug 9, 2026",
-    amount: { amount: "35.50", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "To submit", variant: "blue" },
-  },
-  {
-    id: "4",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Client Dinner - Osteria Francescana", attributes: ["manual-addition", "e-invoice"] },
-    category: "maps--local-dining",
-    report: { text: "Client meetings", onClick: noop },
-    date: "Aug 9, 2026",
-    amount: { amount: "94.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "To submit", variant: "blue" },
-  },
-  {
-    id: "5",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Parking Fee - Downtown Office", attributes: [] },
-    category: "maps--directions-car",
-    report: { text: "Parking", onClick: noop },
-    date: "Aug 3, 2026",
-    amount: { amount: "13.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "Submitted", variant: "yellow" },
-  },
-  {
-    id: "6",
-    alerts: { policyAlert: true },
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Training - Online Course", attributes: ["medius-card", "e-invoice"] },
-    category: "maps--local-dining",
-    report: { text: "Trainings", onClick: noop },
-    date: "July 14, 2026",
-    amount: { amount: "120.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "Submitted", variant: "yellow" },
-  },
-  {
-    id: "7",
-    alerts: { duplicate: true },
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Uber drive - Hotel to airport", attributes: ["file-attached"] },
-    category: "maps--local-taxi",
-    report: { text: "Trip to Sweden", onClick: noop },
-    date: "July 7, 2026",
-    amount: { amount: "85.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "Submitted", variant: "yellow" },
-  },
-  {
-    id: "8",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Hotel Stay - Sweden", attributes: ["medius-card", "e-invoice-not-expected"] },
-    category: "maps--hotel",
-    report: { text: "Trip to Sweden", onClick: noop },
-    date: "July 7, 2026",
-    amount: { amount: "345.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "Approved", variant: "green" },
-  },
-  {
-    id: "9",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Uber drive - airport to office", attributes: ["medius-card"] },
-    category: "maps--local-taxi",
-    report: { text: "Trip to Sweden", onClick: noop },
-    date: "July 7, 2026",
-    amount: { amount: "1,200.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "Exported", variant: "grey" },
-  },
-  {
-    id: "10",
-    alerts: {},
-    thumbnail: { src: RECEIPT_PLACEHOLDER, alt: "Receipt" },
-    expenseTitle: { title: "Flight to Sweden", attributes: [] },
-    category: "maps--flight",
-    report: { text: "Trip to Sweden", onClick: noop },
-    date: "July 7, 2026",
-    amount: { amount: "440.00", currency: "EUR" },
-    actions: { icon: "content--create", label: "Edit", onClick: noop },
-    status: { label: "Exported", variant: "grey" },
-  },
-];
+    status: { label, variant },
+  };
+}
+
+// ── Sorting ───────────────────────────────────────────────────────────────────
+
+/** Defines a meaningful workflow order for status sorting. */
+const STATUS_ORDER: Record<ExpenseStatus, number> = {
+  "draft":     0,
+  "to-review": 1,
+  "to-submit": 2,
+  "submitted": 3,
+  "approved":  4,
+  "exported":  5,
+  "rejected":  6,
+};
+
+/** Returns a comparable primitive for a given column key. */
+function sortValue(e: Expense, key: string): string | number {
+  switch (key) {
+    case "expenseTitle": return e.title.toLowerCase();
+    case "category":     return e.category;
+    case "report":       return getReportLabel(e.reportId).toLowerCase();
+    case "date":         return e.date;           // ISO → lexicographic order is correct
+    case "amount":       return e.amount;
+    case "status":       return STATUS_ORDER[e.status];
+    default:             return "";
+  }
+}
 
 const ROWS_PER_PAGE_OPTIONS: SelectOption[] = [
   { value: "10", label: "10" },
@@ -166,7 +100,7 @@ const ROWS_PER_PAGE_OPTIONS: SelectOption[] = [
   { value: "50", label: "50" },
 ];
 
-const TOTAL_RESULTS = 67;
+const TOTAL_RESULTS = EXPENSES.length;
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -181,7 +115,21 @@ export default function ExpenseList() {
   const [rowsPerPage, setRowsPerPage] = useState("10");
   const [activeView, setActiveView] = useState<"list" | "card">("list");
 
-  const totalPages = Math.ceil(TOTAL_RESULTS / Number(rowsPerPage));
+  const perPage = Number(rowsPerPage);
+  const totalPages = Math.ceil(TOTAL_RESULTS / perPage);
+
+  // Sort then paginate — all derived from the raw EXPENSES array
+  const sortedRows: RowData[] = [...EXPENSES]
+    .sort((a, b) => {
+      const va = sortValue(a, sortKey);
+      const vb = sortValue(b, sortKey);
+      if (va < vb) return sortDirection === "asc" ? -1 : 1;
+      if (va > vb) return sortDirection === "asc" ? 1 : -1;
+      return 0;
+    })
+    .map(expenseToRow);
+
+  const visibleRows = sortedRows.slice((currentPage - 1) * perPage, currentPage * perPage);
 
   const pages: (number | null)[] = (() => {
     if (totalPages <= 5) return Array.from({ length: totalPages }, (_, i) => i + 1);
@@ -272,13 +220,13 @@ export default function ExpenseList() {
         {/* Table */}
         <DataTable
           columns={COLUMNS}
-          rows={ROWS}
+          rows={visibleRows}
           selectable
           selectedIds={selectedIds}
           onSelectionChange={setSelectedIds}
           sortKey={sortKey}
           sortDirection={sortDirection}
-          onSort={(key, dir) => { setSortKey(key); setSortDirection(dir); }}
+          onSort={(key, dir) => { setSortKey(key); setSortDirection(dir); setCurrentPage(1); }}
           onRowClick={(id) => console.log("open", id)}
           emptyMessage="No expenses found."
         />
@@ -339,7 +287,7 @@ export default function ExpenseList() {
               <Select
                 options={ROWS_PER_PAGE_OPTIONS}
                 value={rowsPerPage}
-                onChange={setRowsPerPage}
+                onChange={(v) => { setRowsPerPage(v); setCurrentPage(1); }}
               />
             </div>
             <span className={styles.resultsCount}>{TOTAL_RESULTS} Results</span>
