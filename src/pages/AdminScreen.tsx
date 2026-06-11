@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { AdminPanel } from "@medius-expense/design-system";
 import AppLayout from "../components/AppLayout";
+import ComingSoon from "../components/ComingSoon";
 import styles from "./AdminScreen.module.css";
 
 export default function AdminScreen() {
@@ -21,7 +22,7 @@ export default function AdminScreen() {
           onNavigate={handleNavigate}
         />
         <main className={styles.content}>
-          {/* Pages will be added here one by one */}
+          <ComingSoon />
         </main>
       </div>
     </AppLayout>
