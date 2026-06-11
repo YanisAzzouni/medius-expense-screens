@@ -1,0 +1,16 @@
+/* ── Full-viewport shell ── */
+.shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--font-family);
+}
+
+/* ── Everything below the NavBar ── */
+.pageContent {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

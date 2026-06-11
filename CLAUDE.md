@@ -359,12 +359,52 @@ Families: `chalk` · `olive` · `blue` · `green` · `red` · `orange` · `yello
 
 ---
 
+## AppLayout — Shared Page Wrapper
+
+**Every page must be wrapped in `<AppLayout>`** — never place `<NavBar>` directly inside a page component.
+
+```tsx
+import AppLayout from "../components/AppLayout";
+
+export default function MyPage() {
+  return (
+    <AppLayout showAdmin showMediusCard>
+      {/* page content */}
+    </AppLayout>
+  );
+}
+```
+
+`AppLayout` handles:
+- Rendering the `<NavBar>` once, in one place
+- Keeping the active tab in sync with the URL automatically (reads `useLocation`)
+- Navigating to the correct route when a tab is clicked
+
+**Props:**
+```ts
+showMediusCard?:  boolean
+showAdmin?:       boolean
+showRequests?:    boolean
+showManager?:     boolean
+showAccountant?:  boolean
+```
+
+Pass only the tabs that should be visible on that screen. All pages in this project currently use `showAdmin` and `showMediusCard`.
+
+**Never:**
+- Import `NavBar` directly in a page component
+- Manage `activeItem` state manually in a page
+- Copy-paste NavBar props between pages
+
+---
+
 ## Rules for Consumer Projects
 
 - Import only from `"@medius-expense/design-system"` — never from internal paths.
 - For layout and custom styling that the design system doesn't cover, plain CSS/CSS Modules are fine — but prefer token CSS variables over hardcoded values.
 - Do not recreate spacing, colours, or typography by hand if a token exists.
 - **Before building any new screen**, always rebuild and reinstall the design system (see "Design System — Rebuild Workflow" above).
-- **Follow the existing page pattern** — use `src/pages/ExpenseList.tsx` and `src/pages/AdminScreen.tsx` as reference for page structure, routing, and NavBar wiring.
+- **Wrap every page in `<AppLayout>`** — never place `<NavBar>` directly in a page (see "AppLayout" above).
+- **Follow the existing page pattern** — use `src/pages/ExpenseList.tsx` and `src/pages/AdminScreen.tsx` as reference for page structure.
 - **Routes live in `src/App.tsx`** — register every new page there. Admin sub-pages follow the pattern `/admin/:section/:item`.
 - **Mock data goes in `src/data/`** — never inline large data arrays inside page components.

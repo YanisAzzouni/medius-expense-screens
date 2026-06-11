@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import {
-  NavBar,
   DataTable,
   Button,
   TextInput,
@@ -10,11 +8,11 @@ import {
   Select,
 } from "@medius-expense/design-system";
 import type {
-  NavItemKey,
   ColumnDef,
   RowData,
   SelectOption,
 } from "@medius-expense/design-system";
+import AppLayout from "../components/AppLayout";
 import styles from "./ExpenseList.module.css";
 import {
   EXPENSES,
@@ -106,13 +104,6 @@ const TOTAL_RESULTS = EXPENSES.length;
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function ExpenseList() {
-  const navigate = useNavigate();
-  const [activeNav, setActiveNav] = useState<NavItemKey>("expenses");
-
-  function handleNavChange(key: NavItemKey) {
-    setActiveNav(key);
-    if (key === "admin") navigate("/admin");
-  }
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [sortKey, setSortKey] = useState("date");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
@@ -146,15 +137,7 @@ export default function ExpenseList() {
   })();
 
   return (
-    <div className={styles.page}>
-      <NavBar
-        activeItem={activeNav}
-        onNavigate={handleNavChange}
-        userInitials="YA"
-        showMediusCard
-        showAdmin
-      />
-
+    <AppLayout showMediusCard showAdmin>
       <div className={styles.content}>
 
         {/* Header */}
@@ -303,6 +286,6 @@ export default function ExpenseList() {
 
         </div>
       </div>
-    </div>
+    </AppLayout>
   );
 }
