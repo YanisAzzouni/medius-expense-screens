@@ -2,35 +2,14 @@ import AppLayout from "../components/AppLayout";
 import ComingSoon from "../components/ComingSoon";
 import styles from "./PlaceholderPage.module.css";
 
-interface PlaceholderPageProps {
-  title: string;
-  showMediusCard?: boolean;
-  showAdmin?: boolean;
-  showRequests?: boolean;
-  showManager?: boolean;
-  showAccountant?: boolean;
-}
-
 /**
- * Generic page used for nav destinations that haven't been built yet.
- * Keeps the full layout (NavBar + background) intact with a ComingSoon state.
+ * Generic page for nav destinations that haven't been built yet.
+ * Keeps the full layout intact with a ComingSoon placeholder.
+ * Replace this route in App.tsx with the real page when it's ready.
  */
-export default function PlaceholderPage({
-  title,
-  showMediusCard,
-  showAdmin,
-  showRequests,
-  showManager,
-  showAccountant,
-}: PlaceholderPageProps) {
+export default function PlaceholderPage({ title }: { title: string }) {
   return (
-    <AppLayout
-      showMediusCard={showMediusCard}
-      showAdmin={showAdmin}
-      showRequests={showRequests}
-      showManager={showManager}
-      showAccountant={showAccountant}
-    >
+    <AppLayout>
       <div className={styles.content}>
         <ComingSoon title={title} />
       </div>

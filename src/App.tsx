@@ -3,9 +3,6 @@ import ExpenseList from "./pages/ExpenseList";
 import AdminScreen from "./pages/AdminScreen";
 import PlaceholderPage from "./pages/PlaceholderPage";
 
-/** Shared nav props — keep all pages consistent. */
-const NAV = { showAdmin: true, showMediusCard: true, showRequests: true, showManager: true };
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,13 +11,13 @@ export default function App() {
         <Route path="/" element={<Navigate to="/expenses" replace />} />
 
         {/* ── Top-nav pages ── */}
-        <Route path="/dashboard"   element={<PlaceholderPage title="Dashboard"    {...NAV} />} />
+        <Route path="/dashboard"   element={<PlaceholderPage title="Dashboard"   />} />
         <Route path="/expenses"    element={<ExpenseList />} />
-        <Route path="/reports"     element={<PlaceholderPage title="Reports"      {...NAV} />} />
-        <Route path="/requests"    element={<PlaceholderPage title="Requests"     {...NAV} />} />
-        <Route path="/manager"     element={<PlaceholderPage title="Manager"      {...NAV} />} />
-        <Route path="/medius-card" element={<PlaceholderPage title="Medius Card"  {...NAV} />} />
-        <Route path="/accountant"  element={<PlaceholderPage title="Accountant"   {...NAV} showAccountant />} />
+        <Route path="/reports"     element={<PlaceholderPage title="Reports"     />} />
+        <Route path="/requests"    element={<PlaceholderPage title="Requests"    />} />
+        <Route path="/manager"     element={<PlaceholderPage title="Manager"     />} />
+        <Route path="/medius-card" element={<PlaceholderPage title="Medius Card" />} />
+        <Route path="/accountant"  element={<PlaceholderPage title="Accountant"  />} />
 
         {/* ── Admin ── */}
         <Route path="/admin" element={<Navigate to="/admin/users-access/users" replace />} />

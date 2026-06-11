@@ -13,7 +13,7 @@ export default function AdminScreen() {
   }
 
   return (
-    <AppLayout showAdmin showMediusCard>
+    <AppLayout>
       <div className={styles.body}>
         <AdminPanel
           companyName="Medius AB"

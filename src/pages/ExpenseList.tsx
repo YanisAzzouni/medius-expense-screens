@@ -137,7 +137,7 @@ export default function ExpenseList() {
   })();
 
   return (
-    <AppLayout showMediusCard showAdmin>
+    <AppLayout>
       <div className={styles.content}>
 
         {/* Header */}
