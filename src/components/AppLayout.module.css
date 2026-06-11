@@ -2,14 +2,15 @@
 .shell {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--color-chalk-100);
   font-family: var(--font-family);
 }
 
-/* ── Everything below the NavBar ── */
+/* ── Everything below the NavBar — scrolls independently ── */
 .pageContent {
   flex: 1;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
