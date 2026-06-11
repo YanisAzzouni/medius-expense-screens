@@ -6,13 +6,16 @@ import {
   Banner,
   Icon,
   Select,
+  ExpenseModal,
 } from "@medius-expense/design-system";
 import type {
   ColumnDef,
   RowData,
   SelectOption,
+  ExpenseModalInitialData,
 } from "@medius-expense/design-system";
 import AppLayout from "../components/AppLayout";
+import { useToastContext } from "../components/ToastProvider";
 import styles from "./ExpenseList.module.css";
 import {
   EXPENSES,
@@ -25,6 +28,27 @@ import receiptPlaceholder from "../assets/receipt-placeholder.svg";
 import type { Expense, ExpenseStatus } from "../data/expenses";
 
 const noop = () => {};
+
+// ── Expense → modal initial data ──────────────────────────────────────────────
+
+function expenseToModalData(e: Expense): ExpenseModalInitialData {
+  return {
+    title:             e.title,
+    date:              e.date,
+    category:          e.category,
+    paymentInstrument: e.paymentInstrument,
+    country:           e.country,
+    amount:            formatAmount(e.amount),
+    currency:          e.currency.toLowerCase(),
+    billable:          e.billable,
+    reimburse:         e.reimburse,
+    credit:            e.credit,
+    vat:               formatAmount(e.vat),
+    vatPct:            String(e.vatPct),
+    report:            e.reportId,
+    description:       e.description,
+  };
+}
 
 // ── Columns ──────────────────────────────────────────────────────────────────
 
@@ -104,6 +128,7 @@ const TOTAL_RESULTS = EXPENSES.length;
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function ExpenseList() {
+  const { success } = useToastContext();
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [sortKey, setSortKey] = useState("date");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
@@ -112,6 +137,11 @@ export default function ExpenseList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState("10");
   const [activeView, setActiveView] = useState<"list" | "card">("list");
+  const [openExpenseId, setOpenExpenseId] = useState<string | null>(null);
+
+  const openExpense = openExpenseId
+    ? EXPENSES.find((e) => e.id === openExpenseId) ?? null
+    : null;
 
   const perPage = Number(rowsPerPage);
   const totalPages = Math.ceil(TOTAL_RESULTS / perPage);
@@ -218,7 +248,7 @@ export default function ExpenseList() {
           sortKey={sortKey}
           sortDirection={sortDirection}
           onSort={(key, dir) => { setSortKey(key); setSortDirection(dir); setCurrentPage(1); }}
-          onRowClick={(id) => console.log("open", id)}
+          onRowClick={(id) => setOpenExpenseId(id)}
           emptyMessage="No expenses found."
         />
 
@@ -286,6 +316,33 @@ export default function ExpenseList() {
 
         </div>
       </div>
+      {/* ── Expense modal ── */}
+      {openExpense && (
+        <div className={styles.modalBackdrop} onClick={() => setOpenExpenseId(null)}>
+          <div className={styles.modalWrapper} onClick={(e) => e.stopPropagation()}>
+            <ExpenseModal
+              key={openExpense.id}
+              title={openExpense.title}
+              tags={openExpense.tags.map((label) => ({ label }))}
+              statusLabel={EXPENSE_STATUS_META[openExpense.status].label}
+              statusVariant={EXPENSE_STATUS_META[openExpense.status].variant}
+              showBanner={openExpense.showBanner}
+              bannerMessage={openExpense.bannerMessage}
+              initialData={expenseToModalData(openExpense)}
+              onClose={() => setOpenExpenseId(null)}
+              onSave={() => {
+                success("Expense saved", `"${openExpense.title}" has been saved.`);
+                setOpenExpenseId(null);
+              }}
+              onNext={() => {
+                const idx = EXPENSES.findIndex((e) => e.id === openExpense.id);
+                const next = EXPENSES[idx + 1];
+                if (next) setOpenExpenseId(next.id);
+              }}
+            />
+          </div>
+        </div>
+      )}
     </AppLayout>
   );
 }
