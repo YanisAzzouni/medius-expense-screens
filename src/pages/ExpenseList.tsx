@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   NavBar,
   DataTable,
@@ -104,16 +105,13 @@ const TOTAL_RESULTS = EXPENSES.length;
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
-interface ExpenseListProps {
-  onNavigateAway?: () => void;
-}
-
-export default function ExpenseList({ onNavigateAway }: ExpenseListProps) {
+export default function ExpenseList() {
+  const navigate = useNavigate();
   const [activeNav, setActiveNav] = useState<NavItemKey>("expenses");
 
   function handleNavChange(key: NavItemKey) {
     setActiveNav(key);
-    if (key === "admin") onNavigateAway?.();
+    if (key === "admin") navigate("/admin");
   }
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [sortKey, setSortKey] = useState("date");
@@ -154,6 +152,7 @@ export default function ExpenseList({ onNavigateAway }: ExpenseListProps) {
         onNavigate={handleNavChange}
         userInitials="YA"
         showMediusCard
+        showAdmin
       />
 
       <div className={styles.content}>

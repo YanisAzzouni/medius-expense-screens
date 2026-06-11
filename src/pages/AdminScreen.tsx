@@ -1,46 +1,39 @@
-import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   NavBar,
   AdminPanel,
 } from "@medius-expense/design-system";
-import type {
-  NavItemKey,
-} from "@medius-expense/design-system";
+import type { NavItemKey } from "@medius-expense/design-system";
 import styles from "./AdminScreen.module.css";
 
-interface AdminScreenProps {
-  onNavigateAway?: () => void;
-}
-
-export default function AdminScreen({ onNavigateAway }: AdminScreenProps) {
-  const [activeNav, setActiveNav] = useState<NavItemKey>("admin");
-  const [activeSection, setActiveSection] = useState("users-access");
-  const [activeItem, setActiveItem] = useState("users");
+export default function AdminScreen() {
+  const { section = "users-access", item = "" } = useParams();
+  const navigate = useNavigate();
 
   function handleNavChange(key: NavItemKey) {
-    setActiveNav(key);
-    if (key !== "admin") onNavigateAway?.();
+    if (key === "expenses") navigate("/expenses");
+    else if (key === "admin") navigate("/admin/users-access/users");
   }
 
   function handleNavigate(sectionKey: string, itemKey?: string) {
-    setActiveSection(sectionKey);
-    setActiveItem(itemKey ?? "");
+    navigate(`/admin/${sectionKey}${itemKey ? `/${itemKey}` : ""}`);
   }
 
   return (
     <div className={styles.page}>
       <NavBar
-        activeItem={activeNav}
+        activeItem="admin"
         onNavigate={handleNavChange}
         userInitials="YA"
+        showMediusCard
         showAdmin
       />
 
       <div className={styles.body}>
         <AdminPanel
           companyName="Medius AB"
-          activeSection={activeSection}
-          activeItem={activeItem}
+          activeSection={section}
+          activeItem={item}
           onNavigate={handleNavigate}
         />
 
