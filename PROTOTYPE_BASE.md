@@ -198,6 +198,21 @@ const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
 />
 ```
 
+### Toast notifications
+
+```tsx
+import { useToastContext } from "../components/ToastProvider";
+
+const { success, error, warning, information } = useToastContext();
+
+success("Saved");
+error("Failed", "Optional description line.");
+warning("Budget exceeded");
+information("Syncing...");
+```
+
+No setup needed — `ToastContainer` is already mounted in `AppLayout`. Never import `useToast` or `ToastContainer` directly in a page.
+
 ### Navigating between admin sub-pages
 
 ```tsx
