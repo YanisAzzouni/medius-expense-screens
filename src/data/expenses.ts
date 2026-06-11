@@ -31,12 +31,28 @@ export type ExpenseStatus =
   | "rejected";
 
 export type ExpenseCategory =
+  | "car"
+  | "diesel"
+  | "electricity"
+  | "entertainment"
+  | "equipment"
+  | "flight"
+  | "fuel"
+  | "gas-utility"
+  | "internet"
+  | "lodging"
   | "meals"
-  | "travel"
-  | "hotel"
-  | "taxi"
+  | "mileage"
+  | "misc"
   | "parking"
-  | "training";
+  | "phone"
+  | "postal-charges"
+  | "rent"
+  | "services"
+  | "taxi"
+  | "toll"
+  | "transportation"
+  | "water";
 
 export type PaymentInstrument =
   | "company-card"
@@ -126,12 +142,28 @@ export const EXPENSE_STATUS_META: Record<
 /* ─── Category → DataTable icon name ───────────────────────────────────── */
 
 export const CATEGORY_ICON: Record<ExpenseCategory, string> = {
-  meals:    "maps--local-dining",
-  travel:   "maps--flight",
-  hotel:    "maps--hotel",
-  taxi:     "maps--local-taxi",
-  parking:  "maps--directions-car",
-  training: "maps--local-library",
+  "car":            "maps--directions-car",
+  "diesel":         "maps--local-gas-station",
+  "electricity":    "actions--offline-bolt",
+  "entertainment":  "actions--theaters",
+  "equipment":      "hardware--computer",
+  "flight":         "maps--flight",
+  "fuel":           "maps--local-gas-station",
+  "gas-utility":    "maps--local-gas-station",
+  "internet":       "device--network-wifi",
+  "lodging":        "maps--hotel",
+  "meals":          "maps--local-dining",
+  "mileage":        "maps--directions-car",
+  "misc":           "navigation--more-vert",
+  "parking":        "maps--local-parking",
+  "phone":          "maps--local-phone",
+  "postal-charges": "maps--local-post-office",
+  "rent":           "actions--home",
+  "services":       "hardware--headset",
+  "taxi":           "maps--local-taxi",
+  "toll":           "actions--toll",
+  "transportation": "maps--train",
+  "water":          "maps--local-drink",
 };
 
 /* ─── Country display labels ────────────────────────────────────────────── */
@@ -392,7 +424,7 @@ export const EXPENSES: Expense[] = [
     showBanner: true,
     bannerMessage: "This expense is flagged by policy: training expenses require manager pre-approval.",
     date: "2026-07-14",
-    category: "training",
+    category: "services",
     paymentInstrument: "company-card",
     country: "us",
     amount: 120.00,
@@ -477,7 +509,7 @@ export const EXPENSES: Expense[] = [
     receiptImage: invoice8,
     alerts: {},
     date: "2026-07-07",
-    category: "hotel",
+    category: "lodging",
     paymentInstrument: "company-card",
     country: "se",
     amount: 345.00,
@@ -569,7 +601,7 @@ export const EXPENSES: Expense[] = [
     receiptImage: invoice10,
     alerts: {},
     date: "2026-07-07",
-    category: "travel",
+    category: "flight",
     paymentInstrument: "company-card",
     country: "se",
     amount: 440.00,
@@ -648,7 +680,7 @@ export const EXPENSES: Expense[] = [
     receiptImage: undefined,
     alerts: {},
     date: "2026-06-10",
-    category: "training",
+    category: "services",
     paymentInstrument: "personal-card",
     country: "gb",
     amount: 649.00,
@@ -681,7 +713,7 @@ export const EXPENSES: Expense[] = [
     receiptImage: undefined,
     alerts: {},
     date: "2026-05-01",
-    category: "training",
+    category: "services",
     paymentInstrument: "company-card",
     country: "us",
     amount: 45.00,
@@ -753,7 +785,7 @@ export const EXPENSES: Expense[] = [
     receiptImage: undefined,
     alerts: {},
     date: "2026-04-14",
-    category: "travel",
+    category: "flight",
     paymentInstrument: "personal-card",
     country: "de",
     amount: 210.00,
