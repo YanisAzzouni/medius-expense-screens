@@ -398,6 +398,39 @@ Pass only the tabs that should be visible on that screen. All pages in this proj
 
 ---
 
+## Mock Data Library
+
+All mock data lives in `src/data/`. Always import from the barrel file:
+
+```ts
+import { USERS, EXPENSES, BUDGETS, TRANSACTIONS } from "../data";
+```
+
+**Files and what they cover:**
+
+| File | Domain | Key exports |
+|------|--------|-------------|
+| `expenses.ts` | Expenses, Reports | `EXPENSES`, `REPORTS`, `EXPENSE_STATUS_META`, `CATEGORY_ICON` |
+| `users.ts` | Users & Access | `USERS`, `GROUPS`, `DELEGATIONS`, `CONTACTS`, `ABSENCES` |
+| `payment.ts` | Payment | `TRANSACTIONS`, `ADVANCES`, `PAYMENT_INSTRUMENTS`, `BANK_ACCOUNTS`, `ROLE_DEFINITIONS` |
+| `settings.ts` | Config & Policies | `CATEGORIES`, `PROJECTS`, `CUSTOM_FIELDS`, `MILEAGE_RATES`, `VEHICLES`, `SPENDING_POLICIES`, `BUDGETS`, `SUBSCRIPTION`, `BILLS` |
+| `index.ts` | Barrel | re-exports all of the above |
+
+**Cross-references (IDs are stable and consistent across files):**
+- `Expense.reportId` → `Report.id`
+- `User.groupIds` → `Group.id`
+- `Delegation.delegatorId / delegateId` → `User.id`
+- `Transaction.userId` → `User.id`, `Transaction.expenseId` → `Expense.id`
+- `Project.managerId` → `User.id`
+- `Budget.groupId` → `Group.id`
+
+**Rules:**
+- **Never** define mock data inline inside a page component
+- **Never** create a new data file without adding it to `index.ts`
+- When adding new entities, make sure IDs cross-reference correctly
+
+---
+
 ## Rules for Consumer Projects
 
 - Import only from `"@medius-expense/design-system"` — never from internal paths.
