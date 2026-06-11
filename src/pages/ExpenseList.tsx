@@ -104,8 +104,17 @@ const TOTAL_RESULTS = EXPENSES.length;
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
-export default function ExpenseList() {
+interface ExpenseListProps {
+  onNavigateAway?: () => void;
+}
+
+export default function ExpenseList({ onNavigateAway }: ExpenseListProps) {
   const [activeNav, setActiveNav] = useState<NavItemKey>("expenses");
+
+  function handleNavChange(key: NavItemKey) {
+    setActiveNav(key);
+    if (key === "admin") onNavigateAway?.();
+  }
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [sortKey, setSortKey] = useState("date");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
@@ -142,7 +151,7 @@ export default function ExpenseList() {
     <div className={styles.page}>
       <NavBar
         activeItem={activeNav}
-        onNavigate={setActiveNav}
+        onNavigate={handleNavChange}
         userInitials="YA"
         showMediusCard
       />
