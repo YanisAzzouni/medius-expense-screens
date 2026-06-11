@@ -1,7 +1,6 @@
 import { NavBar } from "@medius-expense/design-system";
 import type { NavItemKey } from "@medius-expense/design-system";
 import { useNavigate, useLocation } from "react-router-dom";
-import { ToastProvider } from "./ToastProvider";
 import styles from "./AppLayout.module.css";
 
 const NAV_ROUTES: Record<NavItemKey, string> = {
@@ -46,21 +45,19 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   const { pathname } = useLocation();
 
   return (
-    <ToastProvider>
-      <div className={styles.shell}>
-        <NavBar
-          activeItem={activeNavFromPath(pathname)}
-          onNavigate={(key) => navigate(NAV_ROUTES[key] ?? "/")}
-          userInitials="YA"
-          showMediusCard
-          showAdmin
-          showRequests
-          showManager
-        />
-        <div className={styles.pageContent}>
-          {children}
-        </div>
+    <div className={styles.shell}>
+      <NavBar
+        activeItem={activeNavFromPath(pathname)}
+        onNavigate={(key) => navigate(NAV_ROUTES[key] ?? "/")}
+        userInitials="YA"
+        showMediusCard
+        showAdmin
+        showRequests
+        showManager
+      />
+      <div className={styles.pageContent}>
+        {children}
       </div>
-    </ToastProvider>
+    </div>
   );
 }

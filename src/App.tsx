@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { ToastProvider } from "./components/ToastProvider";
 import ExpenseList from "./pages/ExpenseList";
 import AdminScreen from "./pages/AdminScreen";
 import PlaceholderPage from "./pages/PlaceholderPage";
@@ -6,6 +7,7 @@ import PlaceholderPage from "./pages/PlaceholderPage";
 export default function App() {
   return (
     <BrowserRouter>
+    <ToastProvider>
       <Routes>
         {/* ── Default ── */}
         <Route path="/" element={<Navigate to="/expenses" replace />} />
@@ -23,6 +25,7 @@ export default function App() {
         <Route path="/admin" element={<Navigate to="/admin/users-access/users" replace />} />
         <Route path="/admin/:section/:item?" element={<AdminScreen />} />
       </Routes>
+    </ToastProvider>
     </BrowserRouter>
   );
 }
