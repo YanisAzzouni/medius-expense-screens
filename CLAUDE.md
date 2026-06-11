@@ -14,6 +14,28 @@
 
 ---
 
+## Design System — Rebuild Workflow
+
+The design system is installed from a **local path** (`../medius-expense-design-system`). The screens project consumes the compiled `dist/` output — **not** the source files directly.
+
+**Whenever the design system has changed** (new component, prop update, style fix), run this before building any new screen:
+
+```bash
+# 1. Rebuild the design system
+cd /Users/yanisazzouni/Desktop/medius-expense-design-system
+npm run build
+
+# 2. Reinstall it in the screens project
+cd /Users/yanisazzouni/Desktop/medius-expense-screens
+npm install ../medius-expense-design-system
+```
+
+If you skip this step, the screens project will silently use stale compiled code and components will not reflect the latest changes.
+
+**How to tell if a rebuild is needed:** if you're unsure whether the design system was recently changed, always rebuild — it takes ~3 seconds and is safe to run repeatedly.
+
+---
+
 ## Package
 
 ```
@@ -342,3 +364,7 @@ Families: `chalk` · `olive` · `blue` · `green` · `red` · `orange` · `yello
 - Import only from `"@medius-expense/design-system"` — never from internal paths.
 - For layout and custom styling that the design system doesn't cover, plain CSS/CSS Modules are fine — but prefer token CSS variables over hardcoded values.
 - Do not recreate spacing, colours, or typography by hand if a token exists.
+- **Before building any new screen**, always rebuild and reinstall the design system (see "Design System — Rebuild Workflow" above).
+- **Follow the existing page pattern** — use `src/pages/ExpenseList.tsx` and `src/pages/AdminScreen.tsx` as reference for page structure, routing, and NavBar wiring.
+- **Routes live in `src/App.tsx`** — register every new page there. Admin sub-pages follow the pattern `/admin/:section/:item`.
+- **Mock data goes in `src/data/`** — never inline large data arrays inside page components.
