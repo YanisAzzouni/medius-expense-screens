@@ -13,6 +13,7 @@ import type {
   RowData,
   SelectOption,
   ExpenseModalInitialData,
+  ExpenseTag,
 } from "@medius-expense/design-system";
 import AppLayout from "../components/AppLayout";
 import { useToastContext } from "../components/ToastProvider";
@@ -25,7 +26,68 @@ import {
   formatAmount,
 } from "../data/expenses";
 import receiptPlaceholder from "../assets/receipt-placeholder.svg";
-import type { Expense, ExpenseStatus } from "../data/expenses";
+import type { Expense, ExpenseStatus, AttributeType } from "../data/expenses";
+
+// ── Attribute → tag metadata (mirrors DataTable internals) ────────────────────
+
+const ATTR_ICON: Record<AttributeType, string> = {
+  "manual-addition":        "hardware--keyboard",
+  "split":                  "communication--call-split",
+  "email":                  "communication--email",
+  "card-statement":         "actions--credit-card",
+  "file-attached":          "editor--attach-file",
+  "guest":                  "social--person-add",
+  "merged":                 "editor--merge-type",
+  "medius-card":            "actions--medius-card",
+  "e-invoice":              "actions--e-invoice",
+  "e-invoice-expected":     "actions--e-invoice",
+  "e-invoice-not-expected": "actions--no-e-invoice",
+  "transaction-expected":   "actions--transaction",
+};
+
+const ATTR_LABEL: Record<AttributeType, string> = {
+  "manual-addition":        "Manual addition",
+  "split":                  "Split",
+  "email":                  "Email",
+  "card-statement":         "Card statement",
+  "file-attached":          "File attached",
+  "guest":                  "Guest",
+  "merged":                 "Merged",
+  "medius-card":            "Medius card",
+  "e-invoice":              "E-invoice",
+  "e-invoice-expected":     "E-invoice expected",
+  "e-invoice-not-expected": "E-invoice not expected",
+  "transaction-expected":   "Transaction expected",
+};
+
+const ATTR_COLOR: Record<AttributeType, "neutral" | "grey" | "orange"> = {
+  "manual-addition":        "grey",
+  "split":                  "neutral",
+  "email":                  "neutral",
+  "card-statement":         "neutral",
+  "file-attached":          "neutral",
+  "guest":                  "neutral",
+  "merged":                 "neutral",
+  "medius-card":            "neutral",
+  "e-invoice":              "neutral",
+  "e-invoice-expected":     "orange",
+  "e-invoice-not-expected": "grey",
+  "transaction-expected":   "orange",
+};
+
+const ATTR_ICON_COLOR: Partial<Record<AttributeType, string>> = {
+  "medius-card": "var(--color-olive-500)",
+  "e-invoice":   "var(--color-blue-500)",
+};
+
+function attributesToTags(attributes: AttributeType[]): ExpenseTag[] {
+  return attributes.map((attr) => ({
+    label:     ATTR_LABEL[attr],
+    icon:      <Icon name={ATTR_ICON[attr] as Parameters<typeof Icon>[0]["name"]} size="small" />,
+    color:     ATTR_COLOR[attr],
+    iconColor: ATTR_ICON_COLOR[attr],
+  }));
+}
 
 const noop = () => {};
 
@@ -323,7 +385,7 @@ export default function ExpenseList() {
             <ExpenseModal
               key={openExpense.id}
               title={openExpense.title}
-              tags={openExpense.tags.map((label) => ({ label }))}
+              tags={attributesToTags(openExpense.attributes)}
               statusLabel={EXPENSE_STATUS_META[openExpense.status].label}
               statusVariant={EXPENSE_STATUS_META[openExpense.status].variant}
               showBanner={openExpense.showBanner}
