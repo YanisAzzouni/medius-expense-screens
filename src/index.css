@@ -50,16 +50,41 @@
   }
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; /* prevent the window itself from scrolling */
+}
+
 #root {
   width: 100%;
-  min-height: 100svh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+/* ── Themed scrollbar (Webkit) ── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-chalk-300, #d1d0d4);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-chalk-500, #9b99a1);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-chalk-300, #d1d0d4) transparent;
 }
 
 h1,
