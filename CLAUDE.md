@@ -398,6 +398,43 @@ Pass only the tabs that should be visible on that screen. All pages in this proj
 
 ---
 
+## Toast Notifications
+
+Toasts are globally available on every page via `useToastContext`. Never instantiate `useToast` or `<ToastContainer>` directly in a page — they are already wired into `AppLayout`.
+
+```tsx
+import { useToastContext } from "../components/ToastProvider";
+
+export default function MyPage() {
+  const { success, error, warning, information } = useToastContext();
+
+  return (
+    <AppLayout>
+      <button onClick={() => success("Saved", "Your changes have been saved.")}>
+        Save
+      </button>
+    </AppLayout>
+  );
+}
+```
+
+**4 variants:**
+```ts
+success("Message", "Optional description")
+error("Message", "Optional description")
+warning("Message", "Optional description")
+information("Message", "Optional description")
+```
+
+**Custom duration** (ms, default 4000 — use 0 for persistent):
+```ts
+const { toast } = useToastContext();
+toast({ variant: "success", message: "Done", duration: 8000 });
+toast({ variant: "error",   message: "Failed", duration: 0 }); // won't auto-dismiss
+```
+
+---
+
 ## Mock Data Library
 
 All mock data lives in `src/data/`. Always import from the barrel file:
