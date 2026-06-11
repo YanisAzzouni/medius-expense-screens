@@ -2,8 +2,7 @@
 .shell {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   background-color: var(--color-chalk-100);
   font-family: var(--font-family);
 }
@@ -11,7 +10,6 @@
 /* ── Everything below the NavBar ── */
 .pageContent {
   flex: 1;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
