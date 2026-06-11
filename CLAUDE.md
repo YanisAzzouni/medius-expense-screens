@@ -398,6 +398,59 @@ Pass only the tabs that should be visible on that screen. All pages in this proj
 
 ---
 
+## Loading & Error States
+
+Three tools work together to simulate realistic async data fetching.
+
+### useMockFetch — simulates an API call
+
+```ts
+import { useMockFetch } from "../hooks/useMockFetch";
+import { USERS } from "../data";
+
+const { data, loading, error, refetch } = useMockFetch(() => USERS, []);
+```
+
+Parameters:
+```ts
+useMockFetch(
+  fetcher,      // () => T  — returns mock data after the delay
+  deps,         // unknown[] — re-fetches when these change (like useEffect)
+  delay?,       // number — ms of simulated latency (default: 800)
+  errorRate?,   // 0–1 — probability of random error, useful for testing (default: 0)
+)
+```
+
+### LoadingState + ErrorState — drop-in UI components
+
+```tsx
+import LoadingState from "../components/LoadingState";
+import ErrorState   from "../components/ErrorState";
+
+const { data, loading, error, refetch } = useMockFetch(() => USERS, []);
+
+if (loading) return <LoadingState />;
+if (error)   return <ErrorState message={error} onRetry={refetch} />;
+// render data...
+```
+
+Both components fill their container (use `flex: 1` or full-height parent).
+
+### Spinner — from the design system
+
+```tsx
+import { Spinner } from "@medius-expense/design-system";
+
+<Spinner />                            // default (24px)
+<Spinner size="small" />               // 16px
+<Spinner size="large" />               // 40px
+<Spinner label="Loading users…" />     // custom accessible label
+```
+
+**Never** build a custom spinner — always use `<Spinner>` from the design system.
+
+---
+
 ## Toast Notifications
 
 Toasts are globally available on every page via `useToastContext`. Never instantiate `useToast` or `<ToastContainer>` directly in a page — they are already wired into `AppLayout`.

@@ -198,6 +198,23 @@ const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
 />
 ```
 
+### Loading & error states
+
+```tsx
+import { useMockFetch } from "../hooks/useMockFetch";
+import LoadingState     from "../components/LoadingState";
+import ErrorState       from "../components/ErrorState";
+import { USERS }        from "../data";
+
+const { data, loading, error, refetch } = useMockFetch(() => USERS, []);
+
+if (loading) return <LoadingState />;
+if (error)   return <ErrorState message={error} onRetry={refetch} />;
+// render data...
+```
+
+Always use this pattern for any page that "fetches" data — even with mock data. It makes prototypes feel realistic and lets you test loading/error UI.
+
 ### Toast notifications
 
 ```tsx
