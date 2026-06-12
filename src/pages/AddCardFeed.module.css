@@ -1,0 +1,155 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 36px 10px 40px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.intro {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-chalk-900);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-500);
+}
+
+.stepper {
+  width: 800px;
+  max-width: 100%;
+}
+
+/* ── Consent box ── */
+.consentBox {
+  background: var(--color-chalk-100);
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.consentCheckboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.consentText {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-900);
+  padding-top: 2px;
+}
+
+/* ── Enable card feed section ── */
+.enableSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.subSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subTitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-900);
+}
+
+.subTitleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.subSubtitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-500);
+}
+
+/* ── Email template ── */
+.emailTemplate {
+  background: var(--color-chalk-100);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.emailHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emailHeaderLabel {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-600);
+}
+
+.emailDivider {
+  height: 1px;
+  background: var(--color-chalk-200);
+}
+
+.emailBody {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-500);
+  white-space: pre-wrap;
+}

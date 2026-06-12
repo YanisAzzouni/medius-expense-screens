@@ -29,7 +29,7 @@ export default function CardFeedsAdmin() {
   }
 
   function handleAddFeed() {
-    // navigation TBD — user will specify
+    navigate("/admin/payment/card-feeds/new");
   }
 
   const dimensionLabel = DIMENSION_OPTIONS.find((o) => o.value === dimension)?.label ?? "";
