@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import type { FeedRecord } from "./CardFeedsAdmin";
 import {
   Stepper, TextInput, Select, Checkbox, LabelTag, Button, Icon,
 } from "@medius-expense/design-system";
@@ -16,20 +17,35 @@ const FUNDING_OPTIONS = [
 ];
 
 export default function AddCardFeed() {
-  const navigate = useNavigate();
+  const navigate  = useNavigate();
+  const location  = useLocation();
 
-  /* ── Per-step form state ── */
-  const [bin,            setBin]            = useState("");
-  const [fundingType,    setFundingType]    = useState("");
-  const [consentChecked, setConsentChecked] = useState(false);
-  const [companyId,      setCompanyId]      = useState("");
+  const locState     = location.state as { feed?: FeedRecord; feeds?: FeedRecord[] } | null;
+  const editingFeed  = locState?.feed;
+  const existingFeeds: FeedRecord[] = locState?.feeds ?? [];
+
+  /* ── Per-step form state — init from editing feed if resuming ── */
+  const [bin,            setBin]            = useState(editingFeed?.formData.bin ?? "");
+  const [fundingType,    setFundingType]    = useState(editingFeed?.formData.fundingType ?? "");
+  const [consentChecked, setConsentChecked] = useState(editingFeed?.formData.consentChecked ?? false);
+  const [companyId,      setCompanyId]      = useState(editingFeed?.formData.companyId ?? "");
 
   /* ── Saved summaries (shown when step is done) ── */
-  const [savedBin,         setSavedBin]         = useState("");
-  const [savedFundingType, setSavedFundingType] = useState("");
+  const [savedBin,         setSavedBin]         = useState(editingFeed?.formData.bin ?? "");
+  const [savedFundingType, setSavedFundingType] = useState(editingFeed?.formData.fundingType ?? "");
+  const [detectedName,     setDetectedName]     = useState(editingFeed?.name ?? "");
 
-  const [activeStep, setActiveStep] = useState(0);
+  const [activeStep, setActiveStep] = useState(editingFeed?.savedStep ?? 0);
   const [copied,     setCopied]     = useState(false);
+  const [isLoading,  setIsLoading]  = useState(false);
+  const [isSaving,   setIsSaving]   = useState(false);
+
+  const STEP_DELAYS = [2000, 500, 700, 1500];
+
+  const FAKE_BANKS = [
+    "BNP Paribas - France", "ING - Netherlands", "Barclays - United Kingdom",
+    "Deutsche Bank - Germany", "Santander - Spain", "Nordea - Sweden",
+  ];
 
   /* ── Navigation ── */
   function handleNavigate(sectionKey: string, itemKey?: string) {
@@ -37,22 +53,80 @@ export default function AddCardFeed() {
   }
 
   function handleBack() {
-    if (activeStep === 0) navigate("/admin/payment/card-feeds");
+    if (activeStep === 0) navigate("/admin/payment/card-feeds", { state: { feeds: existingFeeds.length ? existingFeeds : undefined } });
     else setActiveStep((s) => s - 1);
   }
 
+  function formatNetwork(b: string) {
+    const scheme = Math.random() < 0.5 ? "VISA" : "MC";
+    const first4 = b.slice(0, 4);
+    const next2  = b.slice(4, 6);
+    return `${scheme} ${first4} ${next2}••`;
+  }
+
+  function buildFeed(status: FeedRecord["status"]): FeedRecord {
+    const binStr       = savedBin || bin;
+    const isImporting  = status === "importing";
+    const cardsEnrolled = isImporting ? Math.floor(Math.random() * 401) + 100 : editingFeed?.cardsEnrolled;
+    const importOutcome = isImporting
+      ? (Math.random() < 0.75 ? "action-required" : "live") as "action-required" | "live"
+      : editingFeed?.importOutcome;
+    const unmatched = importOutcome === "action-required"
+      ? Math.floor(Math.random() * 9) + 1
+      : 0;
+    const fundingLabel = fundingType === "company-funds" ? "Company funds" : fundingType === "employee-funds" ? "Employee funds" : undefined;
+
+    return {
+      id:           editingFeed?.id ?? `feed-${binStr}`,
+      name:         detectedName || `Card feed – ${binStr}`,
+      network:      editingFeed?.network ?? formatNetwork(binStr),
+      cards:        "-",
+      lastSync:     "-",
+      status,
+      savedStep:    activeStep,
+      formData: {
+        bin:            savedBin || bin,
+        fundingType:    savedFundingType || fundingType,
+        consentChecked,
+        companyId,
+      },
+      importOutcome,
+      cardsEnrolled,
+      unmatched,
+      fundsType:    fundingLabel ?? editingFeed?.fundsType,
+      connectedOn:  isImporting ? "Jun 13, 2026" : editingFeed?.connectedOn,
+    };
+  }
+
+  function goToList(status: FeedRecord["status"]) {
+    const updated = buildFeed(status);
+    const feeds = editingFeed
+      ? existingFeeds.map((f) => (f.id === updated.id ? updated : f))
+      : [...existingFeeds, updated];
+    if (status === "importing") {
+      navigate(`/admin/payment/card-feeds/${updated.id}`, { state: { feed: updated, feeds } });
+    } else {
+      navigate("/admin/payment/card-feeds", { state: { feeds } });
+    }
+  }
+
   function handleNext() {
-    if (activeStep === 0) setSavedBin(bin);
-    if (activeStep === 1) setSavedFundingType(fundingType);
-    setActiveStep((s) => s + 1);
+    setIsLoading(true);
+    setTimeout(() => {
+      if (activeStep === 0) {
+        setSavedBin(bin);
+        if (!detectedName) setDetectedName(FAKE_BANKS[Math.floor(Math.random() * FAKE_BANKS.length)]);
+      }
+      if (activeStep === 1) setSavedFundingType(fundingType);
+      if (activeStep === 3) { goToList("importing"); return; }
+      setActiveStep((s) => s + 1);
+      setIsLoading(false);
+    }, STEP_DELAYS[activeStep]);
   }
 
   function handleSaveAndFinishLater() {
-    navigate("/admin/payment/card-feeds");
-  }
-
-  function handleFinish() {
-    navigate("/admin/payment/card-feeds");
+    setIsSaving(true);
+    setTimeout(() => goToList("pending"), 600);
   }
 
   /* ── Email template ── */
@@ -104,7 +178,6 @@ export default function AddCardFeed() {
           <Select
             label="Funding type"
             required
-            helpText
             placeholder="Select funding type…"
             options={FUNDING_OPTIONS}
             value={fundingType}
@@ -155,7 +228,6 @@ export default function AddCardFeed() {
       description: "Contact your bank to activate the feed, then enter the company identifier they provide.",
       children: (
         <div className={styles.enableSection}>
-          {/* Sub-step 1 */}
           <div className={styles.subSection}>
             <p className={styles.subTitle}>Step 1 - Send a request to your bank</p>
             <div className={styles.emailTemplate}>
@@ -175,8 +247,6 @@ export default function AddCardFeed() {
               <p className={styles.emailBody}>{emailTemplate}</p>
             </div>
           </div>
-
-          {/* Sub-step 2 */}
           <div className={styles.subSection}>
             <div className={styles.subTitleBlock}>
               <p className={styles.subTitle}>Step 2 - Enter your company identifier</p>
@@ -199,8 +269,8 @@ export default function AddCardFeed() {
   ];
 
   /* ── Per-step config ── */
-  const nextLabels    = ["Check eligibility", "Continue", "Continue", "Finish"];
-  const nextDisabled  = [!isStep0Valid, !isStep1Valid, !consentChecked, !isStep3Valid];
+  const nextLabels   = ["Check eligibility", "Continue", "Continue", "Finish"];
+  const nextDisabled = [!isStep0Valid, !isStep1Valid, !consentChecked, !isStep3Valid];
 
   return (
     <AppLayout>
@@ -216,13 +286,13 @@ export default function AddCardFeed() {
             <PageHeader
               breadcrumbs={[
                 { label: "Admin",      onClick: () => navigate("/admin") },
-                { label: "Card feeds", onClick: () => navigate("/admin/payment/card-feeds") },
-                { label: "New feed" },
+                { label: "Card feeds", onClick: () => navigate("/admin/payment/card-feeds", { state: { feeds: existingFeeds.length ? existingFeeds : undefined } }) },
+                { label: editingFeed ? editingFeed.name : "New feed" },
               ]}
             />
             <div className={styles.body}>
               <div className={styles.intro}>
-                <h1 className={styles.title}>Add a card feed</h1>
+                <h1 className={styles.title}>{editingFeed ? `Edit: ${editingFeed.name}` : "Add a card feed"}</h1>
                 <p className={styles.subtitle}>Connect a corporate card program from your bank to Medius Expense.</p>
               </div>
 
@@ -231,11 +301,14 @@ export default function AddCardFeed() {
                 steps={steps}
                 activeStep={activeStep}
                 onBack={handleBack}
-                onNext={activeStep === 3 ? handleFinish : handleNext}
+                onNext={handleNext}
                 nextLabel={nextLabels[activeStep]}
                 nextDisabled={nextDisabled[activeStep]}
-                secondaryActionLabel={activeStep === 3 ? "Save and finish later" : undefined}
-                onSecondaryAction={activeStep === 3 ? handleSaveAndFinishLater : undefined}
+                nextLoading={isLoading}
+                secondaryActionLabel={activeStep >= 1 && activeStep <= 3 ? "Save" : undefined}
+                secondaryActionIcon={activeStep >= 1 && activeStep <= 3 ? <Icon name="content--save" size="small" /> : undefined}
+                onSecondaryAction={activeStep >= 1 && activeStep <= 3 ? handleSaveAndFinishLater : undefined}
+                secondaryLoading={isSaving}
               />
             </div>
           </div>

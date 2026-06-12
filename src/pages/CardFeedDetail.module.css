@@ -1,0 +1,127 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 50px 48px;
+  overflow-y: auto;
+}
+
+.inner {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Feed header ── */
+.feedHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.feedTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.feedName {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: var(--color-chalk-900);
+}
+
+.feedNetwork {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-chalk-500);
+}
+
+/* ── Tiles row ── */
+.tilesRow {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* ── Shared state card (importing + live) ── */
+.stateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  padding: 24px 0 32px;
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-chalk-200, #eaeaed);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.stateIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: var(--color-chalk-300, #d3d3d9);
+  flex-shrink: 0;
+}
+
+.stateBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 0 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.stateTitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-chalk-600, #5d5d69);
+}
+
+.stateSubtitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-600, #5d5d69);
+  max-width: 400px;
+}
+
+.stateActions {
+  display: flex;
+  gap: 6px;
+}
+
+/* ── Dev action (below state card) ── */
+.devAction {
+  display: flex;
+  justify-content: center;
+}

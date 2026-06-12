@@ -47,6 +47,14 @@
   max-width: 100%;
 }
 
+/* ── Step 0 two-field form ── */
+.step0Form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
 /* ── Consent box ── */
 .consentBox {
   background: var(--color-chalk-100);

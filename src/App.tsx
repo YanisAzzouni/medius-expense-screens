@@ -3,6 +3,7 @@ import { ToastProvider } from "./components/ToastProvider";
 import ExpenseList from "./pages/ExpenseList";
 import AdminScreen from "./pages/AdminScreen";
 import AddCardFeed from "./pages/AddCardFeed";
+import CardFeedDetail from "./pages/CardFeedDetail";
 import PlaceholderPage from "./pages/PlaceholderPage";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         {/* ── Admin ── */}
         <Route path="/admin" element={<Navigate to="/admin/users-access/users" replace />} />
         <Route path="/admin/payment/card-feeds/new" element={<AddCardFeed />} />
+        <Route path="/admin/payment/card-feeds/:feedId" element={<CardFeedDetail />} />
         <Route path="/admin/:section/:item?" element={<AdminScreen />} />
       </Routes>
     </ToastProvider>
