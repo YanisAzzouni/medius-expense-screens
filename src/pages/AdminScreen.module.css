@@ -14,3 +14,11 @@
   padding: 32px;
   box-sizing: border-box;
 }
+
+/* No padding — page handles its own layout (e.g. has a full-width PageHeader) */
+.content_flush {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}

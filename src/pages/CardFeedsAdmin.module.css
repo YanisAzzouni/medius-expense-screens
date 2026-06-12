@@ -1,0 +1,47 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 36px 10px 10px;
+}
+
+.intro {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-chalk-900);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-500);
+}
+
+.stepper {
+  width: 800px;
+  max-width: 100%;
+}
