@@ -183,6 +183,9 @@ export default function CardFeedDetail() {
                         We're pulling in all cards from your {networkScheme} corporate program and matching
                         them to employees. This can take a few minutes to a few days.
                       </p>
+                      <div className={styles.stateActions}>
+                        <Button hierarchy="secondary" onClick={handleBack}>Back to Card feeds</Button>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.devAction}>
