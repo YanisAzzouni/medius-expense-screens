@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@medius-expense/design-system": "github:yanis-azzouni_mediusab/medius-expense-design-system",
+    "@medius-expense/design-system": "github:YanisAzzouni/medius-expense-design-system",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.17.0"
