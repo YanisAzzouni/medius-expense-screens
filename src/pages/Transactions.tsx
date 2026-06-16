@@ -111,7 +111,7 @@ export default function Transactions() {
 
   const rows: RowData[] = TRANSACTIONS.map((tx) => ({
     id:       tx.id,
-    typeIcon: tx.type === "payment" ? "actions--transaction" : "actions--cancel-card",
+    typeIcon: tx.type === "payment" ? "actions--transaction" : "actions--transaction-fees",
     typeName: tx.type === "payment" ? "Payment" : "Fee",
     merchant: tx.merchant,
     source:   tx.source,
@@ -124,12 +124,12 @@ export default function Transactions() {
       : { label: "No transaction" } satisfies StatusCellData,
     actions: tx.type === "payment"
       ? {
-          icon:    "actions--scan-receipt",
+          icon:    "actions--see-invoice",
           label:   "See invoice",
           onClick: () => setSelectedId(tx.id),
         } satisfies ActionsCellData
       : {
-          icon:     "actions--scan-receipt",
+          icon:     "actions--see-invoice",
           label:    "See invoice",
           onClick:  () => {},
           disabled: true,
