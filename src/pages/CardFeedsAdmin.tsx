@@ -182,7 +182,7 @@ export default function CardFeedsAdmin() {
           required
           placeholder="e.g. 412345"
           value={bin}
-          onChange={setBin}
+          onChange={(e) => setBin(e.target.value)}
         />
       ) : (
         <LabelTag
