@@ -312,6 +312,7 @@ export default function ExpenseList() {
           onSort={(key, dir) => { setSortKey(key); setSortDirection(dir); setCurrentPage(1); }}
           onRowClick={(id) => setOpenExpenseId(id)}
           emptyMessage="No expenses found."
+          fillWidth
         />
 
         {/* Pagination footer — one-off per CLAUDE.md, uses DS components inside */}
