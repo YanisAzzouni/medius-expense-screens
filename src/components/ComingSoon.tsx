@@ -15,7 +15,7 @@ export default function ComingSoon({ title }: ComingSoonProps) {
   return (
     <div className={styles.container}>
       <span className={styles.icon}>
-        <Icon name="content--inventory" size="large" />
+        <Icon name="device--widgets" size="large" />
       </span>
       <p className={styles.label}>
         {title ? `${title} — coming soon` : "This page hasn't been built yet"}

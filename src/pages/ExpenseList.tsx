@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
   DataTable,
   Button,
@@ -17,6 +17,9 @@ import type {
 } from "@medius-expense/design-system";
 import AppLayout from "../components/AppLayout";
 import { useToastContext } from "../components/ToastProvider";
+import { useMockFetch } from "../hooks/useMockFetch";
+import LoadingState from "../components/LoadingState";
+import ErrorState from "../components/ErrorState";
 import styles from "./ExpenseList.module.css";
 import {
   EXPENSES,
@@ -185,12 +188,12 @@ const ROWS_PER_PAGE_OPTIONS: SelectOption[] = [
   { value: "50", label: "50" },
 ];
 
-const TOTAL_RESULTS = EXPENSES.length;
-
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function ExpenseList() {
   const { success } = useToastContext();
+  const { data, loading, error, refetch } = useMockFetch(() => EXPENSES, []);
+
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [sortKey, setSortKey] = useState("date");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
@@ -201,25 +204,59 @@ export default function ExpenseList() {
   const [activeView, setActiveView] = useState<"list" | "card">("list");
   const [openExpenseId, setOpenExpenseId] = useState<string | null>(null);
 
+  const expenses = useMemo(() => data ?? [], [data]);
+
   const openExpense = openExpenseId
-    ? EXPENSES.find((e) => e.id === openExpenseId) ?? null
+    ? expenses.find((e) => e.id === openExpenseId) ?? null
     : null;
 
   const perPage = Number(rowsPerPage);
-  const totalPages = Math.ceil(TOTAL_RESULTS / perPage);
 
-  // Sort then paginate — all derived from the raw EXPENSES array
-  const sortedRows: RowData[] = [...EXPENSES]
-    .sort((a, b) => {
-      const va = sortValue(a, sortKey);
-      const vb = sortValue(b, sortKey);
-      if (va < vb) return sortDirection === "asc" ? -1 : 1;
-      if (va > vb) return sortDirection === "asc" ? 1 : -1;
-      return 0;
-    })
-    .map(expenseToRow);
+  // Reset to page 1 whenever the search term changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchValue]);
 
-  const visibleRows = sortedRows.slice((currentPage - 1) * perPage, currentPage * perPage);
+  // Escape closes the modal
+  useEffect(() => {
+    if (!openExpense) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpenExpenseId(null);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [openExpense]);
+
+  // Filter → sort → map (memoized; only recomputes when inputs change)
+  const sortedRows: RowData[] = useMemo(() => {
+    const term = searchValue.trim().toLowerCase();
+    const filtered = term
+      ? expenses.filter(
+          (e) =>
+            e.title.toLowerCase().includes(term) ||
+            (e.merchant?.name.toLowerCase().includes(term) ?? false) ||
+            getReportLabel(e.reportId).toLowerCase().includes(term),
+        )
+      : expenses;
+
+    return [...filtered]
+      .sort((a, b) => {
+        const va = sortValue(a, sortKey);
+        const vb = sortValue(b, sortKey);
+        if (va < vb) return sortDirection === "asc" ? -1 : 1;
+        if (va > vb) return sortDirection === "asc" ? 1 : -1;
+        return 0;
+      })
+      .map(expenseToRow);
+  }, [expenses, searchValue, sortKey, sortDirection]);
+
+  const totalResults = sortedRows.length;
+  const totalPages = Math.max(1, Math.ceil(totalResults / perPage));
+
+  const visibleRows = useMemo(
+    () => sortedRows.slice((currentPage - 1) * perPage, currentPage * perPage),
+    [sortedRows, currentPage, perPage],
+  );
 
   const pages: (number | null)[] = (() => {
     if (totalPages <= 5) return Array.from({ length: totalPages }, (_, i) => i + 1);
@@ -227,6 +264,26 @@ export default function ExpenseList() {
     if (currentPage >= totalPages - 2) return [1, null, totalPages - 2, totalPages - 1, totalPages];
     return [1, null, currentPage, null, totalPages];
   })();
+
+  if (loading) {
+    return (
+      <AppLayout>
+        <div className={styles.content}>
+          <LoadingState />
+        </div>
+      </AppLayout>
+    );
+  }
+
+  if (error) {
+    return (
+      <AppLayout>
+        <div className={styles.content}>
+          <ErrorState message={error ?? undefined} onRetry={refetch} />
+        </div>
+      </AppLayout>
+    );
+  }
 
   return (
     <AppLayout>
@@ -243,7 +300,7 @@ export default function ExpenseList() {
         {/* Banner */}
         {showBanner && (
           <Banner
-            type="information"
+            variant="information"
             title="Detached title"
             dismissible
             onDismiss={() => setShowBanner(false)}
@@ -273,6 +330,8 @@ export default function ExpenseList() {
             <Button
               hierarchy={activeView === "list" ? "secondary" : "tertiary"}
               iconOnly
+              aria-label="List view"
+              aria-pressed={activeView === "list"}
               onClick={() => setActiveView("list")}
             >
               <Icon name="actions--view-list" size="small" />
@@ -280,6 +339,8 @@ export default function ExpenseList() {
             <Button
               hierarchy={activeView === "card" ? "secondary" : "tertiary"}
               iconOnly
+              aria-label="Card view"
+              aria-pressed={activeView === "card"}
               onClick={() => setActiveView("card")}
             >
               <Icon name="actions--calendar-today" size="small" />
@@ -333,10 +394,11 @@ export default function ExpenseList() {
             </div>
           </div>
 
-          <div className={styles.paginationControls}>
+          <nav className={styles.paginationControls} aria-label="Pagination">
             <Button
               hierarchy="tertiary"
               iconOnly
+              aria-label="Previous page"
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
             >
               <Icon name="navigation--chevron-left" size="small" />
@@ -349,6 +411,8 @@ export default function ExpenseList() {
                 <Button
                   key={p}
                   hierarchy={p === currentPage ? "primary" : "tertiary"}
+                  aria-label={`Page ${p}`}
+                  aria-current={p === currentPage ? "page" : undefined}
                   onClick={() => setCurrentPage(p)}
                 >
                   {String(p)}
@@ -359,11 +423,12 @@ export default function ExpenseList() {
             <Button
               hierarchy="tertiary"
               iconOnly
+              aria-label="Next page"
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
             >
               <Icon name="navigation--chevron-right" size="small" />
             </Button>
-          </div>
+          </nav>
 
           <div className={styles.paginationRight}>
             <span className={styles.paginationLabel}>Rows per page</span>
@@ -374,7 +439,7 @@ export default function ExpenseList() {
                 onChange={(v) => { setRowsPerPage(v); setCurrentPage(1); }}
               />
             </div>
-            <span className={styles.resultsCount}>{TOTAL_RESULTS} Results</span>
+            <span className={styles.resultsCount}>{totalResults} Results</span>
           </div>
 
         </div>
@@ -382,7 +447,13 @@ export default function ExpenseList() {
       {/* ── Expense modal ── */}
       {openExpense && (
         <div className={styles.modalBackdrop} onClick={() => setOpenExpenseId(null)}>
-          <div className={styles.modalWrapper} onClick={(e) => e.stopPropagation()}>
+          <div
+            className={styles.modalWrapper}
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Expense details — ${openExpense.title}`}
+            onClick={(e) => e.stopPropagation()}
+          >
             <ExpenseModal
               key={openExpense.id}
               title={openExpense.title}
@@ -398,8 +469,8 @@ export default function ExpenseList() {
                 setOpenExpenseId(null);
               }}
               onNext={() => {
-                const idx = EXPENSES.findIndex((e) => e.id === openExpense.id);
-                const next = EXPENSES[idx + 1];
+                const idx = expenses.findIndex((e) => e.id === openExpense.id);
+                const next = expenses[idx + 1];
                 if (next) setOpenExpenseId(next.id);
               }}
             />

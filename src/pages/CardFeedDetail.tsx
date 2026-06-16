@@ -1,24 +1,12 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import type { FeedRecord } from "./CardFeedsAdmin";
-import { PageHeader, Banner, Button, Icon, DataTable, StatusTag, FeedTile, AdminPanel } from "@medius-expense/design-system";
-import AppLayout from "../components/AppLayout";
-import adminStyles from "./AdminScreen.module.css";
+import { PageHeader, Banner, Button, Icon, DataTable, StatusTag, FeedTile } from "@medius-expense/design-system";
+import AdminLayout from "../components/AdminLayout";
+import { FEED_CARDHOLDERS, CARD_NETWORK_LOGOS } from "../data";
 import styles from "./CardFeedDetail.module.css";
 
-/* ─── Fake unmatched card data ───────────────────────────────────────────── */
-
-const FAKE_CARDHOLDERS = [
-  { id: "u1", cardholder: "Sarah Chen",    last4: "7821" },
-  { id: "u2", cardholder: "Marcus Webb",   last4: "3456" },
-  { id: "u3", cardholder: "Priya Sharma",  last4: "9012" },
-  { id: "u4", cardholder: "Tom Eriksen",   last4: "1847" },
-  { id: "u5", cardholder: "Ana Costa",     last4: "6234" },
-  { id: "u6", cardholder: "David Park",    last4: "5509" },
-  { id: "u7", cardholder: "Emma Wilson",   last4: "4128" },
-  { id: "u8", cardholder: "Liam Nguyen",   last4: "8763" },
-  { id: "u9", cardholder: "Fatima Al-Ali", last4: "2291" },
-];
+/* ─── Table columns ──────────────────────────────────────────────────────── */
 
 const UNMATCHED_COLUMNS = [
   { key: "card",       type: "text" as const,    title: "Card number", fill: true },
@@ -27,14 +15,9 @@ const UNMATCHED_COLUMNS = [
   { key: "action",     type: "actions" as const, title: "Action"                  },
 ];
 
-/* ─── Network logo URLs ──────────────────────────────────────────────────── */
-
-const VISA_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Visa_2014_logo_detail.svg/2560px-Visa_2014_logo_detail.svg.png";
-const MC_LOGO   = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png";
-
 function networkLogo(scheme: string) {
-  if (scheme === "VISA") return { logoSrc: VISA_LOGO, logoAlt: "VISA" };
-  if (scheme === "MC")   return { logoSrc: MC_LOGO,   logoAlt: "Mastercard" };
+  if (scheme === "VISA") return { logoSrc: CARD_NETWORK_LOGOS.VISA, logoAlt: "VISA" };
+  if (scheme === "MC")   return { logoSrc: CARD_NETWORK_LOGOS.MC,   logoAlt: "Mastercard" };
   return { logoSrc: undefined, logoAlt: scheme };
 }
 
@@ -45,12 +28,50 @@ export default function CardFeedDetail() {
   const location  = useLocation();
 
   const locState  = location.state as { feed: FeedRecord; feeds: FeedRecord[] } | null;
-  const [feed,  setFeed]  = useState<FeedRecord>(locState?.feed!);
-  const [feeds, setFeeds] = useState<FeedRecord[]>(locState?.feeds ?? []);
 
-  function handleNavigate(sectionKey: string, itemKey?: string) {
-    navigate(`/admin/${sectionKey}${itemKey ? `/${itemKey}` : ""}`);
+  // Router state is undefined on direct navigation / refresh — guard against it
+  // instead of asserting, so the page degrades gracefully rather than crashing.
+  if (!locState?.feed) {
+    return (
+      <AdminLayout activeSection="payment" activeItem="card-feeds" flush>
+        <div className={styles.page}>
+          <PageHeader
+            breadcrumbs={[
+              { label: "Admin",      onClick: () => navigate("/admin") },
+              { label: "Card feeds", onClick: () => navigate("/admin/payment/card-feeds") },
+            ]}
+          />
+          <div className={styles.body}>
+            <div className={styles.stateCard}>
+              <div className={styles.stateIcon}>
+                <Icon name="alert--error-outline" size="large" />
+              </div>
+              <div className={styles.stateBody}>
+                <p className={styles.stateTitle}>Feed not found</p>
+                <p className={styles.stateSubtitle}>
+                  We couldn't load this card feed. Open it from the Card feeds list to view its details.
+                </p>
+                <div className={styles.stateActions}>
+                  <Button hierarchy="secondary" onClick={() => navigate("/admin/payment/card-feeds")}>
+                    Back to Card feeds
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </AdminLayout>
+    );
   }
+
+  return <CardFeedDetailContent initialFeed={locState.feed} initialFeeds={locState.feeds ?? []} />;
+}
+
+function CardFeedDetailContent({ initialFeed, initialFeeds }: { initialFeed: FeedRecord; initialFeeds: FeedRecord[] }) {
+  const navigate = useNavigate();
+
+  const [feed,  setFeed]  = useState<FeedRecord>(initialFeed);
+  const [feeds, setFeeds] = useState<FeedRecord[]>(initialFeeds);
 
   function handleBack() {
     navigate("/admin/payment/card-feeds", { state: { feeds } });
@@ -75,7 +96,7 @@ export default function CardFeedDetail() {
   const isActionRequired = feed.status === "action-required";
   const isLive           = feed.status === "live";
 
-  const unmatchedRows = FAKE_CARDHOLDERS.slice(0, feed.unmatched ?? 0).map((r) => ({
+  const unmatchedRows = FEED_CARDHOLDERS.slice(0, feed.unmatched ?? 0).map((r) => ({
     id:          r.id,
     card:        `${networkScheme} •••• ${r.last4}`,
     cardholder:  r.cardholder,
@@ -84,15 +105,7 @@ export default function CardFeedDetail() {
   }));
 
   return (
-    <AppLayout>
-      <div className={adminStyles.body}>
-        <AdminPanel
-          companyName="Medius AB"
-          activeSection="payment"
-          activeItem="card-feeds"
-          onNavigate={handleNavigate}
-        />
-        <main className={adminStyles.content_flush}>
+    <AdminLayout activeSection="payment" activeItem="card-feeds" flush>
           <div className={styles.page}>
             <PageHeader
               breadcrumbs={[
@@ -127,7 +140,7 @@ export default function CardFeedDetail() {
 
               {/* ── Banner (action required only) ── */}
               {isActionRequired && (
-                <Banner type="warning" title={`${feed.unmatched} card${feed.unmatched !== 1 ? "s" : ""} could not be matched`}>
+                <Banner variant="warning" title={`${feed.unmatched} card${feed.unmatched !== 1 ? "s" : ""} could not be matched`}>
                   We imported {feed.cardsEnrolled} cards but couldn't match {feed.unmatched} to an employee in Medius.
                   Review the unmatched cards below and assign them manually.
                 </Banner>
@@ -244,8 +257,6 @@ export default function CardFeedDetail() {
               </div>
             </div>
           </div>
-        </main>
-      </div>
-    </AppLayout>
+    </AdminLayout>
   );
 }

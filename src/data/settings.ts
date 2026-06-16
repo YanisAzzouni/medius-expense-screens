@@ -8,7 +8,7 @@ import type { Currency, StatusTagVariant } from "./expenses";
 
 /* ─── Category ───────────────────────────────────────────────────────────── */
 
-export interface ExpenseCategory {
+export interface ExpenseCategoryConfig {
   id:           string;
   name:         string;
   icon:         string;   // Icon name from design system manifest
@@ -17,17 +17,17 @@ export interface ExpenseCategory {
   active:       boolean;
 }
 
-export const CATEGORIES: ExpenseCategory[] = [
+export const CATEGORIES: ExpenseCategoryConfig[] = [
   { id: "cat-001", name: "Meals & Entertainment", icon: "maps--local-dining",   accountCode: "6200", taxable: true,  active: true  },
   { id: "cat-002", name: "Travel",                icon: "maps--flight",          accountCode: "6210", taxable: false, active: true  },
   { id: "cat-003", name: "Hotel & Lodging",       icon: "maps--hotel",           accountCode: "6220", taxable: false, active: true  },
   { id: "cat-004", name: "Taxi & Transport",      icon: "maps--local-taxi",      accountCode: "6230", taxable: true,  active: true  },
   { id: "cat-005", name: "Parking",               icon: "maps--directions-car",  accountCode: "6240", taxable: true,  active: true  },
   { id: "cat-006", name: "Training & Courses",    icon: "maps--local-library",   accountCode: "6300", taxable: false, active: true  },
-  { id: "cat-007", name: "Office Supplies",       icon: "content--inventory",    accountCode: "6100", taxable: true,  active: true  },
+  { id: "cat-007", name: "Office Supplies",       icon: "content--archive",    accountCode: "6100", taxable: true,  active: true  },
   { id: "cat-008", name: "Telecom",               icon: "communication--phone",  accountCode: "6400", taxable: true,  active: true  },
   { id: "cat-009", name: "Subscriptions",         icon: "av--subscriptions",     accountCode: "6500", taxable: true,  active: true  },
-  { id: "cat-010", name: "Other",                 icon: "editor--more-horiz",    accountCode: "6900", taxable: true,  active: false },
+  { id: "cat-010", name: "Other",                 icon: "navigation--more-horiz",    accountCode: "6900", taxable: true,  active: false },
 ];
 
 /* ─── Project ────────────────────────────────────────────────────────────── */

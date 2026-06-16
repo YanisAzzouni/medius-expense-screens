@@ -60,7 +60,7 @@ export type PaymentInstrument =
   | "cash"
   | "bank-transfer";
 
-export type CountryCode = "fr" | "se" | "us" | "de" | "gb";
+export type CountryCode = "fr" | "se" | "us" | "de" | "gb" | "it";
 
 export type Currency = "EUR" | "SEK" | "USD" | "GBP" | "NOK";
 
@@ -174,6 +174,7 @@ export const COUNTRY_LABEL: Record<CountryCode, string> = {
   us: "United States (USD)",
   de: "Germany (EUR)",
   gb: "United Kingdom (GBP)",
+  it: "Italy (EUR)",
 };
 
 /* ─── Main Expense type ─────────────────────────────────────────────────── */

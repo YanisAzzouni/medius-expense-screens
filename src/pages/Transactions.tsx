@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   DataTable,
@@ -17,43 +17,15 @@ import type {
   ExpenseModalInitialData,
   ExpenseTag,
 } from "@medius-expense/design-system";
+import {
+  CARD_TRANSACTIONS,
+  CARD_EXP_STATE_VARIANT,
+  type CardTransaction,
+} from "../data";
+import { useMockFetch } from "../hooks/useMockFetch";
+import LoadingState from "../components/LoadingState";
+import ErrorState from "../components/ErrorState";
 import styles from "./Transactions.module.css";
-
-/* ─── Mock data ─────────────────────────────────────────────────────────── */
-
-type TxType   = "payment" | "fee";
-type ExpState = "To review" | "To submit" | "Approved";
-
-interface Transaction {
-  id: string;
-  type: TxType;
-  merchant: string;
-  source: string;
-  employee: string;
-  txDate: string;
-  txDateIso: string;
-  amount: string;
-  expState: ExpState | null; // null = fee row (no linked expense)
-  category: string;
-}
-
-const TRANSACTIONS: Transaction[] = [
-  { id: "1", type: "payment", merchant: "Pet Paradise",     source: "BNPP - France", employee: "Ava Thompson",    txDate: "Feb 22, 2026", txDateIso: "2026-02-22", amount: "450.75", expState: "To review", category: "misc"           },
-  { id: "2", type: "payment", merchant: "Gourmet Bistro",   source: "BNPP - France", employee: "Michael Brown",   txDate: "Jan 15, 2026", txDateIso: "2026-01-15", amount: "675.20", expState: "To review", category: "meals"          },
-  { id: "3", type: "payment", merchant: "Tech Haven",       source: "BNPP - France", employee: "Emily Johnson",   txDate: "Jun 18, 2026", txDateIso: "2026-06-18", amount: "720.30", expState: "To review", category: "equipment"      },
-  { id: "4", type: "fee",     merchant: "Bookworm's Nook",  source: "Medius card",   employee: "Sophia Davis",    txDate: "May 12, 2026", txDateIso: "2026-05-12", amount: "560.45", expState: null,        category: "misc"           },
-  { id: "5", type: "fee",     merchant: "Fashion Hub",      source: "Medius card",   employee: "Olivia Taylor",   txDate: "Mar 30, 2026", txDateIso: "2026-03-30", amount: "390.10", expState: null,        category: "misc"           },
-  { id: "6", type: "fee",     merchant: "GreenGrocer",      source: "Medius card",   employee: "James Anderson",  txDate: "Jul 24, 2026", txDateIso: "2026-07-24", amount: "880.60", expState: null,        category: "meals"          },
-  { id: "7", type: "payment", merchant: "Fitness World",    source: "Medius card",   employee: "Juliette Martin", txDate: "Sep 7, 2026",  txDateIso: "2026-09-07", amount: "820.50", expState: "Approved",  category: "misc"           },
-  { id: "8", type: "payment", merchant: "Travel Explorers", source: "Import",        employee: "Liam Wilson",     txDate: "Apr 5, 2026",  txDateIso: "2026-04-05", amount: "540.90", expState: "Approved",  category: "transportation" },
-  { id: "9", type: "payment", merchant: "Home Essentials",  source: "Import",        employee: "John Smith",      txDate: "Aug 31, 2026", txDateIso: "2026-08-31", amount: "610.15", expState: "Approved",  category: "misc"           },
-];
-
-const EXP_STATE_VARIANT: Record<ExpState, "grey" | "blue" | "green"> = {
-  "To review": "grey",
-  "To submit": "blue",
-  "Approved":  "green",
-};
 
 /* ─── Columns ───────────────────────────────────────────────────────────── */
 
@@ -82,14 +54,15 @@ function getModalTags(source: string): ExpenseTag[] {
   return [];
 }
 
-function makeInitialData(tx: Transaction): ExpenseModalInitialData {
+function makeInitialData(tx: CardTransaction): ExpenseModalInitialData {
+  const isCompanyCard = tx.source === "Medius card" || tx.source.startsWith("BNPP");
   return {
     title:             tx.merchant,
     date:              tx.txDateIso,
     amount:            tx.amount,
     currency:          "eur",
     category:          tx.category,
-    paymentInstrument: tx.source === "Medius card" ? "company-card" : tx.source.startsWith("BNPP") ? "company-card" : "",
+    paymentInstrument: isCompanyCard ? "company-card" : "",
   };
 }
 
@@ -98,43 +71,70 @@ function makeInitialData(tx: Transaction): ExpenseModalInitialData {
 export default function Transactions() {
   const navigate = useNavigate();
 
+  const { data, loading, error, refetch } = useMockFetch(() => CARD_TRANSACTIONS, []);
+
   const [sortKey, setSortKey]         = useState<string | undefined>(undefined);
   const [sortDir, setSortDir]         = useState<"asc" | "desc">("asc");
   const [selectedId, setSelectedId]   = useState<string | null>(null);
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [search, setSearch]           = useState("");
 
-  const selectedTx = TRANSACTIONS.find((t) => t.id === selectedId) ?? null;
+  const transactions = useMemo(() => data ?? [], [data]);
+  const selectedTx = transactions.find((t) => t.id === selectedId) ?? null;
 
   function handleSort(key: string, dir: "asc" | "desc") {
     setSortKey(key);
     setSortDir(dir);
   }
 
-  const rows: RowData[] = TRANSACTIONS.map((tx) => ({
-    id:       tx.id,
-    typeIcon: tx.type === "payment" ? "actions--transaction" : "actions--transaction-fees",
-    typeName: tx.type === "payment" ? "Payment" : "Fee",
-    merchant: tx.merchant,
-    source:   tx.source,
-    employee: tx.employee,
-    txDate:   tx.txDate,
-    amount:   { amount: tx.amount, currency: "EUR" } satisfies AmountCellData,
-    txState:  { label: "Validated", variant: "green" } satisfies StatusCellData,
-    expState: tx.expState !== null
-      ? { label: tx.expState, variant: EXP_STATE_VARIANT[tx.expState] } satisfies StatusCellData
-      : { label: "No transaction" } satisfies StatusCellData,
-    actions: tx.type === "payment"
-      ? {
-          icon:    "actions--see-invoice",
-          label:   "See invoice",
-          onClick: () => setSelectedId(tx.id),
-        } satisfies ActionsCellData
-      : {
-          icon:     "actions--see-invoice",
-          label:    "See invoice",
-          onClick:  () => {},
-          disabled: true,
-        } satisfies ActionsCellData,
-  }));
+  // Escape closes the modal
+  useEffect(() => {
+    if (!selectedTx) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setSelectedId(null);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selectedTx]);
+
+  const rows: RowData[] = useMemo(() => {
+    const term = search.trim().toLowerCase();
+    const filtered = term
+      ? transactions.filter(
+          (tx) =>
+            tx.merchant.toLowerCase().includes(term) ||
+            tx.employee.toLowerCase().includes(term) ||
+            tx.source.toLowerCase().includes(term),
+        )
+      : transactions;
+
+    return filtered.map((tx) => ({
+      id:       tx.id,
+      typeIcon: tx.type === "payment" ? "actions--transaction" : "actions--transaction-fees",
+      typeName: tx.type === "payment" ? "Payment" : "Fee",
+      merchant: tx.merchant,
+      source:   tx.source,
+      employee: tx.employee,
+      txDate:   tx.txDate,
+      amount:   { amount: tx.amount, currency: "EUR" } satisfies AmountCellData,
+      txState:  { label: "Validated", variant: "green" } satisfies StatusCellData,
+      expState: tx.expState !== null
+        ? { label: tx.expState, variant: CARD_EXP_STATE_VARIANT[tx.expState] } satisfies StatusCellData
+        : { label: "No transaction" } satisfies StatusCellData,
+      actions: tx.type === "payment"
+        ? {
+            icon:    "actions--see-invoice",
+            label:   "See invoice",
+            onClick: () => setSelectedId(tx.id),
+          } satisfies ActionsCellData
+        : {
+            icon:     "actions--see-invoice",
+            label:    "See invoice",
+            onClick:  () => {},
+            disabled: true,
+          } satisfies ActionsCellData,
+    }));
+  }, [transactions, search]);
 
   return (
     <div className={styles.page}>
@@ -146,41 +146,51 @@ export default function Transactions() {
       />
 
       <div className={styles.body}>
-        {/* ── Toolbar ── */}
-        <div className={styles.toolbar}>
-          <div className={styles.toolbarLeft}>
-            <TextInput
-              placeholder="Search..."
-              value=""
-              onChange={() => {}}
-              className={styles.searchInput}
-            />
-            <Button hierarchy="secondary">
-              <span className={styles.filtersBtn}>
-                Filters
-                <Icon name="navigation--expand-more" size="small" />
-              </span>
-            </Button>
-          </div>
-          <Button
-            hierarchy="secondary"
-            icon={<Icon name="content--save-alt" size="small" />}
-          >
-            Export
-          </Button>
-        </div>
+        {loading ? (
+          <LoadingState />
+        ) : error ? (
+          <ErrorState message={error ?? undefined} onRetry={refetch} />
+        ) : (
+          <>
+            {/* ── Toolbar ── */}
+            <div className={styles.toolbar}>
+              <div className={styles.toolbarLeft}>
+                <TextInput
+                  placeholder="Search..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className={styles.searchInput}
+                />
+                <Button hierarchy="secondary">
+                  <span className={styles.filtersBtn}>
+                    Filters
+                    <Icon name="navigation--expand-more" size="small" />
+                  </span>
+                </Button>
+              </div>
+              <Button
+                hierarchy="secondary"
+                icon={<Icon name="content--save-alt" size="small" />}
+              >
+                Export
+              </Button>
+            </div>
 
-        {/* ── Table ── */}
-        <div className={styles.tableWrap}>
-          <DataTable
-            columns={COLUMNS}
-            rows={rows}
-            selectable
-            sortKey={sortKey}
-            sortDirection={sortDir}
-            onSort={handleSort}
-          />
-        </div>
+            {/* ── Table ── */}
+            <div className={styles.tableWrap}>
+              <DataTable
+                columns={COLUMNS}
+                rows={rows}
+                selectable
+                selectedIds={selectedIds}
+                onSelectionChange={setSelectedIds}
+                sortKey={sortKey}
+                sortDirection={sortDir}
+                onSort={handleSort}
+              />
+            </div>
+          </>
+        )}
       </div>
 
       {/* ── Expense modal overlay ── */}
@@ -191,13 +201,16 @@ export default function Transactions() {
         >
           <div
             className={styles.modalWrapper}
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Transaction details — ${selectedTx.merchant}`}
             onClick={(e) => e.stopPropagation()}
           >
             <ExpenseModal
               title={selectedTx.merchant}
               tags={getModalTags(selectedTx.source)}
-              statusLabel={selectedTx.expState}
-              statusVariant={EXP_STATE_VARIANT[selectedTx.expState]}
+              statusLabel={selectedTx.expState ?? undefined}
+              statusVariant={selectedTx.expState ? CARD_EXP_STATE_VARIANT[selectedTx.expState] : undefined}
               initialData={makeInitialData(selectedTx)}
               onClose={() => setSelectedId(null)}
             />

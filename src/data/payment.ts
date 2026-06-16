@@ -172,3 +172,64 @@ export const ROLE_DEFINITIONS: RoleDefinition[] = [
     permissions: ["view-all-expenses", "view-reports"],
   },
 ];
+
+/* ─── Card-feed transactions (Transactions admin screen) ─────────────────── */
+
+export type CardTxType   = "payment" | "fee";
+export type CardExpState = "To review" | "To submit" | "Approved";
+
+export interface CardTransaction {
+  id: string;
+  type: CardTxType;
+  merchant: string;
+  source: string;
+  employee: string;
+  txDate: string;
+  txDateIso: string;
+  amount: string;
+  expState: CardExpState | null; // null = fee row (no linked expense)
+  category: string;
+}
+
+export const CARD_TRANSACTIONS: CardTransaction[] = [
+  { id: "1", type: "payment", merchant: "Pet Paradise",     source: "BNPP - France", employee: "Ava Thompson",    txDate: "Feb 22, 2026", txDateIso: "2026-02-22", amount: "450.75", expState: "To review", category: "misc"           },
+  { id: "2", type: "payment", merchant: "Gourmet Bistro",   source: "BNPP - France", employee: "Michael Brown",   txDate: "Jan 15, 2026", txDateIso: "2026-01-15", amount: "675.20", expState: "To review", category: "meals"          },
+  { id: "3", type: "payment", merchant: "Tech Haven",       source: "BNPP - France", employee: "Emily Johnson",   txDate: "Jun 18, 2026", txDateIso: "2026-06-18", amount: "720.30", expState: "To review", category: "equipment"      },
+  { id: "4", type: "fee",     merchant: "Bookworm's Nook",  source: "Medius card",   employee: "Sophia Davis",    txDate: "May 12, 2026", txDateIso: "2026-05-12", amount: "560.45", expState: null,        category: "misc"           },
+  { id: "5", type: "fee",     merchant: "Fashion Hub",      source: "Medius card",   employee: "Olivia Taylor",   txDate: "Mar 30, 2026", txDateIso: "2026-03-30", amount: "390.10", expState: null,        category: "misc"           },
+  { id: "6", type: "fee",     merchant: "GreenGrocer",      source: "Medius card",   employee: "James Anderson",  txDate: "Jul 24, 2026", txDateIso: "2026-07-24", amount: "880.60", expState: null,        category: "meals"          },
+  { id: "7", type: "payment", merchant: "Fitness World",    source: "Medius card",   employee: "Juliette Martin", txDate: "Sep 7, 2026",  txDateIso: "2026-09-07", amount: "820.50", expState: "Approved",  category: "misc"           },
+  { id: "8", type: "payment", merchant: "Travel Explorers", source: "Import",        employee: "Liam Wilson",     txDate: "Apr 5, 2026",  txDateIso: "2026-04-05", amount: "540.90", expState: "Approved",  category: "transportation" },
+  { id: "9", type: "payment", merchant: "Home Essentials",  source: "Import",        employee: "John Smith",      txDate: "Aug 31, 2026", txDateIso: "2026-08-31", amount: "610.15", expState: "Approved",  category: "misc"           },
+];
+
+export const CARD_EXP_STATE_VARIANT: Record<CardExpState, "grey" | "blue" | "green"> = {
+  "To review": "grey",
+  "To submit": "blue",
+  "Approved":  "green",
+};
+
+/* ─── Card-feed detail (unmatched cardholders + network logos) ───────────── */
+
+export interface FeedCardholder {
+  id: string;
+  cardholder: string;
+  last4: string;
+}
+
+export const FEED_CARDHOLDERS: FeedCardholder[] = [
+  { id: "u1", cardholder: "Sarah Chen",    last4: "7821" },
+  { id: "u2", cardholder: "Marcus Webb",   last4: "3456" },
+  { id: "u3", cardholder: "Priya Sharma",  last4: "9012" },
+  { id: "u4", cardholder: "Tom Eriksen",   last4: "1847" },
+  { id: "u5", cardholder: "Ana Costa",     last4: "6234" },
+  { id: "u6", cardholder: "David Park",    last4: "5509" },
+  { id: "u7", cardholder: "Emma Wilson",   last4: "4128" },
+  { id: "u8", cardholder: "Liam Nguyen",   last4: "8763" },
+  { id: "u9", cardholder: "Fatima Al-Ali", last4: "2291" },
+];
+
+export const CARD_NETWORK_LOGOS = {
+  VISA: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Visa_2014_logo_detail.svg/2560px-Visa_2014_logo_detail.svg.png",
+  MC:   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png",
+} as const;

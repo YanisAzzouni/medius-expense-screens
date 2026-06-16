@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './design-tokens.css'
 import '@medius-expense/design-system/styles'
 import './index.css'
 import App from './App.tsx'

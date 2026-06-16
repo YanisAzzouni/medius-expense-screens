@@ -187,7 +187,7 @@ export default function CardFeedsAdmin() {
       ) : (
         <LabelTag
           label="Real-time network feed available for this card program."
-          color="green"
+          variant="green"
           icon={<Icon name="navigation--check" size="small" />}
         />
       ),
@@ -200,13 +200,13 @@ export default function CardFeedsAdmin() {
       children: phase === "add-feed" ? (
         <LabelTag
           label="Account activated"
-          color="green"
+          variant="green"
           icon={<Icon name="navigation--check" size="small" />}
         />
       ) : phase === "unlock-waiting" ? (
         <LabelTag
           label="Activation requested · Your account manager will reach out within 1–2 business days"
-          color="yellow"
+          variant="yellow"
           icon={<Icon name="actions--hourglass-full" size="small" />}
         />
       ) : undefined,

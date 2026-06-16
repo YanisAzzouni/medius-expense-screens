@@ -6,10 +6,8 @@ import {
 } from "@medius-expense/design-system";
 import type { StepDef } from "@medius-expense/design-system";
 import { PageHeader } from "@medius-expense/design-system";
-import AppLayout from "../components/AppLayout";
-import { AdminPanel } from "@medius-expense/design-system";
+import AdminLayout from "../components/AdminLayout";
 import styles from "./AddCardFeed.module.css";
-import adminStyles from "./AdminScreen.module.css";
 
 const FUNDING_OPTIONS = [
   { value: "company-funds",  label: "Company funds"  },
@@ -48,10 +46,6 @@ export default function AddCardFeed() {
   ];
 
   /* ── Navigation ── */
-  function handleNavigate(sectionKey: string, itemKey?: string) {
-    navigate(`/admin/${sectionKey}${itemKey ? `/${itemKey}` : ""}`);
-  }
-
   function handleBack() {
     if (activeStep === 0) navigate("/admin/payment/card-feeds", { state: { feeds: existingFeeds.length ? existingFeeds : undefined } });
     else setActiveStep((s) => s - 1);
@@ -164,7 +158,7 @@ export default function AddCardFeed() {
         ) : (
           <LabelTag
             label="Real-time network feed available for this card program."
-            color="green"
+            variant="green"
             size="small"
             icon={<Icon name="navigation--check" size="small" />}
           />
@@ -186,7 +180,7 @@ export default function AddCardFeed() {
         ) : (
           <LabelTag
             label={fundingLabel}
-            color="green"
+            variant="green"
             size="small"
             icon={<Icon name="navigation--check" size="small" />}
           />
@@ -216,7 +210,7 @@ export default function AddCardFeed() {
         ) : (
           <LabelTag
             label="Confirmed"
-            color="green"
+            variant="green"
             size="small"
             icon={<Icon name="navigation--check" size="small" />}
           />
@@ -273,15 +267,7 @@ export default function AddCardFeed() {
   const nextDisabled = [!isStep0Valid, !isStep1Valid, !consentChecked, !isStep3Valid];
 
   return (
-    <AppLayout>
-      <div className={adminStyles.body}>
-        <AdminPanel
-          companyName="Medius AB"
-          activeSection="payment"
-          activeItem="card-feeds"
-          onNavigate={handleNavigate}
-        />
-        <main className={adminStyles.content_flush}>
+    <AdminLayout activeSection="payment" activeItem="card-feeds" flush>
           <div className={styles.page}>
             <PageHeader
               breadcrumbs={[
@@ -305,15 +291,13 @@ export default function AddCardFeed() {
                 nextLabel={nextLabels[activeStep]}
                 nextDisabled={nextDisabled[activeStep]}
                 nextLoading={isLoading}
-                secondaryActionLabel={activeStep >= 1 && activeStep <= 3 ? "Save" : undefined}
-                secondaryActionIcon={activeStep >= 1 && activeStep <= 3 ? <Icon name="content--save" size="small" /> : undefined}
-                onSecondaryAction={activeStep >= 1 && activeStep <= 3 ? handleSaveAndFinishLater : undefined}
+                secondaryLabel={activeStep >= 1 && activeStep <= 3 ? "Save" : undefined}
+                secondaryIcon={activeStep >= 1 && activeStep <= 3 ? <Icon name="content--save" size="small" /> : undefined}
+                onSecondary={activeStep >= 1 && activeStep <= 3 ? handleSaveAndFinishLater : undefined}
                 secondaryLoading={isSaving}
               />
             </div>
           </div>
-        </main>
-      </div>
-    </AppLayout>
+    </AdminLayout>
   );
 }

@@ -119,7 +119,7 @@ hintType?:    "neutral" | "danger" | "success"
 ```ts
 import { Banner } from "@medius-expense/design-system";
 
-type?:         "information" | "warning" | "error" | "success"  // default: "information"
+variant?:      "information" | "warning" | "error" | "success"  // default: "information"
 title?:        string
 children?:     ReactNode   // body text
 showIcon?:     boolean     // default: true
@@ -148,7 +148,7 @@ Renders a pill badge with a coloured dot. Use for workflow states (Draft, Submit
 import { LabelTag } from "@medius-expense/design-system";
 
 label:   string
-color?:  "neutral" | "grey" | "blue" | "green" | "orange" | "red" | "teal"  // default: "neutral"
+variant?: "neutral" | "grey" | "blue" | "green" | "orange" | "red" | "teal" | "yellow"  // default: "neutral"
 size?:   "default" | "small"                                         // default: "default"
 icon?:   ReactNode   // optional leading icon
 ```
@@ -197,8 +197,7 @@ import { Checkbox } from "@medius-expense/design-system";
 checked?:   boolean | "indeterminate"
 onChange?:  (checked: boolean) => void
 label?:     string
-state?:     "default" | "danger" | "disabled"
-disabled?:  boolean   // alias for state="disabled"
+state?:     "default" | "danger" | "disabled"   // use state="disabled" to disable
 // + id, name, value, className
 ```
 
@@ -296,7 +295,9 @@ emptyMessage?:       string        // shown when rows.length === 0
 
 **ColumnDef shape:**
 ```ts
-{ key: string; title?: string; type: CellType; size?: "S"|"M"|"L"; sortable?: boolean }
+{ key: string; title?: string; type: CellType; size?: "S"|"M"|"L"; sortable?: boolean; fill?: boolean }
+// fill: true → column behaves like `expense-title` (flex: 1, grows to fill).
+// DataTableProps also accepts `fillWidth?: boolean` to stretch the table to its container.
 ```
 
 **12 cell types and their row data shape (key → value in RowData):**
@@ -304,7 +305,7 @@ emptyMessage?:       string        // shown when rows.length === 0
 |------|-----------------|-------------|
 | `alerts` | 60px fixed | `{ warning?, duplicate?, policyAlert? }` |
 | `thumbnail` | 60px fixed | `{ src: string; alt?: string }` |
-| `status` | **hugs content** (fit-content) | `{ label: string; variant?: StatusTagVariant }` |
+| `status` | **120px fixed** | `{ label: string; variant?: StatusTagVariant }` |
 | `amount` | 120px min | `{ amount, currency, amount2?, currency2? }` |
 | `date` | **120px fixed** (min + max) | `string` |
 | `icon` | 60px fixed | `string` (icon name) |
@@ -319,6 +320,20 @@ emptyMessage?:       string        // shown when rows.length === 0
 `manual-addition` · `split` · `email` · `card-statement` · `file-attached` · `guest` · `merged` · `medius-card` · `e-invoice` · `e-invoice-expected` · `e-invoice-not-expected` · `transaction-expected`
 
 Sorting is external-only: `onSort` fires, parent updates `sortKey`/`sortDirection`. Selection supports both controlled (`selectedIds` + `onSelectionChange`) and uncontrolled modes.
+
+---
+
+### Other exported components
+
+These are also exported from `@medius-expense/design-system` and used by the screens. Read the TypeScript interface before using.
+
+- **`Stepper`** (`StepperProps`, `StepDef`) — multi-step flow. Primary action: `onNext`/`nextLabel`/`nextIcon`/`nextDisabled`/`nextLoading`; secondary action mirrors it: `onSecondary`/`secondaryLabel`/`secondaryIcon`/`secondaryDisabled`/`secondaryLoading`; plus `onBack`.
+- **`PageHeader`** (`PageHeaderProps`, `PageHeaderAction`) — page title bar with `breadcrumbs` and actions.
+- **`Breadcrumb`** (`BreadcrumbProps`, `BreadcrumbItem`) — standalone breadcrumb trail.
+- **`FeedTile`** (`FeedTileProps`, `FeedTileVariant`, `FeedTileNumberColor`) — dashboard/summary tile.
+- **`Toast`** / **`ToastContainer`** / **`useToast`** (`ToastItem`, `ToastVariant`, `ToastProps`, `ToastContainerProps`) — toast system (wired globally via `ToastProvider`; prefer `useToastContext`).
+
+All leaf components forward a `ref` to their root element and accept `className`.
 
 ---
 

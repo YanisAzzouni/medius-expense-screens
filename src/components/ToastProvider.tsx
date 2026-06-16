@@ -24,7 +24,7 @@ const ToastContext = createContext<ToastContextValue | null>(null);
  */
 export function useToastContext(): ToastContextValue {
   const ctx = useContext(ToastContext);
-  if (!ctx) throw new Error("useToastContext must be used inside AppLayout");
+  if (!ctx) throw new Error("useToastContext must be used inside <ToastProvider>");
   return ctx;
 }
 
