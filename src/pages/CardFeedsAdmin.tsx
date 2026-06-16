@@ -221,7 +221,7 @@ export default function CardFeedsAdmin() {
   const nextLabel =
     phase === "eligibility"    ? "Check eligibility" :
     phase === "unlock"         ? "Request activation" :
-    "+ Add first feed";
+    "Add first feed";
 
   const nextDisabled = phase === "eligibility" && bin.trim().length < 6;
   const nextLoading  =
@@ -242,7 +242,7 @@ export default function CardFeedsAdmin() {
   const onNext =
     phase === "eligibility"    ? handleCheckEligibility  :
     phase === "unlock"         ? handleRequestActivation  :
-    phase === "unlock-waiting" ? undefined                :
+    phase === "unlock-waiting" ? undefined :
     handleAddFeed;
 
   return (
