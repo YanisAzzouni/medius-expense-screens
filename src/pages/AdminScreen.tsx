@@ -3,6 +3,7 @@ import { AdminPanel } from "@medius-expense/design-system";
 import AppLayout from "../components/AppLayout";
 import ComingSoon from "../components/ComingSoon";
 import CardFeedsAdmin from "./CardFeedsAdmin";
+import Transactions from "./Transactions";
 import styles from "./AdminScreen.module.css";
 
 export default function AdminScreen() {
@@ -13,7 +14,8 @@ export default function AdminScreen() {
     navigate(`/admin/${sectionKey}${itemKey ? `/${itemKey}` : ""}`);
   }
 
-  const isCardFeeds = section === "payment" && item === "card-feeds";
+  const isCardFeeds     = section === "payment" && item === "card-feeds";
+  const isTransactions  = section === "payment" && item === "transactions";
 
   return (
     <AppLayout>
@@ -24,8 +26,10 @@ export default function AdminScreen() {
           activeItem={item}
           onNavigate={handleNavigate}
         />
-        <main className={isCardFeeds ? styles.content_flush : styles.content}>
-          {isCardFeeds ? <CardFeedsAdmin /> : <ComingSoon />}
+        <main className={(isCardFeeds || isTransactions) ? styles.content_flush : styles.content}>
+          {isCardFeeds    ? <CardFeedsAdmin /> :
+           isTransactions ? <Transactions />   :
+           <ComingSoon />}
         </main>
       </div>
     </AppLayout>
