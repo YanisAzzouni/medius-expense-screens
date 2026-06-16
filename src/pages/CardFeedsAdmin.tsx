@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Stepper, Select, LabelTag, Icon, DataTable, PageHeader, Button } from "@medius-expense/design-system";
+import { Stepper, LabelTag, Icon, DataTable, PageHeader, Button, TextInput } from "@medius-expense/design-system";
 import type { StepDef, StatusTagVariant } from "@medius-expense/design-system";
 import styles from "./CardFeedsAdmin.module.css";
 
@@ -46,16 +46,6 @@ const FEED_COLUMNS = [
   { key: "cards",    type: "text" as const, title: "Cards",   size: "S" as const },
   { key: "lastSync", type: "text" as const, title: "Last sync"             },
   { key: "status",   type: "status" as const, title: "Status", sortable: true },
-];
-
-/* ─── Constants ──────────────────────────────────────────────────────────── */
-
-const DIMENSION_OPTIONS = [
-  { value: "dimension-1", label: "Dimension 1" },
-  { value: "dimension-2", label: "Dimension 2" },
-  { value: "dimension-3", label: "Dimension 3" },
-  { value: "dimension-4", label: "Dimension 4" },
-  { value: "dimension-5", label: "Dimension 5" },
 ];
 
 /* ─── Feeds list view ────────────────────────────────────────────────────── */
@@ -107,21 +97,27 @@ function CardFeedsList({ feeds, onAddFeed, onReset, onRowClick }: {
 
 /* ─── Setup wizard ───────────────────────────────────────────────────────── */
 
+type SetupPhase =
+  | "eligibility"       // step 1 active
+  | "unlock"            // step 2 active
+  | "unlock-waiting"    // step 2 waiting (activation requested)
+  | "add-feed";         // step 3 active
+
 export default function CardFeedsAdmin() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [activeStep, setActiveStep]         = useState(0);
-  const [dimension, setDimension]           = useState("");
-  const [savedDimension, setSavedDimension] = useState("");
-  const [isValidating, setIsValidating]     = useState(false);
-  const [isNavigating, setIsNavigating]     = useState(false);
+  const [phase, setPhase]           = useState<SetupPhase>("eligibility");
+  const [bin, setBin]               = useState("");
+  const [isChecking, setIsChecking] = useState(false);
+  const [isRequesting, setIsRequesting] = useState(false);
+  const [isNavigating, setIsNavigating] = useState(false);
 
   const incomingFeeds: FeedRecord[] | undefined = (location.state as { feeds?: FeedRecord[] })?.feeds;
 
   if (incomingFeeds?.length) {
     const handleRowClick = (id: string) => {
-      const feed = incomingFeeds!.find((f) => f.id === id);
+      const feed = incomingFeeds.find((f) => f.id === id);
       if (!feed) return;
       if (feed.status === "pending") {
         navigate("/admin/payment/card-feeds/new", { state: { feed, feeds: incomingFeeds } });
@@ -139,17 +135,30 @@ export default function CardFeedsAdmin() {
     );
   }
 
-  function handleValidate() {
-    setIsValidating(true);
+  /* ── Step 1: check eligibility ── */
+  function handleCheckEligibility() {
+    setIsChecking(true);
     setTimeout(() => {
-      setSavedDimension(dimension);
-      setActiveStep(1);
-      setIsValidating(false);
+      setPhase("unlock");
+      setIsChecking(false);
     }, 1200);
   }
 
-  function handleBack() { setActiveStep(0); }
+  /* ── Step 2: request activation ── */
+  function handleRequestActivation() {
+    setIsRequesting(true);
+    setTimeout(() => {
+      setPhase("unlock-waiting");
+      setIsRequesting(false);
+    }, 1000);
+  }
 
+  /* ── Dev: simulate activation received ── */
+  function handleSimulateActivation() {
+    setPhase("add-feed");
+  }
+
+  /* ── Step 3: navigate to add feed ── */
   function handleAddFeed() {
     setIsNavigating(true);
     setTimeout(() => {
@@ -157,38 +166,84 @@ export default function CardFeedsAdmin() {
     }, 900);
   }
 
-  const savedLabel = DIMENSION_OPTIONS.find((o) => o.value === savedDimension)?.label ?? "";
+  const activeStep =
+    phase === "eligibility"    ? 0 :
+    phase === "unlock"         ? 1 :
+    phase === "unlock-waiting" ? 1 :
+    2;
 
   const steps: StepDef[] = [
     {
-      title: "Configure employee ID field",
-      description:
-        "Before setting up your first card feed, tell us where employee IDs are stored in Medius. We'll use this to automatically match imported cards to the right employees.",
-      children:
-        activeStep === 0 ? (
-          <Select
-            label="Employee ID"
-            required
-            placeholder="Select a dimension…"
-            options={DIMENSION_OPTIONS}
-            value={dimension}
-            onChange={setDimension}
-          />
-        ) : (
-          <LabelTag
-            label={`Configured in: ${savedLabel}`}
-            color="green"
-            size="small"
-            icon={<Icon name="navigation--check" size="small" />}
-          />
-        ),
+      title: "Check eligibility",
+      description: "Enter the first 6 to 8 digits of any card in your program to check if a real-time feed is available.",
+      children: phase === "eligibility" ? (
+        <TextInput
+          label="BIN"
+          required
+          placeholder="e.g. 412345"
+          value={bin}
+          onChange={setBin}
+        />
+      ) : (
+        <LabelTag
+          label="Real-time network feed available for this card program."
+          color="green"
+          icon={<Icon name="navigation--check" size="small" />}
+        />
+      ),
+    },
+    {
+      title: "Unlock card feeds",
+      description: "Card feeds are available as a plan upgrade. Your account manager will be notified to reach out and get you set up.",
+      waiting: phase === "unlock-waiting",
+      lockedMessage: "Complete step 1 first",
+      children: phase === "add-feed" ? (
+        <LabelTag
+          label="Account activated"
+          color="green"
+          icon={<Icon name="navigation--check" size="small" />}
+        />
+      ) : phase === "unlock-waiting" ? (
+        <LabelTag
+          label="Activation requested · Your account manager will reach out within 1–2 business days"
+          color="yellow"
+          icon={<Icon name="actions--hourglass-full" size="small" />}
+        />
+      ) : undefined,
     },
     {
       title: "Add your first card feed",
-      description: "Connect a VISA or Mastercard corporate program from your bank.",
-      lockedMessage: "Complete step 1 first",
+      description: "Connect your first VISA or Mastercard corporate program to start importing cards and transactions.",
+      lockedMessage: "Complete step 2 first",
     },
   ];
+
+  const nextLabel =
+    phase === "eligibility"    ? "Check eligibility" :
+    phase === "unlock"         ? "Request activation" :
+    "+ Add first feed";
+
+  const nextDisabled = phase === "eligibility" && bin.trim().length < 6;
+  const nextLoading  =
+    phase === "eligibility" ? isChecking :
+    phase === "unlock"      ? isRequesting :
+    isNavigating;
+
+  const nextIcon =
+    phase === "eligibility" ? undefined :
+    phase === "unlock"      ? undefined :
+    <Icon name="content--add" size="small" />;
+
+  const onBack =
+    phase === "unlock"      ? () => setPhase("eligibility") :
+    phase === "add-feed"    ? () => setPhase("unlock")      :
+    undefined;
+
+  const onNext =
+    phase === "eligibility"    ? handleCheckEligibility  :
+    phase === "unlock"         ? handleRequestActivation  :
+    phase === "unlock-waiting" ? undefined                :
+    handleAddFeed;
 
   return (
     <div className={styles.page}>
@@ -199,21 +254,50 @@ export default function CardFeedsAdmin() {
         ]}
       />
       <div className={styles.body}>
+        {/* ── Hero card ── */}
+        <div className={styles.heroCard}>
+          <Icon name="actions--credit-card" size="large" className={styles.heroIcon} />
+          <div className={styles.heroText}>
+            <h2 className={styles.heroTitle}>Connect your existing corporate cards to Medius</h2>
+            <p className={styles.heroSubtitle}>
+              Card feeds let you import your company's corporate card transactions directly into Medius Expense,
+              in real time, with no manual file exports. Keep your existing bank relationship and card pricing
+              while getting full expense visibility.
+            </p>
+          </div>
+        </div>
+
+        {/* ── "Get started" heading ── */}
         <div className={styles.intro}>
           <h1 className={styles.title}>Get started</h1>
           <p className={styles.subtitle}>Complete these steps to connect your first card</p>
         </div>
+
         <Stepper
           className={styles.stepper}
           steps={steps}
           activeStep={activeStep}
-          onBack={activeStep > 0 ? handleBack : undefined}
-          onNext={activeStep === 0 ? handleValidate : handleAddFeed}
-          nextLabel={activeStep === 0 ? "Validate" : "Add feed"}
-          nextDisabled={activeStep === 0 && !dimension}
-          nextLoading={isValidating || isNavigating}
-          nextIcon={activeStep === 1 ? <Icon name="content--add" size="small" /> : undefined}
+          onBack={onBack}
+          onNext={onNext}
+          nextLabel={nextLabel}
+          nextDisabled={nextDisabled}
+          nextLoading={nextLoading}
+          nextIcon={nextIcon}
         />
+
+        {/* ── Dev buttons ── */}
+        {phase === "unlock-waiting" && (
+          <div className={styles.devAction}>
+            <Button
+              hierarchy="tertiary"
+              appearance="danger"
+              icon={<Icon name="av--play-arrow" size="small" />}
+              onClick={handleSimulateActivation}
+            >
+              Simulate activation
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

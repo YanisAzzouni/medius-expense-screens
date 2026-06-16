@@ -46,6 +46,63 @@
   max-width: 100%;
 }
 
+/* ── Hero card ── */
+.heroCard {
+  width: 100%;
+  max-width: 800px;
+  background: var(--color-white, #fff);
+  border: 1px solid var(--color-chalk-200);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  padding: 24px 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.heroIcon {
+  color: var(--color-chalk-300);
+  width: 50px;
+  height: 50px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-chalk-600);
+}
+
+.heroSubtitle {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: var(--color-chalk-600);
+  max-width: 400px;
+}
+
+/* ── Dev action ── */
+.devAction {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
 /* ── List view ── */
 .listBody {
   display: flex;
