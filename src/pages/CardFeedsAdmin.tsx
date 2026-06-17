@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Stepper, LabelTag, Icon, DataTable, PageHeader, Button, TextInput } from "@medius-expense/design-system";
 import type { StepDef, StatusTagVariant } from "@medius-expense/design-system";
+import { saveFeeds, loadFeeds, clearFeeds } from "../hooks/useFeedStorage";
 import styles from "./CardFeedsAdmin.module.css";
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
@@ -58,6 +59,8 @@ function CardFeedsList({ feeds, onAddFeed, onReset, onRowClick }: {
 }) {
   const navigate = useNavigate();
 
+  useEffect(() => { saveFeeds(feeds); }, [feeds]);
+
   const rows = feeds.map((f) => ({
     id:       f.id,
     name:     f.name,
@@ -113,7 +116,9 @@ export default function CardFeedsAdmin() {
   const [isRequesting, setIsRequesting] = useState(false);
   const [isNavigating, setIsNavigating] = useState(false);
 
-  const incomingFeeds: FeedRecord[] | undefined = (location.state as { feeds?: FeedRecord[] })?.feeds;
+  const locFeeds = (location.state as { feeds?: FeedRecord[] } | null)?.feeds;
+  const incomingFeeds: FeedRecord[] | undefined =
+    locFeeds !== undefined ? locFeeds : loadFeeds<FeedRecord>();
 
   if (incomingFeeds?.length) {
     const handleRowClick = (id: string) => {
@@ -129,7 +134,7 @@ export default function CardFeedsAdmin() {
       <CardFeedsList
         feeds={incomingFeeds}
         onAddFeed={() => navigate("/admin/payment/card-feeds/new", { state: { feeds: incomingFeeds } })}
-        onReset={() => navigate("/admin/payment/card-feeds", { state: { feeds: [] } })}
+        onReset={() => { clearFeeds(); navigate("/admin/payment/card-feeds", { state: { feeds: [] } }); }}
         onRowClick={handleRowClick}
       />
     );

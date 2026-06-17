@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { saveFeeds } from "../hooks/useFeedStorage";
 import type { FeedRecord } from "./CardFeedsAdmin";
 import { PageHeader, Banner, Button, Icon, DataTable, StatusTag, FeedTile } from "@medius-expense/design-system";
 import AdminLayout from "../components/AdminLayout";
@@ -72,6 +73,8 @@ function CardFeedDetailContent({ initialFeed, initialFeeds }: { initialFeed: Fee
 
   const [feed,  setFeed]  = useState<FeedRecord>(initialFeed);
   const [feeds, setFeeds] = useState<FeedRecord[]>(initialFeeds);
+
+  useEffect(() => { saveFeeds(feeds); }, [feeds]);
 
   function handleBack() {
     navigate("/admin/payment/card-feeds", { state: { feeds } });
