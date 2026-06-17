@@ -220,7 +220,7 @@ function CardFeedDetailContent({ initialFeed, initialFeeds }: { initialFeed: Fee
               {/* ── Action required — unmatched table ── */}
               {isActionRequired && (
                 <>
-                  <DataTable columns={UNMATCHED_COLUMNS} rows={unmatchedRows} />
+                  <DataTable columns={UNMATCHED_COLUMNS} rows={unmatchedRows} fillWidth />
                   <div className={styles.devAction}>
                     <Button
                       hierarchy="tertiary"
