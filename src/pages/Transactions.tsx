@@ -32,7 +32,7 @@ import styles from "./Transactions.module.css";
 const COLUMNS: ColumnDef[] = [
   { key: "typeIcon", type: "icon",    title: ""            },
   { key: "typeName", type: "text",    title: "Type"        },
-  { key: "merchant", type: "text",    title: "Merchant name" },
+  { key: "merchant", type: "text",    title: "Merchant name", size: "L" },
   { key: "source",   type: "text",    title: "Source",       sortable: true },
   { key: "employee", type: "text",    title: "Employee"    },
   { key: "txDate",   type: "date",    title: "tx. date",     sortable: true },
