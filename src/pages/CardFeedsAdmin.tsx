@@ -162,7 +162,7 @@ export default function CardFeedsAdmin() {
   function handleAddFeed() {
     setIsNavigating(true);
     setTimeout(() => {
-      navigate("/admin/payment/card-feeds/new");
+      navigate("/admin/payment/card-feeds/new", { state: { prefillBin: bin } });
     }, 900);
   }
 

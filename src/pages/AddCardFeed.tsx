@@ -9,6 +9,11 @@ import { PageHeader } from "@medius-expense/design-system";
 import AdminLayout from "../components/AdminLayout";
 import styles from "./AddCardFeed.module.css";
 
+const FAKE_BANKS = [
+  "BNP Paribas - France", "ING - Netherlands", "Barclays - United Kingdom",
+  "Deutsche Bank - Germany", "Santander - Spain", "Nordea - Sweden",
+];
+
 const FUNDING_OPTIONS = [
   { value: "company-funds",  label: "Company funds"  },
   { value: "employee-funds", label: "Employee funds" },
@@ -18,32 +23,31 @@ export default function AddCardFeed() {
   const navigate  = useNavigate();
   const location  = useLocation();
 
-  const locState     = location.state as { feed?: FeedRecord; feeds?: FeedRecord[] } | null;
+  const locState     = location.state as { feed?: FeedRecord; feeds?: FeedRecord[]; prefillBin?: string } | null;
   const editingFeed  = locState?.feed;
   const existingFeeds: FeedRecord[] = locState?.feeds ?? [];
+  const prefillBin   = locState?.prefillBin ?? "";
 
-  /* ── Per-step form state — init from editing feed if resuming ── */
-  const [bin,            setBin]            = useState(editingFeed?.formData.bin ?? "");
+  /* ── Per-step form state — init from editing feed if resuming, or prefill from first screen ── */
+  const [bin,            setBin]            = useState(editingFeed?.formData.bin ?? prefillBin);
   const [fundingType,    setFundingType]    = useState(editingFeed?.formData.fundingType ?? "");
   const [consentChecked, setConsentChecked] = useState(editingFeed?.formData.consentChecked ?? false);
   const [companyId,      setCompanyId]      = useState(editingFeed?.formData.companyId ?? "");
 
   /* ── Saved summaries (shown when step is done) ── */
-  const [savedBin,         setSavedBin]         = useState(editingFeed?.formData.bin ?? "");
+  const [savedBin,         setSavedBin]         = useState(editingFeed?.formData.bin ?? prefillBin);
   const [savedFundingType, setSavedFundingType] = useState(editingFeed?.formData.fundingType ?? "");
-  const [detectedName,     setDetectedName]     = useState(editingFeed?.name ?? "");
+  const [detectedName,     setDetectedName]     = useState(
+    editingFeed?.name ?? (prefillBin ? FAKE_BANKS[Math.floor(Math.random() * FAKE_BANKS.length)] : "")
+  );
 
-  const [activeStep, setActiveStep] = useState(editingFeed?.savedStep ?? 0);
+  // If a BIN was pre-filled from the first screen, step 0 is already validated — start at step 1
+  const [activeStep, setActiveStep] = useState(editingFeed?.savedStep ?? (prefillBin ? 1 : 0));
   const [copied,     setCopied]     = useState(false);
   const [isLoading,  setIsLoading]  = useState(false);
   const [isSaving,   setIsSaving]   = useState(false);
 
   const STEP_DELAYS = [2000, 500, 700, 1500];
-
-  const FAKE_BANKS = [
-    "BNP Paribas - France", "ING - Netherlands", "Barclays - United Kingdom",
-    "Deutsche Bank - Germany", "Santander - Spain", "Nordea - Sweden",
-  ];
 
   /* ── Navigation ── */
   function handleBack() {
