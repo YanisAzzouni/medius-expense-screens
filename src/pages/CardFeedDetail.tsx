@@ -238,14 +238,15 @@ function CardFeedDetailContent({ initialFeed, initialFeeds }: { initialFeed: Fee
               {/* ── Live state ── */}
               {isLive && (
                 <div className={styles.stateCard}>
-                  <div className={styles.stateIcon}>
-                    <Icon name="alerts--check-circle" size="large" />
+                  <div className={`${styles.stateIcon} ${styles.stateIcon_live}`}>
+                    <Icon name="alerts--check-circle" size="large" style={{ width: 72, height: 72 }} />
                   </div>
                   <div className={styles.stateBody}>
-                    <p className={styles.stateTitle}>Your card feed is live and receiving transactions</p>
+                    <p className={styles.stateTitle}>Your card feed is live and all cards are matched</p>
                     <p className={styles.stateSubtitle}>
-                      All {feed.cardsEnrolled} cards are matched to employees and transactions are syncing
-                      in real time. You can review payment instruments or check incoming transactions below.
+                      All {feed.cardsEnrolled} cards have been imported, <strong>payment instruments</strong> have
+                      been created, and each card has been matched to the right employee. Transactions are now
+                      syncing in real time.
                     </p>
                     <div className={styles.stateActions}>
                       <Button hierarchy="secondary">Payment instruments</Button>

@@ -84,6 +84,12 @@
   flex-shrink: 0;
 }
 
+.stateIcon_live {
+  width: 72px;
+  height: 72px;
+  color: var(--color-green-500);
+}
+
 .stateBody {
   display: flex;
   flex-direction: column;
